@@ -76,6 +76,14 @@ require_once __DIR__ . '/includes/header.php';
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
                                 <span style="color: #13c296;">&#10003;</span>
+                                <span>All Airbnb payout methods supported</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 10px;">
+                                <span style="color: #13c296;">&#10003;</span>
+                                <span>QuickBooks integration</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 10px;">
+                                <span style="color: #13c296;">&#10003;</span>
                                 <span>Team management & task assignment</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
@@ -247,6 +255,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="included-item"><span class="check">&#10003;</span><span>Reporting & analytics</span></div>
                     <div class="included-item"><span class="check">&#10003;</span><span>Owner portal</span></div>
                     <div class="included-item"><span class="check">&#10003;</span><span>PMS integrations</span></div>
+                    <div class="included-item"><span class="check">&#10003;</span><span>QuickBooks integration</span></div>
                     <div class="included-item"><span class="check">&#10003;</span><span>Unlimited team members</span></div>
                 </div>
             </div>

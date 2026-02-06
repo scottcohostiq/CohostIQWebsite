@@ -117,6 +117,13 @@ require_once __DIR__ . '/includes/header.php';
                                 <p>Management fees, cleaning pass-throughs, expense deductions - all automated</p>
                             </div>
                         </div>
+                        <div class="about-feature-item">
+                            <span class="about-check">&#10003;</span>
+                            <div>
+                                <strong>QuickBooks Integration</strong>
+                                <p>Owner statements, expenses, and payouts sync directly to QuickBooks - no double entry</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +159,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="feature-icon">&#128176;</div>
                     <h3 class="feature-title">Automated Billing</h3>
                     <p class="feature-description">
-                        Generate owner statements, track expenses, and manage payouts. No more missed bills or manual calculations.
+                        Generate owner statements, track expenses, and manage payouts. Supports all Airbnb payout methods and syncs directly to QuickBooks.
                     </p>
                 </div>
                 <div class="feature-card">
