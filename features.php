@@ -475,9 +475,9 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128241;</div>
-                    <h3 class="feature-title">Mobile Optimized</h3>
+                    <h3 class="feature-title">iPhone App</h3>
                     <p class="feature-description">
-                        Access CohostIQ from any device. The responsive design works great on phones and tablets for on-the-go management.
+                        Manage tickets, owners, and operations on the go with our native iPhone app. Android coming soon.
                     </p>
                 </div>
                 <div class="feature-card">
