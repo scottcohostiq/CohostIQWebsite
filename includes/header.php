@@ -1,18 +1,21 @@
 <?php
 /**
- * CohostIQ Marketing Website - Security Headers
+ * CohostIQ Marketing Website - Shared Header
  *
- * Lightweight header file for public marketing pages.
- * No session/auth required - just security headers.
+ * Sets security headers, outputs <head>, and renders navigation.
+ *
+ * Pages should set these variables before including this file:
+ *   $pageTitle       - The <title> tag content
+ *   $pageDescription - The meta description content
+ *   $currentPage     - One of: 'home', 'features', 'faq', 'signup'
  */
 
-// Prevent caching of dynamic content
+// Security Headers
 if (!headers_sent()) {
-    header("Cache-Control: public, max-age=3600"); // Cache for 1 hour (marketing pages are static)
+    header("Cache-Control: public, max-age=3600");
     header("Pragma: cache");
 }
 
-// Content Security Policy - strict but allows Google Fonts
 header("Content-Security-Policy: "
     . "default-src 'self'; "
     . "script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
@@ -26,24 +29,65 @@ header("Content-Security-Policy: "
     . "form-action 'self' https://cohostiq.app;"
 );
 
-// Prevent MIME type sniffing
 header("X-Content-Type-Options: nosniff");
-
-// Set content type
 header("Content-Type: text/html; charset=UTF-8");
-
-// Prevent Clickjacking
 header("X-Frame-Options: DENY");
-
-// Enable XSS Protection (legacy browsers)
 header("X-XSS-Protection: 1; mode=block");
-
-// Referrer Policy - don't leak full URL to external sites
 header("Referrer-Policy: strict-origin-when-cross-origin");
-
-// Permissions Policy - restrict browser features we don't need
 header("Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()");
-
-// HSTS - enforce HTTPS (commented out for dev, enable in production)
 // header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload");
+
+// Defaults
+if (!isset($pageTitle)) $pageTitle = 'CohostIQ';
+if (!isset($pageDescription)) $pageDescription = 'CohostIQ - Operational tools for vacation rental co-hosts and property managers.';
+if (!isset($currentPage)) $currentPage = '';
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <title><?php echo htmlspecialchars($pageTitle); ?></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.php" class="logo">
+                    <div class="logo-icon">C</div>
+                    CohostIQ
+                </a>
+                <div class="nav-links">
+                    <a href="index.php"<?php echo $currentPage === 'home' ? ' class="active"' : ''; ?>>Home</a>
+                    <a href="index.php#about">About</a>
+                    <a href="features.php"<?php echo $currentPage === 'features' ? ' class="active"' : ''; ?>>Features</a>
+                    <a href="signup.php#pricing"<?php echo $currentPage === 'signup' ? ' class="active"' : ''; ?>>Pricing</a>
+                    <a href="faq.php"<?php echo $currentPage === 'faq' ? ' class="active"' : ''; ?>>FAQ</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.php">Home</a>
+            <a href="index.php#about">About</a>
+            <a href="features.php">Features</a>
+            <a href="signup.php#pricing">Pricing</a>
+            <a href="faq.php">FAQ</a>
+            <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
+            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
+        </div>
+    </header>

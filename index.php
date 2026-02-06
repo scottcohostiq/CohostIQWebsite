@@ -1,62 +1,17 @@
-<?php require_once __DIR__ . '/includes/header.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CohostIQ - Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.">
-    <title>CohostIQ - Vacation Rental Operations Management</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.php" class="logo">
-                    <div class="logo-icon">C</div>
-                    CohostIQ
-                </a>
-                <div class="nav-links">
-                    <a href="index.php" class="active">Home</a>
-                    <a href="index.php#about">About</a>
-                    <a href="features.php">Features</a>
-                    <a href="signup.php#pricing">Pricing</a>
-                    <a href="faq.php">FAQ</a>
-                </div>
-                <div class="nav-actions">
-                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </div>
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <a href="index.php">Home</a>
-            <a href="index.php#about">About</a>
-            <a href="features.php">Features</a>
-            <a href="signup.php#pricing">Pricing</a>
-            <a href="faq.php">FAQ</a>
-            <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
-        </div>
-    </header>
+<?php
+$pageTitle = 'CohostIQ - Vacation Rental Operations Management';
+$pageDescription = 'CohostIQ - Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.';
+$currentPage = 'home';
+require_once __DIR__ . '/includes/header.php';
+?>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge" style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white;">
-                        <span>&#128640;</span> Coming Soon - Join the Waitlist
+                    <div class="hero-badge">
+                        <span>&#128640;</span> Start Free - No Credit Card Required
                     </div>
                     <h1 class="hero-title">
                         Manage Your Vacation Rentals with <span>Intelligence</span>
@@ -65,7 +20,7 @@
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="signup.php#waitlist" class="btn btn-primary btn-lg">Join Waitlist</a>
+                        <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary btn-lg">Sign Up Free</a>
                         <a href="features.php" class="btn btn-outline btn-lg">See Features</a>
                     </div>
                 </div>
@@ -381,58 +336,14 @@
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Scale Your Operations?</h2>
                 <p class="cta-description">
-                    Stop letting operational overhead hold back your growth. Join the waitlist and be first to experience instant property onboarding.
+                    Stop letting operational overhead hold back your growth. Start free and experience instant property onboarding.
                 </p>
                 <div class="cta-buttons">
-                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-white btn-lg">Sign Up Free</a>
                     <a href="features.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.php" class="logo">
-                        <div class="logo-icon">C</div>
-                        CohostIQ
-                    </a>
-                    <p class="footer-description">
-                        Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting that your PMS doesn't provide.
-                    </p>
-                </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <div class="footer-links">
-                        <a href="features.php">Features</a>
-                        <a href="signup.php">Pricing</a>
-                        <a href="faq.php">FAQ</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <div class="footer-links">
-                        <a href="mailto:support@cohostiq.com">Contact</a>
-                        <a href="mailto:support@cohostiq.com">Support</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> CohostIQ. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
