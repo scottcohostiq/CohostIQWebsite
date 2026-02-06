@@ -1,53 +1,9 @@
-<?php require_once __DIR__ . '/includes/header.php'; ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sign up for CohostIQ and start managing your vacation rentals more efficiently. Free tier available.">
-    <title>Sign Up - CohostIQ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.php" class="logo">
-                    <div class="logo-icon">C</div>
-                    CohostIQ
-                </a>
-                <div class="nav-links">
-                    <a href="index.php">Home</a>
-                    <a href="index.php#about">About</a>
-                    <a href="features.php">Features</a>
-                    <a href="#pricing" class="active">Pricing</a>
-                    <a href="faq.php">FAQ</a>
-                </div>
-                <div class="nav-actions">
-                    <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </div>
-        <div class="mobile-nav" id="mobileNav">
-            <a href="index.php">Home</a>
-            <a href="index.php#about">About</a>
-            <a href="features.php">Features</a>
-            <a href="#pricing">Pricing</a>
-            <a href="faq.php">FAQ</a>
-            <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
-        </div>
-    </header>
+<?php
+$pageTitle = 'Sign Up - CohostIQ';
+$pageDescription = 'Sign up for CohostIQ and start managing your vacation rentals more efficiently. Free tier available.';
+$currentPage = 'signup';
+require_once __DIR__ . '/includes/header.php';
+?>
 
     <!-- Page Header -->
     <section class="page-header">
@@ -310,7 +266,7 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="faq-question">
                         <h4>Is there really a free tier?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
@@ -321,7 +277,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="faq-question">
                         <h4>Can I import my existing data?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
@@ -332,7 +288,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="faq-question">
                         <h4>What if I need help getting started?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
@@ -349,48 +305,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.php" class="logo">
-                        <div class="logo-icon">C</div>
-                        CohostIQ
-                    </a>
-                    <p class="footer-description">
-                        Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting that your PMS doesn't provide.
-                    </p>
-                </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <div class="footer-links">
-                        <a href="features.php">Features</a>
-                        <a href="signup.php">Pricing</a>
-                        <a href="faq.php">FAQ</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <div class="footer-links">
-                        <a href="mailto:support@cohostiq.com">Contact</a>
-                        <a href="mailto:support@cohostiq.com">Support</a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> CohostIQ. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
