@@ -135,6 +135,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Track expenses with receipts and categorization</li>
                         <li>Support for management fees, cleaning fees, and pass-through costs</li>
                         <li>PDF export for easy sharing with owners</li>
+                        <li>All Airbnb payout methods supported - cohost payouts, host-only fees, and split payouts</li>
                         <li>QuickBooks integration for seamless accounting</li>
                     </ul>
                 </div>
@@ -143,7 +144,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                             <div>
                                 <div style="font-weight: 600; color: #1d2144;">Owner Statement</div>
-                                <div style="font-size: 12px; color: #637381;">January 2024 - Lakeside Cabin</div>
+                                <div style="font-size: 12px; color: #637381;">January 2025 - Lakeside Cabin</div>
                             </div>
                             <span style="padding: 6px 14px; background: #4a6cf7; color: white; border-radius: 6px; font-size: 12px;">Download PDF</span>
                         </div>
@@ -167,6 +168,120 @@ require_once __DIR__ . '/includes/header.php';
                             <div style="border-top: 2px solid #1d2144; margin-top: 12px; padding-top: 12px; display: flex; justify-content: space-between;">
                                 <span style="font-weight: 700; color: #1d2144;">Owner Payout</span>
                                 <span style="font-weight: 700; color: #13c296; font-size: 1.25rem;">$3,637.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3b: Airbnb Payouts -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128181; Every Airbnb Payout Method, Handled</h3>
+                    <p>
+                        Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ supports all of them - and makes switching between methods seamless so your billing never breaks.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li><strong>Cohost Payouts:</strong> Airbnb pays you directly, then you pay your owner their share</li>
+                        <li><strong>Host-Only Fees:</strong> Airbnb pays the owner, and your management fee is deducted automatically</li>
+                        <li><strong>Split Payouts:</strong> Airbnb splits the payout between you and the owner based on your agreement</li>
+                        <li>Switch an owner from one method to another mid-month without breaking your billing</li>
+                        <li>Per-property payout rules - different owners, different methods, no problem</li>
+                        <li>Accurate fee calculations regardless of which method each property uses</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: white; border-radius: 12px; overflow: hidden;">
+                        <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #1d2144;">Payout Configuration</span>
+                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;">3 Methods Active</span>
+                        </div>
+                        <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</div>
+                                <div style="font-size: 12px; color: #637381;">Owner: John Davis</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #e8f4fd; color: #4a6cf7; border-radius: 4px; font-size: 12px; font-weight: 600;">Cohost Payout</span>
+                        </div>
+                        <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</div>
+                                <div style="font-size: 12px; color: #637381;">Owner: Sarah Kim</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px; font-weight: 600;">Host-Only Fee</span>
+                        </div>
+                        <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</div>
+                                <div style="font-size: 12px; color: #637381;">Owner: Mike Torres</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #fff3cd; color: #856404; border-radius: 4px; font-size: 12px; font-weight: 600;">Split Payout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3c: QuickBooks Integration -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128218; QuickBooks Integration for Owners</h3>
+                    <p>
+                        Keep your books in sync without double entry. CohostIQ connects directly to QuickBooks so your owner statements, expenses, and payouts flow automatically into your accounting - saving you hours every month and keeping your financials accurate.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Automatically sync owner statements and invoices to QuickBooks</li>
+                        <li>Map revenue, management fees, and expenses to your QuickBooks chart of accounts</li>
+                        <li>Push owner payouts directly into QuickBooks for clean reconciliation</li>
+                        <li>Expense categorization carries over - no reclassifying in QuickBooks</li>
+                        <li>Per-owner and per-property financial records synced automatically</li>
+                        <li>Eliminate manual data entry and reduce accounting errors</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: white; border-radius: 12px; overflow: hidden;">
+                        <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 36px; height: 36px; background: #2CA01C; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px;">QB</div>
+                                <span style="font-weight: 600; color: #1d2144;">QuickBooks Sync</span>
+                            </div>
+                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;">&#10003; Connected</span>
+                        </div>
+                        <div style="padding: 16px 20px;">
+                            <div style="font-size: 12px; color: #637381; margin-bottom: 12px;">Recent Sync Activity</div>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                    <div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Statement - Lakeside Cabin</div>
+                                        <div style="font-size: 11px; color: #637381;">Invoice #1042 created in QuickBooks</div>
+                                    </div>
+                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                    <div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Maintenance Expense - HVAC Repair</div>
+                                        <div style="font-size: 11px; color: #637381;">$450 posted to Repairs & Maintenance</div>
+                                    </div>
+                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                    <div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Payout - John Davis</div>
+                                        <div style="font-size: 11px; color: #637381;">$3,637.50 recorded as bill payment</div>
+                                    </div>
+                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-size: 12px; color: #637381;">Last sync: 2 minutes ago</span>
+                                <span style="font-size: 12px; color: #637381;">47 items synced this month</span>
                             </div>
                         </div>
                     </div>
@@ -384,6 +499,13 @@ require_once __DIR__ . '/includes/header.php';
                     <h3 class="feature-title">Purchasing Workflow</h3>
                     <p class="feature-description">
                         Track purchase requests from creation to fulfillment. Know what was ordered, for which property, and who approved it.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128218;</div>
+                    <h3 class="feature-title">QuickBooks Sync</h3>
+                    <p class="feature-description">
+                        Automatically push owner statements, expenses, and payouts to QuickBooks. No more double entry or manual reconciliation.
                     </p>
                 </div>
                 <div class="feature-card">
