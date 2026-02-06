@@ -29,7 +29,7 @@
                 </div>
                 <div class="nav-actions">
                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
@@ -45,7 +45,7 @@
             <a href="#pricing">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
+            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
         </div>
     </header>
 
@@ -57,9 +57,9 @@
                 <span>/</span>
                 <span>Sign Up</span>
             </nav>
-            <h1 class="page-header-title">Join the CohostIQ Waitlist</h1>
+            <h1 class="page-header-title">Get Started with CohostIQ</h1>
             <p class="page-header-description">
-                We're building something great. Be the first to know when we launch.
+                Start free with your first property. No credit card required.
             </p>
         </div>
     </section>
@@ -134,48 +134,45 @@
                     </div>
                 </div>
 
-                <div class="signup-form-container" id="waitlist">
+                <div class="signup-form-container" id="signup">
                     <div class="signup-form-header">
-                        <div style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">Coming Soon</div>
-                        <h3>Join the Waitlist</h3>
-                        <p>Be the first to know when we launch</p>
+                        <div style="background: linear-gradient(135deg, #13c296, #0ea77d); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">Free to Start</div>
+                        <h3>Create Your Account</h3>
+                        <p>Get started in minutes</p>
                     </div>
                     <div style="text-align: center; padding: 20px 0;">
                         <p style="margin-bottom: 24px; color: #637381;">
-                            We're putting the finishing touches on CohostIQ. Enter your email below and we'll notify you as soon as we're ready for you to get started.
+                            Start with 1 property completely free. No credit card required. Our guided onboarding gets you up and running in under 30 minutes.
                         </p>
-                        <form action="mailto:support@cohostiq.com" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 12px;">
-                            <input type="email" name="email" placeholder="Enter your email address" required style="width: 100%; padding: 14px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 16px;">
-                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                Join Waitlist
-                            </button>
-                        </form>
+                        <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Sign Up Free
+                        </a>
                         <p class="form-note" style="margin-top: 20px;">
-                            We'll only email you about the launch. No spam.
+                            No credit card required. Start with 1 free property.
                         </p>
                     </div>
                     <div style="border-top: 1px solid #e2e8f0; margin-top: 30px; padding-top: 30px;">
-                        <h4 style="text-align: center; margin-bottom: 20px; color: #1d2144;">What Happens Next</h4>
+                        <h4 style="text-align: center; margin-bottom: 20px; color: #1d2144;">How It Works</h4>
                         <div style="display: flex; flex-direction: column; gap: 16px;">
                             <div style="display: flex; gap: 16px; align-items: flex-start;">
                                 <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">1</div>
                                 <div>
-                                    <strong style="color: #1d2144;">Join the Waitlist</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Enter your email above to reserve your spot</p>
+                                    <strong style="color: #1d2144;">Create Your Account</strong>
+                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Quick signup with just your email</p>
                                 </div>
                             </div>
                             <div style="display: flex; gap: 16px; align-items: flex-start;">
                                 <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">2</div>
                                 <div>
-                                    <strong style="color: #1d2144;">We'll Notify You</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">You'll get an email when CohostIQ launches</p>
+                                    <strong style="color: #1d2144;">Guided Onboarding</strong>
+                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Add properties, set up billing rules, and connect your PMS</p>
                                 </div>
                             </div>
                             <div style="display: flex; gap: 16px; align-items: flex-start;">
                                 <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">3</div>
                                 <div>
-                                    <strong style="color: #1d2144;">Create Your Account</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Quick signup with guided onboarding</p>
+                                    <strong style="color: #1d2144;">Invite Your Team</strong>
+                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Add cleaners, maintenance staff, and property owners</p>
                                 </div>
                             </div>
                             <div style="display: flex; gap: 16px; align-items: flex-start;">
@@ -196,7 +193,6 @@
     <section class="section section-gray" id="pricing">
         <div class="container">
             <div class="section-header">
-                <div style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white; display: inline-block; padding: 8px 20px; border-radius: 25px; font-weight: 600; font-size: 14px; margin-bottom: 16px;">Coming Soon - Join the Waitlist</div>
                 <span class="section-label">Pricing</span>
                 <h2 class="section-title">Pay Only for What You Use</h2>
                 <p class="section-description">

@@ -29,7 +29,7 @@
                 </div>
                 <div class="nav-actions">
                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
@@ -45,7 +45,7 @@
             <a href="signup.php#pricing">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
         </div>
     </header>
 
@@ -378,8 +378,8 @@
                     <a href="mailto:support@cohostiq.com" class="btn btn-primary">
                         &#128231; Email Support
                     </a>
-                    <a href="signup.php#waitlist" class="btn btn-outline">
-                        Join Waitlist
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-outline">
+                        Sign Up Free
                     </a>
                 </div>
             </div>
@@ -392,10 +392,10 @@
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Get Started?</h2>
                 <p class="cta-description">
-                    Join the waitlist and be the first to know when CohostIQ launches.
+                    Start free with your first property. No credit card required.
                 </p>
                 <div class="cta-buttons">
-                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-white btn-lg">Sign Up Free</a>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@
                 </div>
                 <div class="nav-actions">
                      <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
@@ -46,7 +46,7 @@
             <a href="signup.php#pricing">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
         </div>
     </header>
 
@@ -55,8 +55,8 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge" style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white;">
-                        <span>&#128640;</span> Coming Soon - Join the Waitlist
+                    <div class="hero-badge">
+                        <span>&#128640;</span> Start Free - No Credit Card Required
                     </div>
                     <h1 class="hero-title">
                         Manage Your Vacation Rentals with <span>Intelligence</span>
@@ -65,7 +65,7 @@
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="signup.php#waitlist" class="btn btn-primary btn-lg">Join Waitlist</a>
+                        <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary btn-lg">Sign Up Free</a>
                         <a href="features.php" class="btn btn-outline btn-lg">See Features</a>
                     </div>
                 </div>
@@ -381,10 +381,10 @@
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Scale Your Operations?</h2>
                 <p class="cta-description">
-                    Stop letting operational overhead hold back your growth. Join the waitlist and be first to experience instant property onboarding.
+                    Stop letting operational overhead hold back your growth. Start free and experience instant property onboarding.
                 </p>
                 <div class="cta-buttons">
-                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-white btn-lg">Sign Up Free</a>
                     <a href="features.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Learn More</a>
                 </div>
             </div>
