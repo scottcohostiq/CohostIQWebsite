@@ -1,0 +1,448 @@
+<?php require_once __DIR__ . '/includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about CohostIQ - onboarding, features, pricing, and support.">
+    <title>FAQ - CohostIQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.php" class="logo">
+                    <div class="logo-icon">C</div>
+                    CohostIQ
+                </a>
+                <div class="nav-links">
+                    <a href="index.php">Home</a>
+                    <a href="index.php#about">About</a>
+                    <a href="features.php">Features</a>
+                    <a href="signup.php#pricing">Pricing</a>
+                    <a href="faq.php" class="active">FAQ</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
+                    <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.php">Home</a>
+            <a href="index.php#about">About</a>
+            <a href="features.php">Features</a>
+            <a href="signup.php#pricing">Pricing</a>
+            <a href="faq.php">FAQ</a>
+            <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
+            <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.php">Home</a>
+                <span>/</span>
+                <span>FAQ</span>
+            </nav>
+            <h1 class="page-header-title">Frequently Asked Questions</h1>
+            <p class="page-header-description">
+                Find answers to common questions about CohostIQ, onboarding, features, and more.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">All Questions</button>
+                <button class="faq-category-btn" data-category="getting-started">Getting Started</button>
+                <button class="faq-category-btn" data-category="onboarding">Onboarding</button>
+                <button class="faq-category-btn" data-category="features">Features</button>
+                <button class="faq-category-btn" data-category="billing">Billing</button>
+            </div>
+
+            <div class="faq-list">
+                <!-- Getting Started -->
+                <div class="faq-item" data-category="getting-started">
+                    <div class="faq-question">
+                        <h4>How do I sign up for CohostIQ?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Signing up is easy! Visit our <a href="signup.php">Sign Up page</a>, fill out the form with your information, and you'll have instant access. Start free with 1 property - no credit card required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="getting-started">
+                    <div class="faq-question">
+                        <h4>Is there a free tier?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! Our free tier includes 1 property with all core features. You get a 30-minute onboarding call to get started. The only limitation is no ongoing support. You can add properties, invite team members, and explore everything CohostIQ has to offer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="getting-started">
+                    <div class="faq-question">
+                        <h4>What do I need to get started?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            All you need is an email address to create your account. During onboarding, you'll add your properties, set up your fee structures, and optionally import existing reservations. Our guided setup process walks you through each step.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="getting-started">
+                    <div class="faq-question">
+                        <h4>Is CohostIQ suitable for my business size?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! CohostIQ is designed to scale with your business. Whether you manage 5 properties or 500, our platform adapts to your needs. Smaller operators benefit from organized workflows and time savings, while larger operations appreciate the team management and advanced reporting features.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Onboarding -->
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>How long does onboarding take?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Most users complete the core onboarding in 15-30 minutes. This includes adding your company information, setting up properties, configuring fee structures, and inviting team members. Importing historical reservations may take additional time depending on how much data you have.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>What are the onboarding steps?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our guided onboarding takes you through these steps:
+                            <ol style="margin-top: 12px; padding-left: 20px;">
+                                <li><strong>What to Expect</strong> - Overview of the setup process and what you'll configure</li>
+                                <li><strong>Define Locations</strong> - Create your Markets, Cities, and Communities to organize properties</li>
+                                <li><strong>Payment Rules</strong> - Set up commission rulesets for how you get paid (management fees, owner-paid fees)</li>
+                                <li><strong>Connect Your PMS</strong> - Link to Hospitable or other property management systems (optional)</li>
+                                <li><strong>QuickBooks</strong> - Connect your QuickBooks account for accounting integration (optional)</li>
+                                <li><strong>Import Properties</strong> - Add properties from your PMS, manually, or via CSV import</li>
+                                <li><strong>Co-Host Rules</strong> - Configure billing rules and assign payment rulesets to properties</li>
+                                <li><strong>Taxes</strong> - Set up tax rates for your locations</li>
+                                <li><strong>Import Reservations</strong> - Bring in existing bookings from your calendar feeds</li>
+                                <li><strong>Team Members</strong> - Invite staff and assign roles (Cleaners, Maintenance, CSRs, etc.)</li>
+                                <li><strong>Company Settings</strong> - Configure company-wide preferences and defaults</li>
+                                <li><strong>Review & Go Live</strong> - Review your setup and activate your account!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>Can I skip onboarding steps and come back later?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Some steps can be skipped and completed later, while others are required to proceed. For example, you must add at least one property before setting up owners. However, you can skip the QuickBooks integration and come back to it anytime. The system will guide you on which steps are required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>How do I import my existing reservations?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            CohostIQ supports multiple ways to import reservations:
+                            <ul style="margin-top: 12px; padding-left: 20px;">
+                                <li><strong>CSV Import</strong> - Upload a spreadsheet with your reservation data</li>
+                                <li><strong>iCal Sync</strong> - Connect to Airbnb, VRBO, or other platforms that provide iCal feeds</li>
+                                <li><strong>Manual Entry</strong> - Add reservations one at a time if needed</li>
+                            </ul>
+                            We provide templates and detailed instructions for each method during onboarding.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>What if I'm not the admin? What do my team members see?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            During onboarding, only the admin (the person who created the account) can complete the setup steps. Other team members who are invited will see a "Setup in Progress" page until the admin completes onboarding and clicks "Go Live." Once live, team members will have access based on their assigned roles.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="onboarding">
+                    <div class="faq-question">
+                        <h4>Can I edit my settings after onboarding is complete?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely! Everything you set up during onboarding can be modified later. You can add more properties, change fee structures, update team member roles, and adjust settings anytime from your dashboard. Onboarding just gives you a structured way to get started.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>How does CohostIQ integrate with my PMS?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            CohostIQ connects directly to Property Management Systems like Hospitable to pull in your property and reservation data. This allows us to enhance your operations with powerful billing, owner statements, reporting, and team management features that your PMS doesn't provide. You keep using your PMS for guest communication and channel management while CohostIQ handles the operational and financial side.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>How does the maintenance ticketing system work?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            CohostIQ's maintenance system goes beyond simple ticketing. You can track every appliance, piece of furniture, and item at each property with purchase dates and warranty information. When issues arise, you'll quickly identify "repeat offenders" - items that keep breaking down and may need replacement.
+                            <br><br>
+                            Tickets can be created manually or <strong>auto-generated from Hospitable, HostBuddy, and Turno</strong> integrations. Assign tickets to your maintenance staff or contractors, who receive notifications and can update status as they work. All maintenance costs are linked to specific items and properties for accurate owner billing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>How do owner statements work?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            CohostIQ automatically generates owner statements based on your reservations, fee structures, and logged expenses. Each statement shows gross revenue, management fees, cleaning fees, maintenance costs, and the net payout. Statements can be downloaded as PDFs and shared with owners. If you connect QuickBooks, statements can flow directly into your accounting.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>What is the Owner Portal?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            The Owner Portal gives property owners their own secure login to view information about their properties. Owners can see upcoming reservations, review past statements, track property performance, and view maintenance history. This transparency builds trust and reduces the time you spend fielding owner questions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>What reports are available?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            CohostIQ includes a variety of reports:
+                            <ul style="margin-top: 12px; padding-left: 20px;">
+                                <li><strong>Revenue Reports</strong> - Track income by property, owner, or time period</li>
+                                <li><strong>Occupancy Reports</strong> - See booking rates and identify gaps</li>
+                                <li><strong>Year-over-Year Comparison</strong> - Compare performance across years</li>
+                                <li><strong>Expense Reports</strong> - Analyze spending by category</li>
+                                <li><strong>Tax Reports</strong> - Generate tax-related summaries</li>
+                            </ul>
+                            All reports can be filtered by date range and exported to CSV or PDF.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="features">
+                    <div class="faq-question">
+                        <h4>Can I customize user permissions?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! CohostIQ uses role-based permissions. You can assign users to roles like Admin, Manager, Cleaner, Maintenance, Purchasing, and CSR. Each role has specific permissions that determine what they can see and do. You can also assign specific properties to team members so they only see what's relevant to their work.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing -->
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question">
+                        <h4>What payment methods do you accept?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We accept all major credit cards (Visa, Mastercard, American Express, Discover) for monthly subscriptions. For annual plans or enterprise agreements, we can also accept bank transfers. Contact our sales team for custom billing arrangements.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question">
+                        <h4>Can I change plans later?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! You can upgrade or downgrade your plan at any time. When you upgrade, you'll get immediate access to additional features and the price difference will be prorated. When you downgrade, the change takes effect at the start of your next billing cycle.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question">
+                        <h4>Is there a contract or commitment?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No long-term contracts! Monthly plans are billed month-to-month and you can cancel anytime. We also offer annual plans at a discounted rate for those who prefer to pay yearly. Enterprise customers may have custom terms based on their specific needs.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question">
+                        <h4>What happens to my data if I cancel?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            If you cancel your subscription, you'll have access until the end of your current billing period. After that, your account will be deactivated but your data is retained for 90 days in case you decide to return. You can request a full data export at any time before or after cancellation.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question">
+                        <h4>Do you offer discounts for annual billing?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! Annual billing comes with a 15% discount compared to monthly pricing. When you choose annual billing, you pay for 10 months and get 12 months of service. This is a great option if you're committed to using CohostIQ long-term.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="section section-gray">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h2 style="margin-bottom: 16px;">Still Have Questions?</h2>
+                <p style="color: #637381; margin-bottom: 30px;">
+                    Can't find the answer you're looking for? Our support team is here to help.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="mailto:support@cohostiq.com" class="btn btn-primary">
+                        &#128231; Email Support
+                    </a>
+                    <a href="signup.php#waitlist" class="btn btn-outline">
+                        Join Waitlist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-description">
+                    Join the waitlist and be the first to know when CohostIQ launches.
+                </p>
+                <div class="cta-buttons">
+                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.php" class="logo">
+                        <div class="logo-icon">C</div>
+                        CohostIQ
+                    </a>
+                    <p class="footer-description">
+                        Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting that your PMS doesn't provide.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="features.php">Features</a>
+                        <a href="signup.php">Pricing</a>
+                        <a href="faq.php">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="mailto:support@cohostiq.com">Contact</a>
+                        <a href="mailto:support@cohostiq.com">Support</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <?php echo date('Y'); ?> CohostIQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
