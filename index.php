@@ -183,6 +183,13 @@ require_once __DIR__ . '/includes/header.php';
                         Give property owners secure access to view their statements, reservations, and property performance anytime.
                     </p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128241;</div>
+                    <h3 class="feature-title">iPhone App</h3>
+                    <p class="feature-description">
+                        Create maintenance tickets, manage owners, and stay on top of operations from anywhere. Android coming soon.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -198,19 +205,6 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
             </div>
             <div class="audience-grid">
-                <div class="audience-card">
-                    <div class="audience-icon">&#127968;</div>
-                    <h3 class="audience-title">Property Managers</h3>
-                    <p class="audience-description">
-                        Scale your portfolio without scaling your workload. Add new properties instantly and save hours per month on invoicing and operations.
-                    </p>
-                    <ul class="audience-features">
-                        <li>Instant property onboarding</li>
-                        <li>Automated owner statements</li>
-                        <li>Team task assignment</li>
-                        <li>Performance reporting</li>
-                    </ul>
-                </div>
                 <div class="audience-card">
                     <div class="audience-icon">&#128188;</div>
                     <h3 class="audience-title">Co-Hosts</h3>
@@ -235,6 +229,19 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Expense tracking</li>
                         <li>Revenue analytics</li>
                         <li>Vendor management</li>
+                    </ul>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">&#128241;</div>
+                    <h3 class="audience-title">On the Go</h3>
+                    <p class="audience-description">
+                        Manage your properties from anywhere with the CohostIQ iPhone app. Create and track maintenance tickets, review owner statements, and stay on top of operations - right from your pocket.
+                    </p>
+                    <ul class="audience-features">
+                        <li>iPhone app for ticketing & owners</li>
+                        <li>Create & manage maintenance tickets</li>
+                        <li>Owner portal access on mobile</li>
+                        <li>Android coming soon</li>
                     </ul>
                 </div>
             </div>
