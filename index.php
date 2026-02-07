@@ -10,8 +10,8 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <span>&#128640;</span> Start Free - No Credit Card Required
+                    <div class="hero-badge" style="background: rgba(255, 107, 107, 0.1); color: #ff6b6b;">
+                        <span>&#128640;</span> Coming Soon - Join the Waitlist
                     </div>
                     <h1 class="hero-title">
                         Manage Your Vacation Rentals with <span>Intelligence</span>
@@ -20,7 +20,7 @@ require_once __DIR__ . '/includes/header.php';
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary btn-lg">Sign Up Free</a>
+                        <a href="signup.php#waitlist" class="btn btn-primary btn-lg">Join Waitlist</a>
                         <a href="features.php" class="btn btn-outline btn-lg">See Features</a>
                     </div>
                 </div>
@@ -350,10 +350,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Scale Your Operations?</h2>
                 <p class="cta-description">
-                    Stop letting operational overhead hold back your growth. Start free and experience instant property onboarding.
+                    Stop letting operational overhead hold back your growth. Join the waitlist and be first in line when we launch.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-white btn-lg">Sign Up Free</a>
+                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
                     <a href="features.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Learn More</a>
                 </div>
             </div>

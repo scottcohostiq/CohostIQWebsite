@@ -13,9 +13,9 @@ require_once __DIR__ . '/includes/header.php';
                 <span>/</span>
                 <span>Sign Up</span>
             </nav>
-            <h1 class="page-header-title">Get Started with CohostIQ</h1>
+            <h1 class="page-header-title">Join the CohostIQ Waitlist</h1>
             <p class="page-header-description">
-                Start free with your first property. No credit card required.
+                Be the first to know when CohostIQ launches. Join the waitlist and get early access.
             </p>
         </div>
     </section>
@@ -98,55 +98,43 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </div>
 
-                <div class="signup-form-container" id="signup">
+                <div class="signup-form-container" id="waitlist">
                     <div class="signup-form-header">
-                        <div style="background: linear-gradient(135deg, #13c296, #0ea77d); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">Free to Start</div>
-                        <h3>Create Your Account</h3>
-                        <p>Get started in minutes</p>
+                        <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">Coming Soon</div>
+                        <h3>Join the Waitlist</h3>
+                        <p>Be first in line when we launch</p>
                     </div>
-                    <div style="text-align: center; padding: 20px 0;">
-                        <p style="margin-bottom: 24px; color: #637381;">
-                            Start with 1 property completely free. No credit card required. Our guided onboarding gets you up and running in under 30 minutes.
-                        </p>
-                        <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary btn-lg" style="width: 100%;">
-                            Sign Up Free
-                        </a>
-                        <p class="form-note" style="margin-top: 20px;">
-                            No credit card required. Start with 1 free property.
-                        </p>
-                    </div>
-                    <div style="border-top: 1px solid #e2e8f0; margin-top: 30px; padding-top: 30px;">
-                        <h4 style="text-align: center; margin-bottom: 20px; color: #1d2144;">How It Works</h4>
-                        <div style="display: flex; flex-direction: column; gap: 16px;">
-                            <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">1</div>
-                                <div>
-                                    <strong style="color: #1d2144;">Create Your Account</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Quick signup with just your email</p>
-                                </div>
-                            </div>
-                            <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">2</div>
-                                <div>
-                                    <strong style="color: #1d2144;">Guided Onboarding</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Add properties, set up billing rules, and connect your PMS</p>
-                                </div>
-                            </div>
-                            <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                <div style="width: 32px; height: 32px; min-width: 32px; background: #4a6cf7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">3</div>
-                                <div>
-                                    <strong style="color: #1d2144;">Invite Your Team</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Add cleaners, maintenance staff, and property owners</p>
-                                </div>
-                            </div>
-                            <div style="display: flex; gap: 16px; align-items: flex-start;">
-                                <div style="width: 32px; height: 32px; min-width: 32px; background: #13c296; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600;">4</div>
-                                <div>
-                                    <strong style="color: #1d2144;">Start Saving Time</strong>
-                                    <p style="margin: 4px 0 0; font-size: 14px; color: #637381;">Get your operations organized from day one</p>
-                                </div>
-                            </div>
+                    <form id="waitlistForm" action="https://cohostiq.app/api/waitlist.php" method="POST" style="padding: 20px 0;">
+                        <div style="margin-bottom: 16px;">
+                            <label for="waitlist_name" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">Name</label>
+                            <input type="text" id="waitlist_name" name="name" required placeholder="Your name" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; box-sizing: border-box;">
                         </div>
+                        <div style="margin-bottom: 16px;">
+                            <label for="waitlist_email" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">Email</label>
+                            <input type="email" id="waitlist_email" name="email" required placeholder="you@example.com" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; box-sizing: border-box;">
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <label for="waitlist_properties" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">How many properties do you manage?</label>
+                            <select id="waitlist_properties" name="properties" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; background: white; box-sizing: border-box;">
+                                <option value="">Select...</option>
+                                <option value="1-5">1-5</option>
+                                <option value="6-25">6-25</option>
+                                <option value="26-50">26-50</option>
+                                <option value="51-100">51-100</option>
+                                <option value="100+">100+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Join Waitlist
+                        </button>
+                        <p class="form-note" style="margin-top: 16px; text-align: center;">
+                            We'll notify you as soon as CohostIQ is ready. No spam, ever.
+                        </p>
+                    </form>
+                    <div id="waitlistSuccess" style="display: none; text-align: center; padding: 40px 20px;">
+                        <div style="font-size: 3rem; margin-bottom: 16px;">&#127881;</div>
+                        <h3 style="color: #1d2144; margin-bottom: 8px;">You're on the list!</h3>
+                        <p style="color: #637381;">We'll be in touch soon with early access details.</p>
                     </div>
                 </div>
             </div>
@@ -158,19 +146,18 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Pricing</span>
-                <h2 class="section-title">Pay Only for What You Use</h2>
+                <h2 class="section-title">Simple Per-Property Pricing</h2>
                 <p class="section-description">
-                    Your first property and market are always free. After that, pay per property and per market - with volume discounts as you grow.
+                    Your first property is always free. After that, pay per property with volume discounts as you grow.
                 </p>
             </div>
 
-            <!-- Pricing Tables -->
-            <div class="pricing-tables-grid">
-                <!-- Per Property Pricing -->
+            <!-- Pricing Table -->
+            <div style="max-width: 600px; margin: 0 auto;">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
                         <div class="pricing-icon pricing-icon-blue">&#127968;</div>
-                        <h3>Per Property</h3>
+                        <h3>Per Property / Month</h3>
                         <p>First property free, then:</p>
                     </div>
                     <div class="pricing-tiers">
@@ -187,31 +174,9 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="price">$8<span class="unit">/property</span></span>
                         </div>
                         <div class="pricing-tier pricing-tier-last">
-                            <span>100+ properties</span>
-                            <span class="contact">Contact us</span>
+                            <span>Properties 101+</span>
+                            <span class="price">$7.25<span class="unit">/property</span></span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Per Market Pricing -->
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <div class="pricing-icon pricing-icon-green">&#128205;</div>
-                        <h3>Per Market</h3>
-                        <p>First market free, then:</p>
-                    </div>
-                    <div class="pricing-tiers">
-                        <div class="pricing-tier">
-                            <span>Markets 2-5</span>
-                            <span class="price">$20<span class="unit">/market</span></span>
-                        </div>
-                        <div class="pricing-tier pricing-tier-last">
-                            <span>5+ markets</span>
-                            <span class="contact">Contact us</span>
-                        </div>
-                    </div>
-                    <div class="pricing-note">
-                        <p><strong>What's a market?</strong> A geographic area where you operate (e.g., "Branson", "Smoky Mountains", "Gulf Shores")</p>
                     </div>
                 </div>
             </div>
@@ -221,24 +186,24 @@ require_once __DIR__ . '/includes/header.php';
                 <h3>Example Monthly Costs</h3>
                 <div class="pricing-examples-grid">
                     <div class="pricing-example-item">
-                        <div class="example-label">1 property, 1 market</div>
+                        <div class="example-label">1 property</div>
                         <div class="example-price">$0</div>
                         <div class="example-calc">Free forever</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">10 properties, 1 market</div>
+                        <div class="example-label">10 properties</div>
                         <div class="example-price">$90</div>
                         <div class="example-calc">9 x $10</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">25 properties, 2 markets</div>
-                        <div class="example-price">$260</div>
-                        <div class="example-calc">24 x $10 + 1 x $20</div>
+                        <div class="example-label">50 properties</div>
+                        <div class="example-price">$465</div>
+                        <div class="example-calc">24x$10 + 25x$9</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">50 properties, 3 markets</div>
-                        <div class="example-price">$505</div>
-                        <div class="example-calc">24x$10 + 25x$9 + 2x$20</div>
+                        <div class="example-label">120 properties</div>
+                        <div class="example-price">$1,010</div>
+                        <div class="example-calc">24x$10 + 25x$9 + 50x$8 + 20x$7.25</div>
                     </div>
                 </div>
             </div>
@@ -261,7 +226,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
 
             <p class="pricing-enterprise">
-                Need more than 100 properties or 5 markets? <a href="mailto:support@cohostiq.com" style="color: #4a6cf7;">Contact us</a> for enterprise pricing.
+                Have questions about pricing? <a href="mailto:support@cohostiq.com" style="color: #4a6cf7;">Contact us</a> - we're happy to help.
             </p>
         </div>
     </section>

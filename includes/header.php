@@ -72,7 +72,7 @@ if (!isset($currentPage)) $currentPage = '';
                 </div>
                 <div class="nav-actions">
                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
+                    <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
@@ -88,6 +88,6 @@ if (!isset($currentPage)) $currentPage = '';
             <a href="signup.php#pricing">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-            <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-primary">Sign Up Free</a>
+            <a href="signup.php#waitlist" class="btn btn-primary">Join Waitlist</a>
         </div>
     </header>
