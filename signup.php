@@ -158,25 +158,28 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="pricing-card-header">
                         <div class="pricing-icon pricing-icon-blue">&#127968;</div>
                         <h3>Per Property / Month</h3>
-                        <p>First property free, then:</p>
+                        <p>First property free. Your rate is based on your total property count:</p>
                     </div>
                     <div class="pricing-tiers">
                         <div class="pricing-tier">
-                            <span>Properties 2-25</span>
-                            <span class="price">$10<span class="unit">/property</span></span>
+                            <span>2-25 properties</span>
+                            <span class="price">$10<span class="unit">/each</span></span>
                         </div>
                         <div class="pricing-tier">
-                            <span>Properties 26-50</span>
-                            <span class="price">$9<span class="unit">/property</span></span>
+                            <span>26-50 properties</span>
+                            <span class="price">$9<span class="unit">/each</span></span>
                         </div>
                         <div class="pricing-tier">
-                            <span>Properties 51-100</span>
-                            <span class="price">$8<span class="unit">/property</span></span>
+                            <span>51-100 properties</span>
+                            <span class="price">$8<span class="unit">/each</span></span>
                         </div>
                         <div class="pricing-tier pricing-tier-last">
-                            <span>Properties 101+</span>
-                            <span class="price">$7.25<span class="unit">/property</span></span>
+                            <span>101+ properties</span>
+                            <span class="price">$7.25<span class="unit">/each</span></span>
                         </div>
+                    </div>
+                    <div class="pricing-note">
+                        <p><strong>Volume pricing:</strong> Your per-property rate is based on your total count. For example, if you have 55 properties, all 54 paid properties are $8 each.</p>
                     </div>
                 </div>
             </div>
@@ -193,17 +196,17 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="pricing-example-item">
                         <div class="example-label">10 properties</div>
                         <div class="example-price">$90</div>
-                        <div class="example-calc">9 x $10</div>
+                        <div class="example-calc">9 x $10/ea</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">50 properties</div>
-                        <div class="example-price">$465</div>
-                        <div class="example-calc">24x$10 + 25x$9</div>
+                        <div class="example-label">30 properties</div>
+                        <div class="example-price">$261</div>
+                        <div class="example-calc">29 x $9/ea</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">120 properties</div>
-                        <div class="example-price">$1,010</div>
-                        <div class="example-calc">24x$10 + 25x$9 + 50x$8 + 20x$7.25</div>
+                        <div class="example-label">75 properties</div>
+                        <div class="example-price">$592</div>
+                        <div class="example-calc">74 x $8/ea</div>
                     </div>
                 </div>
             </div>
