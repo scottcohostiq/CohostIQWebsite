@@ -334,8 +334,8 @@ require_once __DIR__ . '/includes/header.php';
                     <a href="mailto:support@cohostiq.com" class="btn btn-primary">
                         &#128231; Email Support
                     </a>
-                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-outline">
-                        Sign Up Free
+                    <a href="signup.php#waitlist" class="btn btn-outline">
+                        Join Waitlist
                     </a>
                 </div>
             </div>
@@ -348,10 +348,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Get Started?</h2>
                 <p class="cta-description">
-                    Start free with your first property. No credit card required.
+                    Join the waitlist and be the first to know when CohostIQ launches.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/auth/signup_email.php" class="btn btn-white btn-lg">Sign Up Free</a>
+                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
                 </div>
             </div>
         </div>
