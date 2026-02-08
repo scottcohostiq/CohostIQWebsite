@@ -2,6 +2,53 @@
 $pageTitle = 'FAQ - CohostIQ';
 $pageDescription = 'Frequently asked questions about CohostIQ - onboarding, features, pricing, and support.';
 $currentPage = 'faq';
+$pageCanonical = '/faq.php';
+$pageSchema = '{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Is there a free tier?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Our free tier includes 1 property with all core features. You get a 30-minute onboarding call to get started."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does onboarding take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most users complete the core onboarding in 15-30 minutes. This includes adding your company information, setting up properties, configuring fee structures, and inviting team members."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does CohostIQ integrate with my PMS?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CohostIQ connects directly to Property Management Systems like Hospitable to pull in your property and reservation data for billing, owner statements, reporting, and team management."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do owner statements work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CohostIQ automatically generates owner statements based on your reservations, fee structures, and logged expenses. Statements can be downloaded as PDFs and synced to QuickBooks."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is there a contract or commitment?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No long-term contracts! Monthly plans are billed month-to-month and you can cancel anytime."
+            }
+        }
+    ]
+}';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -24,12 +71,12 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section">
         <div class="container">
             <!-- Category Filters -->
-            <div class="faq-categories">
-                <button class="faq-category-btn active" data-category="all">All Questions</button>
-                <button class="faq-category-btn" data-category="getting-started">Getting Started</button>
-                <button class="faq-category-btn" data-category="onboarding">Onboarding</button>
-                <button class="faq-category-btn" data-category="features">Features</button>
-                <button class="faq-category-btn" data-category="billing">Billing</button>
+            <div class="faq-categories" role="group" aria-label="Filter FAQ by category">
+                <button class="faq-category-btn active" data-category="all" aria-pressed="true">All Questions</button>
+                <button class="faq-category-btn" data-category="getting-started" aria-pressed="false">Getting Started</button>
+                <button class="faq-category-btn" data-category="onboarding" aria-pressed="false">Onboarding</button>
+                <button class="faq-category-btn" data-category="features" aria-pressed="false">Features</button>
+                <button class="faq-category-btn" data-category="billing" aria-pressed="false">Billing</button>
             </div>
 
             <div class="faq-list">
