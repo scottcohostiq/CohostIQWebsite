@@ -1,7 +1,8 @@
 <?php
 $pageTitle = 'Sign Up - CohostIQ';
-$pageDescription = 'Sign up for CohostIQ and start managing your vacation rentals more efficiently. Free tier available.';
+$pageDescription = 'Join the CohostIQ waitlist. Vacation rental operations management with billing, maintenance tracking, team management, and reporting.';
 $currentPage = 'signup';
+$pageCanonical = '/signup.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 

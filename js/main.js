@@ -21,47 +21,87 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScroll(); // Check initial state
 
     // ============================================
-    // Mobile Menu Toggle
+    // Mobile Menu Toggle (Accessible)
     // ============================================
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
 
     if (mobileMenuBtn && mobileNav) {
+        function closeMobileMenu() {
+            mobileNav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        function openMobileMenu() {
+            mobileNav.classList.add('active');
+            mobileMenuBtn.classList.add('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        }
+
         mobileMenuBtn.addEventListener('click', function() {
-            mobileNav.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
+            var isOpen = mobileNav.classList.contains('active');
+            if (isOpen) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
         });
 
         // Close mobile menu when clicking a link
-        const mobileLinks = mobileNav.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileNav.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
-            });
+        var mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(function(link) {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                closeMobileMenu();
+                mobileMenuBtn.focus();
+            }
         });
     }
 
     // ============================================
-    // FAQ Accordion
+    // FAQ Accordion (Accessible)
     // ============================================
     const faqQuestions = document.querySelectorAll('.faq-question');
 
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
-            const faqItem = this.parentElement;
-            const isActive = faqItem.classList.contains('active');
+    faqQuestions.forEach(function(question) {
+        // Make FAQ questions keyboard accessible
+        question.setAttribute('role', 'button');
+        question.setAttribute('tabindex', '0');
 
-            // Close all other FAQ items (optional - remove for independent toggles)
-            // document.querySelectorAll('.faq-item').forEach(item => {
-            //     item.classList.remove('active');
-            // });
+        var faqItem = question.parentElement;
+        var answer = faqItem.querySelector('.faq-answer');
+        var toggle = question.querySelector('.faq-toggle');
+        var isActive = faqItem.classList.contains('active');
 
-            // Toggle current item
-            if (isActive) {
+        // Set initial ARIA state
+        question.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        if (answer) {
+            answer.setAttribute('role', 'region');
+            answer.id = answer.id || 'faq-answer-' + Math.random().toString(36).substr(2, 9);
+            question.setAttribute('aria-controls', answer.id);
+        }
+
+        function toggleFaq() {
+            var currentlyActive = faqItem.classList.contains('active');
+            if (currentlyActive) {
                 faqItem.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
             } else {
                 faqItem.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        question.addEventListener('click', toggleFaq);
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFaq();
             }
         });
     });
@@ -72,16 +112,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const categoryBtns = document.querySelectorAll('.faq-category-btn');
     const faqItems = document.querySelectorAll('.faq-item');
 
-    categoryBtns.forEach(btn => {
+    categoryBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
-            const category = this.dataset.category;
+            var category = this.dataset.category;
 
-            // Update active button
-            categoryBtns.forEach(b => b.classList.remove('active'));
+            // Update active button and aria-pressed
+            categoryBtns.forEach(function(b) {
+                b.classList.remove('active');
+                b.setAttribute('aria-pressed', 'false');
+            });
             this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
 
             // Filter FAQ items
-            faqItems.forEach(item => {
+            faqItems.forEach(function(item) {
                 if (category === 'all' || item.dataset.category === category) {
                     item.style.display = 'block';
                 } else {
@@ -286,6 +330,39 @@ document.addEventListener('DOMContentLoaded', function() {
     chartContainers.forEach(container => {
         chartObserver.observe(container);
     });
+
+    // ============================================
+    // Cookie Consent Banner
+    // ============================================
+    var cookieBanner = document.getElementById('cookieConsent');
+    var cookieAcceptBtn = document.getElementById('cookieAccept');
+    var cookieDeclineBtn = document.getElementById('cookieDecline');
+
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+        // Show banner after a short delay
+        setTimeout(function() {
+            cookieBanner.classList.add('visible');
+            cookieBanner.setAttribute('aria-hidden', 'false');
+        }, 1000);
+    }
+
+    function dismissCookieBanner(choice) {
+        localStorage.setItem('cookieConsent', choice);
+        cookieBanner.classList.remove('visible');
+        cookieBanner.setAttribute('aria-hidden', 'true');
+    }
+
+    if (cookieAcceptBtn) {
+        cookieAcceptBtn.addEventListener('click', function() {
+            dismissCookieBanner('accepted');
+        });
+    }
+
+    if (cookieDeclineBtn) {
+        cookieDeclineBtn.addEventListener('click', function() {
+            dismissCookieBanner('declined');
+        });
+    }
 
     // ============================================
     // Waitlist Form Submission

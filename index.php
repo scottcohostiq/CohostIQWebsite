@@ -2,6 +2,32 @@
 $pageTitle = 'CohostIQ - Vacation Rental Operations Management';
 $pageDescription = 'CohostIQ - Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.';
 $currentPage = 'home';
+$pageCanonical = '/index.php';
+$pageSchema = '{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CohostIQ",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS",
+    "description": "Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "First property free, then volume pricing from $7.25-$10/property/month"
+    },
+    "featureList": [
+        "PMS Integration",
+        "Automated Billing & Owner Statements",
+        "Maintenance Tracking",
+        "Team Management",
+        "Reporting & Analytics",
+        "Owner Portal",
+        "QuickBooks Integration",
+        "All Airbnb Payout Methods",
+        "iPhone App"
+    ]
+}';
 require_once __DIR__ . '/includes/header.php';
 ?>
 

@@ -2,6 +2,7 @@
 $pageTitle = 'Features - CohostIQ';
 $pageDescription = 'Explore CohostIQ\'s powerful features for vacation rental management - reservations, maintenance, billing, reporting, and more.';
 $currentPage = 'features';
+$pageCanonical = '/features.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
