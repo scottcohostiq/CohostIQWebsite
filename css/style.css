@@ -1961,6 +1961,300 @@ ul {
 }
 
 /* ============================================
+   Problems Solved Section
+   ============================================ */
+.problems-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.problem-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.problem-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.problem-card-header {
+    padding: 30px 40px 20px;
+    text-align: center;
+}
+
+.problem-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.problem-card-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.problem-subtitle {
+    color: var(--body-color);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.problem-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.problem-before,
+.problem-after {
+    padding: 24px 32px 32px;
+}
+
+.problem-before {
+    background: #fef2f2;
+    border-right: 1px solid var(--border-color);
+}
+
+.problem-after {
+    background: #f0fdf4;
+}
+
+.problem-label {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.problem-label-before {
+    background: rgba(239, 68, 68, 0.15);
+    color: #dc2626;
+}
+
+.problem-label-after {
+    background: rgba(34, 197, 94, 0.15);
+    color: #16a34a;
+}
+
+.problem-time-highlight {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.problem-time-bad {
+    color: #dc2626;
+}
+
+.problem-time-good {
+    color: #16a34a;
+}
+
+.problem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.problem-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--body-color);
+    line-height: 1.5;
+}
+
+.problem-list li::before {
+    content: '\2717';
+    color: #dc2626;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.problem-list-solved li::before {
+    content: '\2713';
+    color: #16a34a;
+}
+
+/* Cohost Payout Problem Callout */
+.payout-callout {
+    background: linear-gradient(135deg, var(--dark), var(--dark-light));
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    color: var(--white);
+}
+
+.payout-callout-header {
+    padding: 32px 40px 16px;
+    text-align: center;
+}
+
+.payout-callout-header h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.payout-callout-header p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.payout-callout-content {
+    padding: 0 40px 32px;
+}
+
+.payout-example {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin: 20px 0;
+}
+
+.payout-example-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.payout-example-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.payout-example-item {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+}
+
+.payout-example-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+}
+
+.payout-example-value {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.payout-example-bad {
+    color: #fca5a5;
+}
+
+.payout-example-good {
+    color: #86efac;
+}
+
+.payout-example-result {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.payout-example-result .payout-example-value {
+    color: #fbbf24;
+}
+
+.payout-example-note {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.payout-callout-bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.payout-callout-bottom strong {
+    color: var(--white);
+}
+
+/* Problems Solved Responsive */
+@media (max-width: 768px) {
+    .problem-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-before {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .problem-card-header {
+        padding: 24px 24px 16px;
+    }
+
+    .problem-before,
+    .problem-after {
+        padding: 20px 24px 24px;
+    }
+
+    .problem-time-highlight {
+        font-size: 1.5rem;
+    }
+
+    .payout-callout-header,
+    .payout-callout-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .payout-example-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .payout-example-value {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .problem-card-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .problem-time-highlight {
+        font-size: 1.25rem;
+    }
+
+    .problem-list li {
+        font-size: 0.85rem;
+    }
+
+    .payout-callout-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .payout-example {
+        padding: 16px;
+    }
+
+    .payout-callout-header,
+    .payout-callout-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* ============================================
    Accessibility - Skip Link
    ============================================ */
 

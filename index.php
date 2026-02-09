@@ -156,8 +156,157 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Common Problems — Solved -->
+    <section class="section section-gray" id="problems-solved">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Common Problems &mdash; Solved</span>
+                <h2 class="section-title">Sound Familiar?</h2>
+                <p class="section-description">
+                    Every cohost knows these headaches. Here's how CohostIQ eliminates them.
+                </p>
+            </div>
+
+            <div class="problems-grid">
+                <!-- Problem 1: Monthly Owner Billing -->
+                <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon">&#128176;</div>
+                        <h3>Monthly Owner Billing</h3>
+                        <p class="problem-subtitle">25 properties</p>
+                    </div>
+                    <div class="problem-comparison">
+                        <div class="problem-before">
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">40&ndash;55+ hours/month</div>
+                            <ul class="problem-list">
+                                <li>Pull reservations from PMS &mdash; 6&ndash;8 hrs</li>
+                                <li>Calculate commissions per property &mdash; 6&ndash;8 hrs</li>
+                                <li>Reconcile cohost payouts &mdash; 8&ndash;12 hrs</li>
+                                <li>Generate owner statements &mdash; 6&ndash;8 hrs</li>
+                                <li>Handle disputes &amp; corrections &mdash; 4&ndash;6 hrs</li>
+                                <li>Update spreadsheets &amp; email owners &mdash; 8&ndash;10 hrs</li>
+                            </ul>
+                        </div>
+                        <div class="problem-after">
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">~30 minutes</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Reservations sync automatically from PMS</li>
+                                <li>Commissions calculated per payment ruleset</li>
+                                <li>Cohost payout credits handled automatically</li>
+                                <li>Owner statements generated in one click</li>
+                                <li>All history tracked &mdash; disputes resolved instantly</li>
+                                <li>Owners access statements via their portal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem 2: Guest Reports AC Broken -->
+                <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon">&#128295;</div>
+                        <h3>Guest Reports AC Broken Mid-Stay</h3>
+                        <p class="problem-subtitle">Emergency maintenance</p>
+                    </div>
+                    <div class="problem-comparison">
+                        <div class="problem-before">
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">Chaos</div>
+                            <ul class="problem-list">
+                                <li>Search for HVAC vendor contact info</li>
+                                <li>No idea if it's under warranty</li>
+                                <li>No record of past repairs</li>
+                                <li>Forget to charge owner for the repair</li>
+                                <li>Owner disputes the charge months later</li>
+                            </ul>
+                        </div>
+                        <div class="problem-after">
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">Handled Instantly</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Ticket auto-created from guest message</li>
+                                <li>Warranty info on file for every item</li>
+                                <li>Repair history shows it's a repeat offender</li>
+                                <li>Cost automatically added to owner statement</li>
+                                <li>Full audit trail &mdash; no disputes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem 3: Onboarding a New Owner -->
+                <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon">&#127968;</div>
+                        <h3>Onboarding a New Owner's Property</h3>
+                        <p class="problem-subtitle">Adding a new client</p>
+                    </div>
+                    <div class="problem-comparison">
+                        <div class="problem-before">
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">1&ndash;2 hours of setup</div>
+                            <ul class="problem-list">
+                                <li>Create new spreadsheet tabs for the property</li>
+                                <li>Manually add to each tool you use</li>
+                                <li>Set up billing formulas from scratch</li>
+                                <li>Hope you don't break existing formulas</li>
+                                <li>No owner visibility until you send a PDF</li>
+                            </ul>
+                        </div>
+                        <div class="problem-after">
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">Minutes</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Import property from PMS in one click</li>
+                                <li>Assign a payment ruleset &mdash; billing is configured</li>
+                                <li>Items &amp; appliances tracked from day one</li>
+                                <li>Owner portal active immediately</li>
+                                <li>Ready to manage on the first reservation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cohost Payout Problem Callout -->
+            <div class="payout-callout">
+                <div class="payout-callout-header">
+                    <h3>&#9888;&#65039; The Cohost Payout Problem</h3>
+                    <p>If you use Airbnb's cohost payouts, you already know this headache.</p>
+                </div>
+                <div class="payout-callout-content">
+                    <div class="payout-example">
+                        <div class="payout-example-header">Example: $1,000 Booking at 20% Commission</div>
+                        <div class="payout-example-grid">
+                            <div class="payout-example-item">
+                                <div class="payout-example-label">Airbnb pays cohost</div>
+                                <div class="payout-example-value payout-example-bad">$270</div>
+                                <div class="payout-example-note">20% of ALL fees ($1,350 gross)</div>
+                            </div>
+                            <div class="payout-example-item">
+                                <div class="payout-example-label">Actual commission owed</div>
+                                <div class="payout-example-value payout-example-good">$200</div>
+                                <div class="payout-example-note">20% of gross rent only ($1,000)</div>
+                            </div>
+                            <div class="payout-example-item payout-example-result">
+                                <div class="payout-example-label">Owner credit needed</div>
+                                <div class="payout-example-value">$70</div>
+                                <div class="payout-example-note">Per reservation &mdash; every single time</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="payout-callout-bottom">
+                        <strong>CohostIQ calculates this automatically</strong> for every reservation and applies the credit to each owner's statement. No spreadsheets. No guessing. No missed credits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Overview -->
-    <section class="section section-gray" id="features">
+    <section class="section" id="features">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Features</span>
