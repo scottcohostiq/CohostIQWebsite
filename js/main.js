@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             cookieBanner.classList.add('visible');
             cookieBanner.setAttribute('aria-hidden', 'false');
-        }, 1000);
+        }, 500);
     }
 
     function dismissCookieBanner(choice) {
