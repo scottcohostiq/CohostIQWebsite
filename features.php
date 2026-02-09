@@ -529,7 +529,7 @@ require_once __DIR__ . '/includes/header.php';
                     Join the waitlist and be first in line when CohostIQ launches.
                 </p>
                 <div class="cta-buttons">
-                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
                     <a href="faq.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">View FAQ</a>
                 </div>
             </div>

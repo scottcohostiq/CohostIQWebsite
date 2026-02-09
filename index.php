@@ -46,7 +46,7 @@ require_once __DIR__ . '/includes/header.php';
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="signup.php#waitlist" class="btn btn-primary btn-lg">Join Waitlist</a>
+                        <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-primary btn-lg">Join Waitlist</a>
                         <a href="features.php" class="btn btn-outline btn-lg">See Features</a>
                     </div>
                 </div>
@@ -528,7 +528,7 @@ require_once __DIR__ . '/includes/header.php';
                     Stop letting operational overhead hold back your growth. Join the waitlist and be first in line when we launch.
                 </p>
                 <div class="cta-buttons">
-                    <a href="signup.php#waitlist" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
                     <a href="features.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Learn More</a>
                 </div>
             </div>
