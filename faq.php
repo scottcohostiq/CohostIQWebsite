@@ -399,6 +399,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div class="cta-buttons">
                     <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>
         </div>
