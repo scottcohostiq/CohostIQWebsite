@@ -47,7 +47,7 @@ require_once __DIR__ . '/includes/header.php';
                     </p>
                     <div class="hero-buttons">
                         <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-primary btn-lg">Join Waitlist</a>
-                        <a href="features.php" class="btn btn-outline btn-lg">See Features</a>
+                        <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg">Request a Demo</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -529,7 +529,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div class="cta-buttons">
                     <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
-                    <a href="features.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Learn More</a>
+                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>
         </div>
