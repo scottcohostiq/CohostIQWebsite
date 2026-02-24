@@ -31,7 +31,7 @@
                 <div class="footer-column">
                     <h4>Legal</h4>
                     <nav class="footer-links" aria-label="Legal links">
-                        <a href="#">Privacy Policy</a>
+                        <a href="privacy.php">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                     </nav>
                 </div>
