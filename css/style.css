@@ -2255,6 +2255,65 @@ ul {
 }
 
 /* ============================================
+   Privacy / Legal Page
+   ============================================ */
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.policy-section {
+    margin-bottom: 40px;
+}
+
+.policy-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.policy-section h3 {
+    font-size: 1.15rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.policy-section p {
+    color: var(--body-color);
+    line-height: 1.8;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.policy-section ul li {
+    list-style: disc;
+    color: var(--body-color);
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.policy-highlight {
+    background: var(--body-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+}
+
+.policy-highlight h2 {
+    color: var(--primary);
+}
+
+@media (max-width: 480px) {
+    .policy-highlight {
+        padding: 20px;
+    }
+}
+
+/* ============================================
    Accessibility - Skip Link
    ============================================ */
 
