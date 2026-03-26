@@ -365,41 +365,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ============================================
-    // Waitlist Form Submission
+    // Signup Form (placeholder for future use)
     // ============================================
-    const waitlistForm = document.getElementById('waitlistForm');
-    const waitlistSuccess = document.getElementById('waitlistSuccess');
-
-    if (waitlistForm) {
-        waitlistForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const formData = new FormData(waitlistForm);
-            const submitBtn = waitlistForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-
-            fetch(waitlistForm.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(function(response) {
-                if (response.ok) {
-                    waitlistForm.style.display = 'none';
-                    waitlistSuccess.style.display = 'block';
-                } else {
-                    throw new Error('Server error');
-                }
-            })
-            .catch(function() {
-                // If the API isn't set up yet, still show success
-                // Remove this fallback once the backend is live
-                waitlistForm.style.display = 'none';
-                waitlistSuccess.style.display = 'block';
-            });
-        });
-    }
 
 });
 

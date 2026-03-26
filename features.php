@@ -526,10 +526,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Transform Your Property Management?</h2>
                 <p class="cta-description">
-                    Join the waitlist and be first in line when CohostIQ launches.
+                    Start your free trial today — first 2 months are on us.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-white btn-lg">Start Free Trial</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>

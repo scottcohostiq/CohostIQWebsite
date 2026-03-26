@@ -36,8 +36,8 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge" style="background: rgba(255, 107, 107, 0.1); color: #ff6b6b;">
-                        <span>&#128640;</span> Coming Soon - Join the Waitlist
+                    <div class="hero-badge" style="background: rgba(74, 108, 247, 0.1); color: #4a6cf7;">
+                        <span>&#128640;</span> Now Available — First 2 Months Free
                     </div>
                     <h1 class="hero-title">
                         Manage Your Vacation Rentals with <span>Intelligence</span>
@@ -46,7 +46,7 @@ require_once __DIR__ . '/includes/header.php';
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-primary btn-lg">Join Waitlist</a>
+                        <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary btn-lg">Start Free Trial</a>
                         <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg">Request a Demo</a>
                     </div>
                 </div>
@@ -525,10 +525,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Scale Your Operations?</h2>
                 <p class="cta-description">
-                    Stop letting operational overhead hold back your growth. Join the waitlist and be first in line when we launch.
+                    Stop letting operational overhead hold back your growth. Start your free trial today.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
+                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-white btn-lg">Start Free Trial</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>

@@ -42,7 +42,7 @@ require_once __DIR__ . '/includes/header.php';
                     <h3>Information You Provide to Us</h3>
                     <p>We collect information you voluntarily provide, including:</p>
                     <ul>
-                        <li><strong>Account Information:</strong> Name, email address, company name, and phone number when you create an account, join our waitlist, or request a demo.</li>
+                        <li><strong>Account Information:</strong> Name, email address, company name, and phone number when you create an account or request a demo.</li>
                         <li><strong>Property &amp; Business Data:</strong> Property details, reservation data, owner information, financial records, and other operational data you enter into the platform.</li>
                         <li><strong>Communications:</strong> Messages you send us via email, contact forms, or support requests.</li>
                         <li><strong>Payment Information:</strong> Billing details processed securely through our third-party payment processor (Stripe). We do not store your full credit card number on our servers.</li>

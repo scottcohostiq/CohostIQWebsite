@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Sign Up - CohostIQ';
-$pageDescription = 'Join the CohostIQ waitlist. Vacation rental operations management with billing, maintenance tracking, team management, and reporting.';
+$pageDescription = 'Sign up for CohostIQ. Vacation rental operations management with billing, maintenance tracking, team management, and reporting. First 2 months free.';
 $currentPage = 'signup';
 $pageCanonical = '/signup.php';
 require_once __DIR__ . '/includes/header.php';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span>/</span>
                 <span>Sign Up</span>
             </nav>
-            <h1 class="page-header-title">Join the CohostIQ Waitlist</h1>
+            <h1 class="page-header-title">Get Started with CohostIQ</h1>
             <p class="page-header-description">
                 Start with 2 months free. No contracts, cancel anytime.
             </p>
@@ -99,43 +99,19 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </div>
 
-                <div class="signup-form-container" id="waitlist">
+                <div class="signup-form-container" id="signup">
                     <div class="signup-form-header">
-                        <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">Coming Soon</div>
-                        <h3>Join the Waitlist</h3>
-                        <p>Be first in line when we launch</p>
+                        <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">2 Months Free</div>
+                        <h3>Start Your Free Trial</h3>
+                        <p>Your first 2 months are completely free. Our guided onboarding gets you up and running in under 30 minutes.</p>
                     </div>
-                    <form id="waitlistForm" action="https://cohostiq.app/api/waitlist.php" method="POST" style="padding: 20px 0;">
-                        <div style="margin-bottom: 16px;">
-                            <label for="waitlist_name" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">Name</label>
-                            <input type="text" id="waitlist_name" name="name" required placeholder="Your name" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; box-sizing: border-box;">
-                        </div>
-                        <div style="margin-bottom: 16px;">
-                            <label for="waitlist_email" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">Email</label>
-                            <input type="email" id="waitlist_email" name="email" required placeholder="you@example.com" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; box-sizing: border-box;">
-                        </div>
-                        <div style="margin-bottom: 16px;">
-                            <label for="waitlist_properties" style="display: block; font-weight: 500; color: #1d2144; margin-bottom: 6px; font-size: 14px;">How many properties do you manage?</label>
-                            <select id="waitlist_properties" name="properties" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; background: white; box-sizing: border-box;">
-                                <option value="">Select...</option>
-                                <option value="1-5">1-5</option>
-                                <option value="6-25">6-25</option>
-                                <option value="26-50">26-50</option>
-                                <option value="51-100">51-100</option>
-                                <option value="100+">100+</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                            Join Waitlist
-                        </button>
+                    <div style="padding: 20px 0; text-align: center;">
+                        <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary btn-lg" style="width: 100%; display: block;">
+                            Start Free Trial
+                        </a>
                         <p class="form-note" style="margin-top: 16px; text-align: center;">
                             First 2 months free — limited time offer. No contracts, cancel anytime.
                         </p>
-                    </form>
-                    <div id="waitlistSuccess" style="display: none; text-align: center; padding: 40px 20px;">
-                        <div style="font-size: 3rem; margin-bottom: 16px;">&#127881;</div>
-                        <h3 style="color: #1d2144; margin-bottom: 8px;">You're on the list!</h3>
-                        <p style="color: #637381;">We'll be in touch soon with early access details.</p>
                     </div>
                 </div>
             </div>
