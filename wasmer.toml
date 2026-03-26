@@ -1,7 +1,19 @@
 [package]
 name = "scottcohostiq/CohostIQWebsite"
 version = "0.1.0"
-description = "CohostIQ marketing website"
+description = "Description for package CohostIQWebsite"
 
-[fs]
-public = "."
+# See more keys and definitions at https://docs.wasmer.io/registry/manifest
+
+[[module]]
+name = "CohostIQWebsite"
+source = "CohostIQWebsite.wasm"
+abi = "wasi"
+
+[module.interfaces]
+wasi = "0.1.0-unstable"
+
+[[command]]
+name = "CohostIQWebsite"
+module = "CohostIQWebsite"
+runner = "wasi"

@@ -16,7 +16,7 @@ require_once __DIR__ . '/includes/header.php';
             </nav>
             <h1 class="page-header-title">Join the CohostIQ Waitlist</h1>
             <p class="page-header-description">
-                Be the first to know when CohostIQ launches. Join the waitlist and get early access.
+                Start with 2 months free. No contracts, cancel anytime.
             </p>
         </div>
     </section>
@@ -33,8 +33,8 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="signup-benefit">
                             <div class="signup-benefit-icon">&#9989;</div>
                             <div class="signup-benefit-text">
-                                <h4>Free Tier Available</h4>
-                                <p>Start with 1 property completely free. All core features included.</p>
+                                <h4>2 Months Free</h4>
+                                <p>Your first 2 calendar months are on us. All core features included. Limited time offer.</p>
                             </div>
                         </div>
                         <div class="signup-benefit">
@@ -129,7 +129,7 @@ require_once __DIR__ . '/includes/header.php';
                             Join Waitlist
                         </button>
                         <p class="form-note" style="margin-top: 16px; text-align: center;">
-                            We'll notify you as soon as CohostIQ is ready. No spam, ever.
+                            First 2 months free — limited time offer. No contracts, cancel anytime.
                         </p>
                     </form>
                     <div id="waitlistSuccess" style="display: none; text-align: center; padding: 40px 20px;">
@@ -149,7 +149,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Pricing</span>
                 <h2 class="section-title">Simple Per-Property Pricing</h2>
                 <p class="section-description">
-                    Your first property is always free. After that, pay per property with volume discounts as you grow.
+                    Start with 2 months free, then pay per property — with volume discounts as you grow.
                 </p>
             </div>
 
@@ -159,11 +159,11 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="pricing-card-header">
                         <div class="pricing-icon pricing-icon-blue">&#127968;</div>
                         <h3>Per Property / Month</h3>
-                        <p>First property free. Your rate is based on your total property count:</p>
+                        <p>Your rate is based on your total property count:</p>
                     </div>
                     <div class="pricing-tiers">
                         <div class="pricing-tier">
-                            <span>2-25 properties</span>
+                            <span>1-25 properties</span>
                             <span class="price">$10<span class="unit">/each</span></span>
                         </div>
                         <div class="pricing-tier">
@@ -180,7 +180,7 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                     <div class="pricing-note">
-                        <p><strong>Volume pricing:</strong> Your per-property rate is based on your total count. For example, if you have 55 properties, all 54 paid properties are $8 each.</p>
+                        <p><strong>Volume pricing:</strong> Pricing uses graduated tiers. For example, 55 properties = 25 × $10 + 25 × $9 + 5 × $8 = $465/mo.</p>
                     </div>
                 </div>
             </div>
@@ -190,24 +190,24 @@ require_once __DIR__ . '/includes/header.php';
                 <h3>Example Monthly Costs</h3>
                 <div class="pricing-examples-grid">
                     <div class="pricing-example-item">
-                        <div class="example-label">1 property</div>
-                        <div class="example-price">$0</div>
-                        <div class="example-calc">Free forever</div>
+                        <div class="example-label">5 properties</div>
+                        <div class="example-price">$50</div>
+                        <div class="example-calc">5 x $10/ea</div>
                     </div>
                     <div class="pricing-example-item">
                         <div class="example-label">10 properties</div>
-                        <div class="example-price">$90</div>
-                        <div class="example-calc">9 x $10/ea</div>
+                        <div class="example-price">$100</div>
+                        <div class="example-calc">10 x $10/ea</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">30 properties</div>
-                        <div class="example-price">$261</div>
-                        <div class="example-calc">29 x $9/ea</div>
+                        <div class="example-label">25 properties</div>
+                        <div class="example-price">$250</div>
+                        <div class="example-calc">25 x $10/ea</div>
                     </div>
                     <div class="pricing-example-item">
-                        <div class="example-label">75 properties</div>
-                        <div class="example-price">$592</div>
-                        <div class="example-calc">74 x $8/ea</div>
+                        <div class="example-label">50 properties</div>
+                        <div class="example-price">$475</div>
+                        <div class="example-calc">25 x $10 + 25 x $9</div>
                     </div>
                 </div>
             </div>
@@ -245,12 +245,12 @@ require_once __DIR__ . '/includes/header.php';
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h4>Is there really a free tier?</h4>
+                        <h4>Is there really a free trial?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes! Our free tier includes 1 property with all core features. You get a 30-minute onboarding call to get started. The only limitation is no ongoing support - but you have full access to all the tools.
+                            Yes! Your first 2 calendar months are completely free with all core features — it's our limited time launch offer. You'll get a 30-minute onboarding call to get you up and running. After your trial, pay per property with volume discounts.
                         </div>
                     </div>
                 </div>
@@ -272,7 +272,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Our guided onboarding process walks you through every step of setting up your account. Free tier users get a 30-minute onboarding call. Paid plans include ongoing email or priority support.
+                            Our guided onboarding process walks you through every step of setting up your account. All users get a 30-minute onboarding call. Paid plans include ongoing email or priority support.
                         </div>
                     </div>
                 </div>

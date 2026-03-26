@@ -12,9 +12,9 @@ $pageSchema = '{
     "description": "Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.",
     "offers": {
         "@type": "Offer",
-        "price": "0",
+        "price": "10",
         "priceCurrency": "USD",
-        "description": "First property free, then volume pricing from $7.25-$10/property/month"
+        "description": "2 months free trial, then volume pricing from $7.25-$10/property/month"
     },
     "featureList": [
         "PMS Integration",

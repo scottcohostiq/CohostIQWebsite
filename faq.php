@@ -9,10 +9,10 @@ $pageSchema = '{
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "Is there a free tier?",
+            "name": "Is there a free trial?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes! Our free tier includes 1 property with all core features. You get a 30-minute onboarding call to get started."
+                "text": "Yes! Your first 2 calendar months are completely free with all core features. You get a 30-minute onboarding call to get started."
             }
         },
         {
@@ -88,19 +88,19 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Signing up is easy! Visit our <a href="signup.php">Sign Up page</a>, fill out the form with your information, and you'll have instant access. Start free with 1 property - no credit card required.
+                            Signing up is easy! Visit our <a href="signup.php">Sign Up page</a>, fill out the form with your information, and you'll have instant access. Start with 2 months free — limited time offer. Our guided onboarding gets you up and running in under 30 minutes.
                         </div>
                     </div>
                 </div>
 
                 <div class="faq-item" data-category="getting-started">
                     <div class="faq-question">
-                        <h4>Is there a free tier?</h4>
+                        <h4>Is there a free trial?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes! Our free tier includes 1 property with all core features. You get a 30-minute onboarding call to get started. The only limitation is no ongoing support. You can add properties, invite team members, and explore everything CohostIQ has to offer.
+                            Yes! Your first 2 calendar months are completely free with all core features — it's our limited time launch offer. You'll get a 30-minute onboarding call to get you up and running. After your trial, pay per property with volume discounts as you grow.
                         </div>
                     </div>
                 </div>
