@@ -18,7 +18,7 @@ $pageSchema = '{
     },
     "featureList": [
         "PMS Integration",
-        "Automated Billing & Owner Statements",
+        "Automated Billing & Owner Statement",
         "Maintenance Tracking",
         "Team Management",
         "Reporting & Analytics",
