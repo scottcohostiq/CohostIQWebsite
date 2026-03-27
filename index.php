@@ -8,7 +8,7 @@ $pageSchema = '{
     "@type": "SoftwareApplication",
     "name": "CohostIQ",
     "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web, iOS",
+    "operatingSystem": "Web",
     "description": "Operational tools for vacation rental co-hosts and property managers. Billing, maintenance tracking, team management, and reporting.",
     "offers": {
         "@type": "Offer",
@@ -18,14 +18,13 @@ $pageSchema = '{
     },
     "featureList": [
         "PMS Integration",
-        "Automated Billing & Owner Statement",
+        "Automated Billing & Owner Statements",
         "Maintenance Tracking",
         "Team Management",
         "Reporting & Analytics",
         "Owner Portal",
         "QuickBooks Integration",
-        "All Airbnb Payout Methods",
-        "iPhone App"
+        "All Airbnb Payout Methods"
     ]
 }';
 require_once __DIR__ . '/includes/header.php';
@@ -46,7 +45,7 @@ require_once __DIR__ . '/includes/header.php';
                         Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
                     </p>
                     <div class="hero-buttons">
-                        <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary btn-lg">Start Free Trial</a>
+                        <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary btn-lg">Start Free Trial</a>
                         <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg">Request a Demo</a>
                     </div>
                 </div>
@@ -358,13 +357,6 @@ require_once __DIR__ . '/includes/header.php';
                         Give property owners secure access to view their statements, reservations, and property performance anytime.
                     </p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#128241;</div>
-                    <h3 class="feature-title">iPhone App</h3>
-                    <p class="feature-description">
-                        Create maintenance tickets, manage owners, and stay on top of operations from anywhere. Android coming soon.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
@@ -384,11 +376,11 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="audience-icon">&#128188;</div>
                     <h3 class="audience-title">Co-Hosts</h3>
                     <p class="audience-description">
-                        Take the chaos out of co-hosting. Coordinate cleanings, handle maintenance, and keep owners informed.
+                        Take the chaos out of co-hosting. Track maintenance, manage billing, and keep owners informed.
                     </p>
                     <ul class="audience-features">
-                        <li>Cleaning schedules</li>
-                        <li>Maintenance coordination</li>
+                        <li>Maintenance ticketing & tracking</li>
+                        <li>Automated owner statements</li>
                         <li>Guest communication logs</li>
                         <li>Owner transparency</li>
                     </ul>
@@ -404,19 +396,6 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Expense tracking</li>
                         <li>Revenue analytics</li>
                         <li>Vendor management</li>
-                    </ul>
-                </div>
-                <div class="audience-card">
-                    <div class="audience-icon">&#128241;</div>
-                    <h3 class="audience-title">On the Go</h3>
-                    <p class="audience-description">
-                        Manage your properties from anywhere with the CohostIQ iPhone app. Create and track maintenance tickets, review owner statements, and stay on top of operations - right from your pocket.
-                    </p>
-                    <ul class="audience-features">
-                        <li>iPhone app for ticketing & owners</li>
-                        <li>Create & manage maintenance tickets</li>
-                        <li>Owner portal access on mobile</li>
-                        <li>Android coming soon</li>
                     </ul>
                 </div>
             </div>
@@ -528,7 +507,7 @@ require_once __DIR__ . '/includes/header.php';
                     Stop letting operational overhead hold back your growth. Start your free trial today.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-white btn-lg">Start Free Trial</a>
+                    <a href="https://cohostiq.app/signup/signup.php" class="btn btn-white btn-lg">Start Free Trial</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>

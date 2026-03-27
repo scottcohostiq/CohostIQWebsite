@@ -381,7 +381,7 @@ require_once __DIR__ . '/includes/header.php';
                     <a href="mailto:support@cohostiq.com" class="btn btn-primary">
                         &#128231; Email Support
                     </a>
-                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-outline">
+                    <a href="https://cohostiq.app/signup/signup.php" class="btn btn-outline">
                         Start Free Trial
                     </a>
                 </div>
@@ -398,7 +398,7 @@ require_once __DIR__ . '/includes/header.php';
                     Start your free trial today — first 2 months are on us.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-white btn-lg">Start Free Trial</a>
+                    <a href="https://cohostiq.app/signup/signup.php" class="btn btn-white btn-lg">Start Free Trial</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>

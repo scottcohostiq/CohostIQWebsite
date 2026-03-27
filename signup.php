@@ -106,7 +106,7 @@ require_once __DIR__ . '/includes/header.php';
                         <p>Your first 2 months are completely free. Our guided onboarding gets you up and running in under 30 minutes.</p>
                     </div>
                     <div style="padding: 20px 0; text-align: center;">
-                        <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary btn-lg" style="width: 100%; display: block;">
+                        <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary btn-lg" style="width: 100%; display: block;">
                             Start Free Trial
                         </a>
                         <p class="form-note" style="margin-top: 16px; text-align: center;">

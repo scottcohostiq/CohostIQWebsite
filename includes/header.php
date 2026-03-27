@@ -124,7 +124,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
                 <div class="nav-actions">
                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-secondary">Request a Demo</a>
-                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary">Start Free Trial</a>
+                    <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary">Start Free Trial</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
                     <span></span>
@@ -141,7 +141,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
             <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-secondary">Request a Demo</a>
-            <a href="https://cohostiq.app/signup/register.php" class="btn btn-primary">Start Free Trial</a>
+            <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary">Start Free Trial</a>
         </div>
     </header>
 

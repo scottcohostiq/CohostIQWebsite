@@ -475,13 +475,6 @@ require_once __DIR__ . '/includes/header.php';
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128241;</div>
-                    <h3 class="feature-title">iPhone App</h3>
-                    <p class="feature-description">
-                        Manage tickets, owners, and operations on the go with our native iPhone app. Android coming soon.
-                    </p>
-                </div>
-                <div class="feature-card">
                     <div class="feature-icon">&#128196;</div>
                     <h3 class="feature-title">Document Storage</h3>
                     <p class="feature-description">
@@ -529,7 +522,7 @@ require_once __DIR__ . '/includes/header.php';
                     Start your free trial today — first 2 months are on us.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/register.php" class="btn btn-white btn-lg">Start Free Trial</a>
+                    <a href="https://cohostiq.app/signup/signup.php" class="btn btn-white btn-lg">Start Free Trial</a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
                 </div>
             </div>
