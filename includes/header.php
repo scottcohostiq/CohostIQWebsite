@@ -47,7 +47,7 @@ if (!isset($pageCanonical)) $pageCanonical = '';
 if (!isset($pageSchema)) $pageSchema = '';
 
 // Base URL for canonical/OG tags
-$siteUrl = 'https://www.cohostiq.com';
+$siteUrl = 'https://www.cohostiq.app';
 $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_NAME'])));
 ?>
 <!DOCTYPE html>
@@ -90,7 +90,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
         "description": "Operational tools for vacation rental co-hosts and property managers.",
         "contactPoint": {
             "@type": "ContactPoint",
-            "email": "support@cohostiq.com",
+            "email": "support@cohostiq.app",
             "contactType": "customer support"
         },
         "sameAs": []
