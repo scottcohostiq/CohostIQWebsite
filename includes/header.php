@@ -23,7 +23,7 @@ header("Content-Security-Policy: "
     . "script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
     . "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
     . "font-src 'self' https://fonts.gstatic.com; "
-    . "img-src 'self' data: https:; "
+    . "img-src 'self' data: https://www.cohostiq.app https://cohostiq.app; "
     . "connect-src 'self' https://cohostiq.app; "
     . "object-src 'none'; "
     . "frame-ancestors 'none'; "
@@ -37,7 +37,8 @@ header("X-Frame-Options: DENY");
 header("X-XSS-Protection: 1; mode=block");
 header("Referrer-Policy: strict-origin-when-cross-origin");
 header("Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()");
-// header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload");
+header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload");
+header_remove("X-Powered-By");
 
 // Defaults
 if (!isset($pageTitle)) $pageTitle = 'CohostIQ';
