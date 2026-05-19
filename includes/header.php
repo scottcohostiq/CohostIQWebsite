@@ -20,9 +20,9 @@ if (!headers_sent()) {
 
 header("Content-Security-Policy: "
     . "default-src 'self'; "
-    . "script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-    . "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
-    . "font-src 'self' https://fonts.gstatic.com; "
+    . "script-src 'self' 'unsafe-inline'; "
+    . "style-src 'self' 'unsafe-inline'; "
+    . "font-src 'self'; "
     . "img-src 'self' data: https://www.cohostiq.app https://cohostiq.app; "
     . "connect-src 'self' https://cohostiq.app; "
     . "object-src 'none'; "
@@ -75,10 +75,8 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
     <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fonts (self-hosted to avoid third-party CORS/SRI/CSP scan findings) -->
+    <link rel="stylesheet" href="/css/fonts/inter.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Organization Schema (all pages) -->
