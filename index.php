@@ -458,15 +458,15 @@ require_once __DIR__ . '/includes/header.php';
                     <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Cleaner marketplace</div>
                     <div style="margin-bottom: 14px;">
                         <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
-                        <div style="color: #1d2144; font-size: 14px;">Finding cleaners, project scheduling, completion photos.</div>
+                        <div style="color: #1d2144; font-size: 14px;">A marketplace for finding new cleaners on demand.</div>
                     </div>
                     <div style="margin-bottom: 14px;">
                         <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
-                        <div style="color: #637381; font-size: 14px;">In-house crew dispatch, payroll, supplies, linens, owner billing.</div>
+                        <div style="color: #637381; font-size: 14px;">Conditional checklists, crew lead and sub pay splits, in-house payroll, supplies, linens, and owner billing.</div>
                     </div>
                     <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
                         <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
-                        <div style="color: #1d2144; font-size: 14px;">Import Turno templates and projects, or run your own crews end to end.</div>
+                        <div style="color: #1d2144; font-size: 14px;">A full Turno replacement for the operations side, plus the billing tie-in Turno doesn't do. Keep Turno for the marketplace if you want, we import the projects.</div>
                     </div>
                 </div>
 

@@ -28,7 +28,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">What Does What</span>
                 <h2 class="section-title">CohostIQ vs. The Tools You Already Use</h2>
                 <p class="section-description">
-                    We're not a PMS replacement. We're not a Turno replacement. We're the layer that connects your operations to your owner billing, so nothing gets dropped between systems.
+                    We're not a PMS replacement. On the cleaning side, we do everything Turno does except run their marketplace, and we add the billing tie-in nobody else has. We're the layer that connects your operations to your owner billing so nothing gets dropped between systems.
                 </p>
             </div>
             <div style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden;">
@@ -46,6 +46,8 @@ require_once __DIR__ . '/includes/header.php';
                     ['Cohost payout credit calculations', 'full', 'no', 'no', 'no'],
                     ['Per-property fee rules and pass-throughs', 'full', 'no', 'no', 'no'],
                     ['Cleaning job scheduling and dispatch', 'full', 'no', 'full', 'full'],
+                    ['Conditional checklists (day, guests, pets, season)', 'full', 'no', 'partial', 'no'],
+                    ['Cleaner marketplace (find new cleaners on demand)', 'no', 'no', 'no', 'full'],
                     ['In-house crew payroll', 'full', 'no', 'partial', 'no'],
                     ['Maintenance tickets and item tracking', 'full', 'partial', 'full', 'no'],
                     ['Supplies and linen tracking', 'full', 'no', 'partial', 'no'],
