@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Features - CohostIQ';
-$pageDescription = 'Explore CohostIQ\'s powerful features for vacation rental management - reservations, maintenance, billing, reporting, and more.';
+$pageDescription = 'CohostIQ features for cohosts and property managers: owner billing, cohost payout math, cleaning operations, maintenance, supplies, and QuickBooks sync.';
 $currentPage = 'features';
 $pageCanonical = '/features.php';
 require_once __DIR__ . '/includes/header.php';
@@ -14,9 +14,65 @@ require_once __DIR__ . '/includes/header.php';
                 <span>/</span>
                 <span>Features</span>
             </nav>
-            <h1 class="page-header-title">Powerful Features for Modern Property Management</h1>
+            <h1 class="page-header-title">Everything Your PMS, Spreadsheets, and Cleaning Tools Don't Do</h1>
             <p class="page-header-description">
-                Discover how CohostIQ enhances your PMS with powerful billing, team coordination, maintenance tracking, and reporting features.
+                CohostIQ is the operational and billing layer for cohosts. Owner statements, cohost payout math, cleaning, maintenance, supplies, and the QuickBooks sync to tie it all together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stack Comparison -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What Does What</span>
+                <h2 class="section-title">CohostIQ vs. The Tools You Already Use</h2>
+                <p class="section-description">
+                    We're not a PMS replacement. We're not a Turno replacement. We're the layer that connects your operations to your owner billing, so nothing gets dropped between systems.
+                </p>
+            </div>
+            <div style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden;">
+                <div style="display: grid; grid-template-columns: 2fr repeat(4, 1fr); background: #f8fafc; padding: 16px 20px; font-size: 13px; font-weight: 600; color: #1d2144; border-bottom: 1px solid #e2e8f0;">
+                    <div>Capability</div>
+                    <div style="text-align: center; color: #4a6cf7;">CohostIQ</div>
+                    <div style="text-align: center;">PMS</div>
+                    <div style="text-align: center;">Breezeway</div>
+                    <div style="text-align: center;">Turno</div>
+                </div>
+                <?php
+                $rows = [
+                    ['Reservations and channel management', 'partial', 'full', 'no', 'no'],
+                    ['Owner statements and billing', 'full', 'no', 'no', 'no'],
+                    ['Cohost payout credit calculations', 'full', 'no', 'no', 'no'],
+                    ['Per-property fee rules and pass-throughs', 'full', 'no', 'no', 'no'],
+                    ['Cleaning job scheduling and dispatch', 'full', 'no', 'full', 'full'],
+                    ['In-house crew payroll', 'full', 'no', 'partial', 'no'],
+                    ['Maintenance tickets and item tracking', 'full', 'partial', 'full', 'no'],
+                    ['Supplies and linen tracking', 'full', 'no', 'partial', 'no'],
+                    ['Owner-facing portal with statements', 'full', 'partial', 'no', 'no'],
+                    ['QuickBooks sync for billing', 'full', 'no', 'no', 'no'],
+                ];
+                foreach ($rows as $i => $r) {
+                    $bg = $i % 2 === 0 ? '#ffffff' : '#fafbfc';
+                    echo '<div style="display: grid; grid-template-columns: 2fr repeat(4, 1fr); padding: 14px 20px; font-size: 14px; color: #1d2144; background: ' . $bg . '; border-bottom: 1px solid #f1f5f9;">';
+                    echo '<div>' . htmlspecialchars($r[0]) . '</div>';
+                    for ($c = 1; $c <= 4; $c++) {
+                        $val = $r[$c];
+                        if ($val === 'full') {
+                            $mark = '<span style="display: inline-block; width: 22px; height: 22px; line-height: 22px; border-radius: 50%; background: #13c296; color: white; font-weight: 700; font-size: 13px;">&#10003;</span>';
+                        } elseif ($val === 'partial') {
+                            $mark = '<span style="display: inline-block; padding: 2px 10px; border-radius: 12px; background: #fff3cd; color: #856404; font-size: 11px; font-weight: 600;">Partial</span>';
+                        } else {
+                            $mark = '<span style="color: #cbd5e1; font-size: 18px;">&minus;</span>';
+                        }
+                        echo '<div style="text-align: center;">' . $mark . '</div>';
+                    }
+                    echo '</div>';
+                }
+                ?>
+            </div>
+            <p style="text-align: center; color: #637381; font-size: 13px; margin-top: 16px;">
+                Comparison reflects core product surface area. Many of these tools integrate with CohostIQ rather than competing with it.
             </p>
         </div>
     </section>
@@ -28,7 +84,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128279; PMS Integration & Enhanced Operations</h3>
                     <p>
-                        CohostIQ connects to your existing Property Management System like Hospitable to supercharge your operations. We pull in your reservation data and enhance it with powerful billing, reporting, and team management features your PMS doesn't provide.
+                        CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Seamless connection to Hospitable and other PMS platforms</li>
@@ -81,7 +137,7 @@ require_once __DIR__ . '/includes/header.php';
                     </p>
                     <ul class="feature-detail-list">
                         <li>Track appliances, furniture, and items per property with purchase dates and warranties</li>
-                        <li>Identify "repeat offenders" - items that keep breaking down</li>
+                        <li>Identify repeat offenders, items that keep breaking down</li>
                         <li>Auto-create tickets from Hospitable, HostBuddy, and Turno integrations</li>
                         <li>Assign tasks to maintenance staff or contractors with notifications</li>
                         <li>Link maintenance costs to specific items and properties for accurate billing</li>
@@ -97,23 +153,238 @@ require_once __DIR__ . '/includes/header.php';
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
                                 <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Samsung HVAC Unit</div>
-                                <div style="font-size: 12px; color: #637381;">Lakeside Cabin - 4 repairs this year</div>
+                                <div style="font-size: 12px; color: #637381;">Lakeside Cabin, 4 repairs this year</div>
                             </div>
                             <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 4px; font-size: 12px;">Repeat Issue</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Hot Tub - Bullfrog A7</div>
-                                <div style="font-size: 12px; color: #637381;">Sunset Villa - Warranty expires 3/24</div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Hot Tub, Bullfrog A7</div>
+                                <div style="font-size: 12px; color: #637381;">Sunset Villa, warranty expires 3/24</div>
                             </div>
                             <span style="padding: 4px 12px; background: #fff3cd; color: #856404; border-radius: 4px; font-size: 12px;">Check Warranty</span>
                         </div>
                         <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
                             <div>
                                 <div style="font-weight: 500; color: #1d2144; font-size: 14px;">LG Washer/Dryer</div>
-                                <div style="font-size: 12px; color: #637381;">Mountain View - No issues</div>
+                                <div style="font-size: 12px; color: #637381;">Mountain View, no issues</div>
                             </div>
                             <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Good</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Cleaning Operations -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#129529; Full Cleaning Operations</h3>
+                    <p>
+                        Run your in-house cleaners end to end, or bring in your Turno templates and projects. Either way, cleaning is a first-class part of CohostIQ, and every dollar spent on cleaning lands on the right owner's statement automatically.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Jobs auto-created from reservations and turnover schedules</li>
+                        <li>Preferred cleaner ordering per property with automatic assignment</li>
+                        <li>Crews with a paid lead and sub members, dispatched as a single unit</li>
+                        <li>Reusable templates with spaces, tasks, and sub-tasks</li>
+                        <li>Conditional checklists: items appear based on day of week, guest count, pet count, or season</li>
+                        <li>Four pay models per template: total job, lead + sub, per hour, or per room</li>
+                        <li>Per-cleaner pay overrides by property size, with autosave and bulk fill</li>
+                        <li>Inspection triggers for new cleaners, long absences, or random audits</li>
+                        <li>Direct import from Turno templates with side-by-side compare</li>
+                        <li>Read-only Turno project history synced nightly</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: white; border-radius: 12px; overflow: hidden;">
+                        <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #1d2144;">Today's Cleanings</span>
+                            <span style="padding: 4px 12px; background: #4a6cf7; color: white; border-radius: 20px; font-size: 12px;">7 Jobs</span>
+                        </div>
+                        <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</div>
+                                <div style="font-size: 12px; color: #637381;">Maria's Crew, 11:00 AM checkout</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 4px; font-size: 12px;">In Progress</span>
+                        </div>
+                        <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</div>
+                                <div style="font-size: 12px; color: #637381;">Auto-assigned, pet stay + deep clean</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #e8f4fd; color: #4a6cf7; border-radius: 4px; font-size: 12px;">Accepted</span>
+                        </div>
+                        <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</div>
+                                <div style="font-size: 12px; color: #637381;">From Turno, 2 photos uploaded</div>
+                            </div>
+                            <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Cleaning Mobile App -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128241; Mobile App for Cleaners</h3>
+                    <p>
+                        A dedicated mobile app for the people doing the work. Cleaners see their jobs, run the checklist, upload photos, report problems, and track linens. You get a full audit trail behind every turnover.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Job acceptance, timer, and step-by-step checklist</li>
+                        <li>Photo uploads tied to specific tasks and rooms</li>
+                        <li>Problem and damage reporting back to the manager</li>
+                        <li>Linen removal tracking when laundry goes off-site</li>
+                        <li>Optional GPS check-in to confirm arrival</li>
+                        <li>Single sign-on from the manager portal, no separate accounts</li>
+                        <li>Push notifications and SMS alerts with a full audit log</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 28px; color: white;">
+                        <div style="font-size: 12px; opacity: 0.7; margin-bottom: 4px;">Job 4 of 7 today</div>
+                        <div style="font-weight: 700; font-size: 1.25rem; margin-bottom: 4px;">Lakeside Cabin</div>
+                        <div style="font-size: 13px; opacity: 0.8; margin-bottom: 20px;">3 bed / 2 bath, pet stay</div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px;">Strip beds and bag linens</span>
+                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px;">Photo: kitchen counters</span>
+                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px; font-weight: 600;">Restock toilet paper (5 rolls)</span>
+                            <span style="font-size: 12px; opacity: 0.7;">In progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Cleaner Payroll -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128181; Cleaner Pay &amp; Payroll</h3>
+                    <p>
+                        Cleaner pay is calculated per job, totaled per pay period, and paid out the way your cleaners actually want to be paid. Cash, check, Venmo, Zelle, PayPal, or Stripe, with quick-pay deep links to skip the typing.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Per-cleaner unpaid balance and full payment history</li>
+                        <li>Quick-pay deep links to Venmo and PayPal with cleaner handles on file</li>
+                        <li>Crew pay split: lead is paid (1099), sub members are hidden labor</li>
+                        <li>Pay matrix view for fast rate changes across cleaners and property sizes</li>
+                        <li>Job-level audit of what was earned, when, and who paid it</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: white; border-radius: 12px; overflow: hidden;">
+                        <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0;">
+                            <span style="font-weight: 600; color: #1d2144;">Payroll Period</span>
+                            <div style="font-size: 12px; color: #637381;">May 15 to May 28</div>
+                        </div>
+                        <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #13c296, #28d6a8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">MC</div>
+                                <div>
+                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Maria's Crew</div>
+                                    <div style="font-size: 12px; color: #637381;">12 jobs, Venmo</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: #1d2144;">$1,840</div>
+                        </div>
+                        <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #4a6cf7, #6b8aff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">JR</div>
+                                <div>
+                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">James R.</div>
+                                    <div style="font-size: 12px; color: #637381;">7 jobs, Zelle</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: #1d2144;">$945</div>
+                        </div>
+                        <div style="padding: 14px 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #ff6b6b, #ff8787); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">LK</div>
+                                <div>
+                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Linda K.</div>
+                                    <div style="font-size: 12px; color: #637381;">9 jobs, check</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: #1d2144;">$1,215</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature: Supplies and Linens -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128230; Supplies, Linens, and Restock Automation</h3>
+                    <p>
+                        Stop running out of paper towels. Stop losing sheets. CohostIQ tracks every consumable and linen at the property level, scales kits to the size of the home, and triggers a restock job before you hear about it from a guest.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Build reusable supply kits with per-bedroom, per-bathroom, or fixed scaling</li>
+                        <li>Property status dashboard with restock progress and low-stock alerts</li>
+                        <li>Auto-created supply delivery jobs on turnover or calendar triggers</li>
+                        <li>Linen modes per property: on-site, off-site cleaner, vendor service, or mixed</li>
+                        <li>Off-site linen checkout tracking with days-out counter</li>
+                        <li>Item catalog with master inventory and unit costs</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: white; border-radius: 12px; overflow: hidden;">
+                        <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #1d2144;">Property Supply Status</span>
+                            <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 20px; font-size: 12px;">2 Low</span>
+                        </div>
+                        <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</span>
+                                <span style="font-size: 12px; color: #ff6b6b;">Restock needed</span>
+                            </div>
+                            <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
+                                <div style="width: 28%; background: #ff6b6b; height: 100%;"></div>
+                            </div>
+                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">TP 2/10, paper towels 1/4, dish soap empty</div>
+                        </div>
+                        <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</span>
+                                <span style="font-size: 12px; color: #856404;">Watch</span>
+                            </div>
+                            <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
+                                <div style="width: 62%; background: #fbbf24; height: 100%;"></div>
+                            </div>
+                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">Linens: 4 sets off-site, 6 days out</div>
+                        </div>
+                        <div style="padding: 14px 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</span>
+                                <span style="font-size: 12px; color: #13c296;">Stocked</span>
+                            </div>
+                            <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
+                                <div style="width: 92%; background: #13c296; height: 100%;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +407,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Track expenses with receipts and categorization</li>
                         <li>Support for management fees, cleaning fees, and pass-through costs</li>
                         <li>PDF export for easy sharing with owners</li>
-                        <li>All Airbnb payout methods supported - cohost payouts, host-only fees, and split payouts</li>
+                        <li>All Airbnb payout methods: cohost payouts, host-only fees, and split payouts</li>
                         <li>QuickBooks integration for seamless accounting</li>
                     </ul>
                 </div>
@@ -145,7 +416,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                             <div>
                                 <div style="font-weight: 600; color: #1d2144;">Owner Statement</div>
-                                <div style="font-size: 12px; color: #637381;">January 2025 - Lakeside Cabin</div>
+                                <div style="font-size: 12px; color: #637381;">January 2025, Lakeside Cabin</div>
                             </div>
                             <span style="padding: 6px 14px; background: #4a6cf7; color: white; border-radius: 6px; font-size: 12px;">Download PDF</span>
                         </div>
@@ -184,14 +455,14 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128181; Every Airbnb Payout Method, Handled</h3>
                     <p>
-                        Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ supports all of them - and makes switching between methods seamless so your billing never breaks.
+                        Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ supports all of them, and switching an owner from one method to another mid-month won't break your billing.
                     </p>
                     <ul class="feature-detail-list">
                         <li><strong>Cohost Payouts:</strong> Airbnb pays you directly, then you pay your owner their share</li>
                         <li><strong>Host-Only Fees:</strong> Airbnb pays the owner, and your management fee is deducted automatically</li>
                         <li><strong>Split Payouts:</strong> Airbnb splits the payout between you and the owner based on your agreement</li>
                         <li>Switch an owner from one method to another mid-month without breaking your billing</li>
-                        <li>Per-property payout rules - different owners, different methods, no problem</li>
+                        <li>Per-property payout rules so different owners can be on different methods</li>
                         <li>Accurate fee calculations regardless of which method each property uses</li>
                     </ul>
                 </div>
@@ -235,13 +506,13 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128218; QuickBooks Integration for Owners</h3>
                     <p>
-                        Keep your books in sync without double entry. CohostIQ connects directly to QuickBooks so your owner statements, expenses, and payouts flow automatically into your accounting - saving you hours every month and keeping your financials accurate.
+                        Keep your books in sync without double entry. CohostIQ connects directly to QuickBooks so owner statements, expenses, and payouts flow automatically into your accounting. Saves hours every month and keeps the financials accurate.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Automatically sync owner statements and invoices to QuickBooks</li>
                         <li>Map revenue, management fees, and expenses to your QuickBooks chart of accounts</li>
                         <li>Push owner payouts directly into QuickBooks for clean reconciliation</li>
-                        <li>Expense categorization carries over - no reclassifying in QuickBooks</li>
+                        <li>Expense categorization carries over, no reclassifying in QuickBooks</li>
                         <li>Per-owner and per-property financial records synced automatically</li>
                         <li>Eliminate manual data entry and reduce accounting errors</li>
                     </ul>
@@ -260,21 +531,21 @@ require_once __DIR__ . '/includes/header.php';
                             <div style="display: flex; flex-direction: column; gap: 10px;">
                                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Statement - Lakeside Cabin</div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Statement, Lakeside Cabin</div>
                                         <div style="font-size: 11px; color: #637381;">Invoice #1042 created in QuickBooks</div>
                                     </div>
                                     <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Maintenance Expense - HVAC Repair</div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Maintenance Expense, HVAC Repair</div>
                                         <div style="font-size: 11px; color: #637381;">$450 posted to Repairs & Maintenance</div>
                                     </div>
                                     <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Payout - John Davis</div>
+                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Payout, John Davis</div>
                                         <div style="font-size: 11px; color: #637381;">$3,637.50 recorded as bill payment</div>
                                     </div>
                                     <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
@@ -298,7 +569,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128101; Team & Vendor Management</h3>
                     <p>
-                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and communicate with contractors - all without leaving CohostIQ.
+                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and communicate with contractors, all without leaving CohostIQ.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Role-based permissions (Admin, Manager, Cleaner, Maintenance, etc.)</li>
@@ -349,7 +620,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128202; Powerful Reporting & Analytics</h3>
+                    <h3>&#128202; Reporting &amp; Analytics</h3>
                     <p>
                         Make data-driven decisions with comprehensive reports. Track occupancy, revenue, expenses, and trends across your entire portfolio or drill down to individual properties.
                     </p>
@@ -519,7 +790,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Transform Your Property Management?</h2>
                 <p class="cta-description">
-                    Start your free trial today — first 2 months are on us.
+                    First 2 months are on us when you start your free trial today.
                 </p>
                 <div class="cta-buttons">
                     <a href="https://cohostiq.app/signup/signup.php" class="btn btn-white btn-lg">Start Free Trial</a>

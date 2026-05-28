@@ -36,13 +36,13 @@ require_once __DIR__ . '/includes/header.php';
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-badge" style="background: rgba(74, 108, 247, 0.1); color: #4a6cf7;">
-                        <span>&#128640;</span> Now Available — First 2 Months Free
+                        New customers get the first 2 months free
                     </div>
                     <h1 class="hero-title">
-                        Manage Your Vacation Rentals with <span>Intelligence</span>
+                        The operations and billing layer for <span>cohosts</span>
                     </h1>
                     <p class="hero-description">
-                        Stop juggling spreadsheets and billing headaches. CohostIQ brings all your property management operations into one platform - so you can scale your portfolio without scaling your workload.
+                        Your PMS handles guests. CohostIQ handles everything behind the property: owner billing, cleaning operations, maintenance, supplies, and the cohost payout math nobody else gets right.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary btn-lg">Start Free Trial</a>
@@ -102,7 +102,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        After years of managing vacation rentals as cohosts ourselves, we got tired of the spreadsheet chaos. Tracking different payout methods, calculating management fees, generating owner statements - it was eating up hours every month.
+                        After years of managing vacation rentals as cohosts ourselves, we got tired of the spreadsheet chaos. Tracking different payout methods, calculating management fees, generating owner statements. It was eating up hours every month.
                     </p>
                     <p>
                         We built CohostIQ to solve the problems we faced every day. No more guessing which payout method an owner is using. No more manual calculations when someone switches from cohost payouts to host-only fees.
@@ -118,7 +118,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="about-check">&#10003;</span>
                             <div>
                                 <strong>All Airbnb Payout Methods</strong>
-                                <p>Cohost payouts, host-only fees, split payouts - we support them all</p>
+                                <p>Cohost payouts, host-only fees, split payouts. We support them all.</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
@@ -139,14 +139,14 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="about-check">&#10003;</span>
                             <div>
                                 <strong>Automatic Calculations</strong>
-                                <p>Management fees, cleaning pass-throughs, expense deductions - all automated</p>
+                                <p>Management fees, cleaning pass-throughs, expense deductions, all automated</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
                             <span class="about-check">&#10003;</span>
                             <div>
                                 <strong>QuickBooks Integration</strong>
-                                <p>Owner statements, expenses, and payouts sync directly to QuickBooks - no double entry</p>
+                                <p>Owner statements, expenses, and payouts sync directly to QuickBooks. No double entry.</p>
                             </div>
                         </div>
                     </div>
@@ -155,11 +155,11 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <!-- Common Problems — Solved -->
+    <!-- Common Problems Solved -->
     <section class="section section-gray" id="problems-solved">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Common Problems &mdash; Solved</span>
+                <span class="section-label">Common Problems Solved</span>
                 <h2 class="section-title">Sound Familiar?</h2>
                 <p class="section-description">
                     Every cohost knows these headaches. Here's how CohostIQ eliminates them.
@@ -177,14 +177,14 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="problem-comparison">
                         <div class="problem-before">
                             <div class="problem-label problem-label-before">Without CohostIQ</div>
-                            <div class="problem-time-highlight problem-time-bad">40&ndash;55+ hours/month</div>
+                            <div class="problem-time-highlight problem-time-bad">40 to 55+ hours/month</div>
                             <ul class="problem-list">
-                                <li>Pull reservations from PMS &mdash; 6&ndash;8 hrs</li>
-                                <li>Calculate commissions per property &mdash; 6&ndash;8 hrs</li>
-                                <li>Reconcile cohost payouts &mdash; 8&ndash;12 hrs</li>
-                                <li>Generate owner statements &mdash; 6&ndash;8 hrs</li>
-                                <li>Handle disputes &amp; corrections &mdash; 4&ndash;6 hrs</li>
-                                <li>Update spreadsheets &amp; email owners &mdash; 8&ndash;10 hrs</li>
+                                <li>Pull reservations from PMS (6 to 8 hrs)</li>
+                                <li>Calculate commissions per property (6 to 8 hrs)</li>
+                                <li>Reconcile cohost payouts (8 to 12 hrs)</li>
+                                <li>Generate owner statements (6 to 8 hrs)</li>
+                                <li>Handle disputes and corrections (4 to 6 hrs)</li>
+                                <li>Update spreadsheets and email owners (8 to 10 hrs)</li>
                             </ul>
                         </div>
                         <div class="problem-after">
@@ -195,7 +195,7 @@ require_once __DIR__ . '/includes/header.php';
                                 <li>Commissions calculated per payment ruleset</li>
                                 <li>Cohost payout credits handled automatically</li>
                                 <li>Owner statements generated in one click</li>
-                                <li>All history tracked &mdash; disputes resolved instantly</li>
+                                <li>All history tracked, disputes resolved instantly</li>
                                 <li>Owners access statements via their portal</li>
                             </ul>
                         </div>
@@ -229,7 +229,7 @@ require_once __DIR__ . '/includes/header.php';
                                 <li>Warranty info on file for every item</li>
                                 <li>Repair history shows it's a repeat offender</li>
                                 <li>Cost automatically added to owner statement</li>
-                                <li>Full audit trail &mdash; no disputes</li>
+                                <li>Full audit trail, no disputes</li>
                             </ul>
                         </div>
                     </div>
@@ -245,7 +245,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="problem-comparison">
                         <div class="problem-before">
                             <div class="problem-label problem-label-before">Without CohostIQ</div>
-                            <div class="problem-time-highlight problem-time-bad">1&ndash;2 hours of setup</div>
+                            <div class="problem-time-highlight problem-time-bad">1 to 2 hours of setup</div>
                             <ul class="problem-list">
                                 <li>Create new spreadsheet tabs for the property</li>
                                 <li>Manually add to each tool you use</li>
@@ -259,10 +259,43 @@ require_once __DIR__ . '/includes/header.php';
                             <div class="problem-time-highlight problem-time-good">Minutes</div>
                             <ul class="problem-list problem-list-solved">
                                 <li>Import property from PMS in one click</li>
-                                <li>Assign a payment ruleset &mdash; billing is configured</li>
-                                <li>Items &amp; appliances tracked from day one</li>
+                                <li>Assign a payment ruleset, billing is configured</li>
+                                <li>Items and appliances tracked from day one</li>
                                 <li>Owner portal active immediately</li>
                                 <li>Ready to manage on the first reservation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem 4: Same-Day Turnover -->
+                <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon">&#129529;</div>
+                        <h3>Coordinating a Same-Day Turnover</h3>
+                        <p class="problem-subtitle">Cleaning, supplies, and pay</p>
+                    </div>
+                    <div class="problem-comparison">
+                        <div class="problem-before">
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">Texts &amp; spreadsheets</div>
+                            <ul class="problem-list">
+                                <li>Text cleaners to confirm who is taking the job</li>
+                                <li>No central checklist, no proof of completion</li>
+                                <li>Cleaner asks for supplies by text, you forget to order</li>
+                                <li>Track cleaner pay in a separate spreadsheet</li>
+                                <li>Forget to bill the owner for the cleaning</li>
+                            </ul>
+                        </div>
+                        <div class="problem-after">
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">Automatic</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Job created from the reservation, preferred cleaner auto-assigned</li>
+                                <li>Cleaner uses the mobile app with photos and checklist</li>
+                                <li>Low supplies trigger a restock job automatically</li>
+                                <li>Pay is tracked per job, paid out via Venmo, Zelle, or check</li>
+                                <li>Cleaning cost flows straight to the owner statement</li>
                             </ul>
                         </div>
                     </div>
@@ -292,7 +325,7 @@ require_once __DIR__ . '/includes/header.php';
                             <div class="payout-example-item payout-example-result">
                                 <div class="payout-example-label">Owner credit needed</div>
                                 <div class="payout-example-value">$70</div>
-                                <div class="payout-example-note">Per reservation &mdash; every single time</div>
+                                <div class="payout-example-note">Per reservation, every single time</div>
                             </div>
                         </div>
                     </div>
@@ -311,51 +344,147 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Features</span>
                 <h2 class="section-title">Everything You Need to Run Your Rentals</h2>
                 <p class="section-description">
-                    From reservations to maintenance, billing to reporting - CohostIQ handles it all so you can focus on growing your business.
+                    Reservations, maintenance, cleaning, billing, reporting. The whole operational layer in one place.
                 </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">&#128279;</div>
-                    <h3 class="feature-title">PMS Integration</h3>
+                    <div class="feature-icon">&#128176;</div>
+                    <h3 class="feature-title">Owner Billing &amp; Statements</h3>
                     <p class="feature-description">
-                        Connect to Hospitable and other PMS platforms. We enhance your operations with billing, reporting, and team tools your PMS doesn't provide.
+                        Per-property fee rules, expense pass-throughs, recurring charges, and management fees. Statements generate themselves from synced reservations.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128181;</div>
+                    <h3 class="feature-title">Cohost Payout Math</h3>
+                    <p class="feature-description">
+                        Every Airbnb payout method handled: cohost payouts, host-only fees, split payouts. Owner credits calculated per reservation. Switch methods mid-month without breaking billing.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#129529;</div>
+                    <h3 class="feature-title">Cleaning Operations</h3>
+                    <p class="feature-description">
+                        Jobs auto-created from reservations. Preferred cleaner assignment, mobile checklists with photos, conditional task lists, and cleaner payroll. Cleaning costs flow straight to the owner statement.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128736;</div>
-                    <h3 class="feature-title">Maintenance Tracking</h3>
+                    <h3 class="feature-title">Maintenance &amp; Items</h3>
                     <p class="feature-description">
-                        Track appliances and items per property, identify repeat offenders, and auto-create tickets from Hospitable, HostBuddy, and Turno integrations.
+                        Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable, HostBuddy, and Turno.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128176;</div>
-                    <h3 class="feature-title">Automated Billing</h3>
+                    <div class="feature-icon">&#128230;</div>
+                    <h3 class="feature-title">Supplies &amp; Linens</h3>
                     <p class="feature-description">
-                        Generate owner statements, track expenses, and manage payouts. Supports all Airbnb payout methods and syncs directly to QuickBooks.
+                        Kit-based supply scaling per property. Auto-restock jobs when stock runs low. Off-site linen checkout tracking so nothing goes missing.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128101;</div>
-                    <h3 class="feature-title">Team Management</h3>
+                    <div class="feature-icon">&#128279;</div>
+                    <h3 class="feature-title">PMS Integration</h3>
                     <p class="feature-description">
-                        Assign roles, delegate tasks, and coordinate with cleaners, maintenance staff, and property owners seamlessly.
+                        Connect to Hospitable and other PMS platforms. Reservations and properties sync automatically. Keep using your PMS for guests, channels, and messaging.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128202;</div>
-                    <h3 class="feature-title">Powerful Reporting</h3>
+                    <div class="feature-icon">&#128218;</div>
+                    <h3 class="feature-title">QuickBooks Sync</h3>
                     <p class="feature-description">
-                        Get insights into occupancy rates, revenue trends, and year-over-year comparisons. Make data-driven decisions.
+                        Owner statements, expenses, and payouts post to QuickBooks automatically. Mapped to your chart of accounts. No double entry, no reclassifying.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128274;</div>
                     <h3 class="feature-title">Owner Portal</h3>
                     <p class="feature-description">
-                        Give property owners secure access to view their statements, reservations, and property performance anytime.
+                        Owners log in to view statements, upcoming reservations, performance, and maintenance history. Cuts down on owner email threads.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where CohostIQ Fits -->
+    <section class="section section-gray" id="stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Where CohostIQ Fits</span>
+                <h2 class="section-title">We Don't Replace Your PMS. We Fill the Gap Behind It.</h2>
+                <p class="section-description">
+                    Most tools cover one slice of the cohost workflow. CohostIQ ties operations to the owner statement so every cleaning, repair, supply, and payout lands on the right bill automatically.
+                </p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
+                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Your PMS</div>
+                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Hospitable, Guesty, OwnerRez</div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
+                        <div style="color: #1d2144; font-size: 14px;">Listings, channels, guest messaging, pricing, reservations.</div>
+                    </div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
+                        <div style="color: #637381; font-size: 14px;">Owner billing, cohost payout credits, per-owner fee rules, operations beyond guest comms.</div>
+                    </div>
+                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
+                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
+                        <div style="color: #1d2144; font-size: 14px;">We pull reservations from your PMS and run the business behind the property.</div>
+                    </div>
+                </div>
+
+                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
+                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Breezeway</div>
+                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Operations platform</div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
+                        <div style="color: #1d2144; font-size: 14px;">Cleaning and maintenance scheduling, inspections, task management.</div>
+                    </div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
+                        <div style="color: #637381; font-size: 14px;">Owner statements, cohost payout math, QuickBooks reconciliation, payroll for your crews.</div>
+                    </div>
+                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
+                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
+                        <div style="color: #1d2144; font-size: 14px;">We run operations and tie every cost directly to the owner who owes it.</div>
+                    </div>
+                </div>
+
+                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
+                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Turno</div>
+                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Cleaner marketplace</div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
+                        <div style="color: #1d2144; font-size: 14px;">Finding cleaners, project scheduling, completion photos.</div>
+                    </div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
+                        <div style="color: #637381; font-size: 14px;">In-house crew dispatch, payroll, supplies, linens, owner billing.</div>
+                    </div>
+                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
+                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
+                        <div style="color: #1d2144; font-size: 14px;">Import Turno templates and projects, or run your own crews end to end.</div>
+                    </div>
+                </div>
+
+                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
+                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">QuickBooks Alone</div>
+                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Accounting only</div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
+                        <div style="color: #1d2144; font-size: 14px;">General ledger, taxes, P&amp;L, bank reconciliation.</div>
+                    </div>
+                    <div style="margin-bottom: 14px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
+                        <div style="color: #637381; font-size: 14px;">Pulling reservations, calculating fees, cohost payout credits, per-property splits.</div>
+                    </div>
+                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
+                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
+                        <div style="color: #1d2144; font-size: 14px;">We do the calculations, then push clean invoices and bills into QuickBooks.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -410,7 +539,7 @@ require_once __DIR__ . '/includes/header.php';
                     <span class="section-label">Benefits</span>
                     <h2 class="section-title">Save Time, Save Money, Stay Organized</h2>
                     <p class="section-description" style="max-width: none;">
-                        CohostIQ isn't just software - it's your operational backbone that pays for itself.
+                        The operational backbone for your portfolio.
                     </p>
                     <div class="benefits-list">
                         <div class="benefit-item">
@@ -484,15 +613,15 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Why CohostIQ</span>
                 <h2 class="section-title">Finally, Operations That Scale With You</h2>
                 <p class="section-description">
-                    We built CohostIQ because we couldn't find tools that handled the operational side of property management. Your PMS handles guests - we handle everything else.
+                    We built CohostIQ because we couldn't find tools that handled the operational side of property management. Your PMS handles guests. We handle everything else.
                 </p>
             </div>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <p style="font-size: 1.125rem; color: #637381; margin-bottom: 24px;">
-                    Every new client or property used to mean hours of setup - configuring billing, setting up statements, onboarding into your systems. With CohostIQ, that setup is instant. <strong style="color: #1d2144;">Scale your portfolio without scaling your workload.</strong>
+                    Every new client or property used to mean hours of setup. Configuring billing, setting up statements, onboarding into your systems. With CohostIQ, that setup is instant. <strong style="color: #1d2144;">Scale your portfolio without scaling your workload.</strong>
                 </p>
                 <p style="font-size: 1.125rem; color: #637381;">
-                    Stop spending hours on invoicing every month. Stop tracking expenses in spreadsheets. Get the time back to focus on what matters - growing your business and delighting your owners.
+                    Stop spending hours on invoicing every month. Stop tracking expenses in spreadsheets. Get the time back to grow your business and take care of your owners.
                 </p>
             </div>
         </div>
