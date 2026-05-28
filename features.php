@@ -285,11 +285,12 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128181; Cleaner Pay &amp; Payroll</h3>
                     <p>
-                        Cleaner pay is calculated per job, totaled per pay period, and paid out the way your cleaners actually want to be paid. Cash, check, Venmo, Zelle, PayPal, or Stripe, with quick-pay deep links to skip the typing.
+                        Cleaner pay is calculated per job, totaled per pay period, and paid out the way your cleaners actually want to be paid. Cash, check, Venmo, Zelle, PayPal, Stripe, and QuickBooks payroll (coming soon), with quick-pay deep links to skip the typing.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Per-cleaner unpaid balance and full payment history</li>
                         <li>Quick-pay deep links to Venmo and PayPal with cleaner handles on file</li>
+                        <li>Pay cleaners through Stripe direct to their bank, or via QuickBooks payroll (coming soon)</li>
                         <li>Crew pay split: lead is paid (1099), sub members are hidden labor</li>
                         <li>Pay matrix view for fast rate changes across cleaners and property sizes</li>
                         <li>Job-level audit of what was earned, when, and who paid it</li>
@@ -326,7 +327,7 @@ require_once __DIR__ . '/includes/header.php';
                                 <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #ff6b6b, #ff8787); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">LK</div>
                                 <div>
                                     <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Linda K.</div>
-                                    <div style="font-size: 12px; color: #637381;">9 jobs, check</div>
+                                    <div style="font-size: 12px; color: #637381;">9 jobs, Stripe</div>
                                 </div>
                             </div>
                             <div style="font-weight: 700; color: #1d2144;">$1,215</div>

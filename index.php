@@ -294,7 +294,7 @@ require_once __DIR__ . '/includes/header.php';
                                 <li>Job created from the reservation, preferred cleaner auto-assigned</li>
                                 <li>Cleaner uses the mobile app with photos and checklist</li>
                                 <li>Low supplies trigger a restock job automatically</li>
-                                <li>Pay is tracked per job, paid out via Venmo, Zelle, or check</li>
+                                <li>Pay is tracked per job, paid via Venmo, Zelle, check, Stripe, or QuickBooks payroll (coming soon)</li>
                                 <li>Cleaning cost flows straight to the owner statement</li>
                             </ul>
                         </div>
@@ -484,6 +484,55 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="fit-card-section">
                         <div class="fit-card-label fit-card-label-us">CohostIQ</div>
                         <div class="fit-card-text">We do the calculations, then push clean invoices and bills into QuickBooks.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI / MCP Positioning -->
+    <section class="section ai-section" id="ai-mcp">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label ai-section-label">AI &amp; MCP</span>
+                <h2 class="section-title ai-section-title">AI Is Great For Guest Messages. Not For Your Owner Statement.</h2>
+                <p class="section-description ai-section-description">
+                    New MCP integrations let an LLM operate your PMS in plain English. Powerful for fuzzy work. Wrong tool for the deterministic work that has to be right, the same way, every single month.
+                </p>
+            </div>
+
+            <div class="ai-compare-grid">
+                <div class="ai-compare-card">
+                    <div class="ai-compare-label ai-compare-label-fuzzy">Where MCP and AI Agents Shine</div>
+                    <ul class="ai-compare-list">
+                        <li><span class="ai-bullet ai-bullet-fuzzy">&#9679;</span> Drafting guest replies and review responses</li>
+                        <li><span class="ai-bullet ai-bullet-fuzzy">&#9679;</span> Suggesting pricing tweaks and copy edits</li>
+                        <li><span class="ai-bullet ai-bullet-fuzzy">&#9679;</span> Summarizing portfolio activity</li>
+                        <li><span class="ai-bullet ai-bullet-fuzzy">&#9679;</span> Open-ended questions about your data</li>
+                    </ul>
+                </div>
+                <div class="ai-compare-card">
+                    <div class="ai-compare-label ai-compare-label-rules">Where Deterministic Rules Win</div>
+                    <ul class="ai-compare-list">
+                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Cohost payout credits, calculated correctly every reservation</li>
+                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Per-property fee structures applied without drift</li>
+                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Owner statement totals that foot to the penny</li>
+                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Pet fees, cleaning, and taxes allocated by rule, not by guess</li>
+                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> "Oops, I forgot to implement that rule" doesn't happen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ai-inside-block">
+                <div class="ai-inside-label">Where AI Fits Inside CohostIQ</div>
+                <div class="ai-inside-grid">
+                    <div class="ai-inside-card">
+                        <h4 class="ai-inside-title">Ask CohostIQ</h4>
+                        <p class="ai-inside-text">Built-in assistant grounded in your actual data. Ask "what was Sunset Villa's revenue last March?" or "any open maintenance at Lakeside?" and get real answers. Spot a problem mid-conversation? It can create the maintenance ticket for you.</p>
+                    </div>
+                    <div class="ai-inside-card">
+                        <h4 class="ai-inside-title">CohostIQ MCP <span class="ai-inside-badge">In Development</span></h4>
+                        <p class="ai-inside-text">Our own MCP server is in active development. Connect Claude, ChatGPT, or Cursor to your CohostIQ data for the fuzzy queries while the deterministic billing rules keep your statements safe.</p>
                     </div>
                 </div>
             </div>
