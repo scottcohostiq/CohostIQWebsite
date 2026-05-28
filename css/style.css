@@ -2428,3 +2428,197 @@ ul {
         justify-content: center;
     }
 }
+
+/* ===== Comparison table (features.php) ===== */
+.compare-table {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.compare-header,
+.compare-row {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    align-items: center;
+}
+
+.compare-header {
+    background: #f8fafc;
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1d2144;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.compare-row {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #1d2144;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.compare-row:last-child {
+    border-bottom: none;
+}
+
+.compare-row-even { background: #ffffff; }
+.compare-row-odd { background: #fafbfc; }
+
+.compare-cell {
+    text-align: center;
+}
+
+.compare-cell-cohost {
+    color: #4a6cf7;
+}
+
+.compare-cell-label {
+    display: none;
+    font-weight: 600;
+    color: #637381;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.compare-mark {
+    display: inline-block;
+}
+
+.compare-mark-full {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background: #13c296;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.compare-mark-partial {
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: #fff3cd;
+    color: #856404;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.compare-mark-none {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .compare-table {
+        border-radius: 12px;
+    }
+
+    .compare-header {
+        display: none;
+    }
+
+    .compare-row {
+        display: block;
+        padding: 18px 18px 8px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .compare-row .compare-feature {
+        font-weight: 700;
+        color: #1d2144;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .compare-row .compare-cell {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 8px 0;
+        border-top: 1px solid #f1f5f9;
+    }
+
+    .compare-cell-label {
+        display: inline-block;
+    }
+
+    .compare-row .compare-cell[data-vendor="CohostIQ"] .compare-cell-label {
+        color: #4a6cf7;
+    }
+}
+
+/* ===== Where CohostIQ Fits cards (index.php) ===== */
+.fit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.fit-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+}
+
+.fit-card-name {
+    font-weight: 700;
+    color: #1d2144;
+    font-size: 1.125rem;
+    margin-bottom: 4px;
+}
+
+.fit-card-tag {
+    font-size: 12px;
+    color: #637381;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fit-card-section {
+    margin-bottom: 14px;
+}
+
+.fit-card-section:last-child {
+    margin-bottom: 0;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.fit-card-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.fit-card-label-handles { color: #13c296; }
+.fit-card-label-gap { color: #ff6b6b; }
+.fit-card-label-us { color: #4a6cf7; }
+
+.fit-card-text {
+    color: #1d2144;
+    font-size: 14px;
+}
+
+.fit-card-text-muted {
+    color: #637381;
+}
+
+@media (max-width: 480px) {
+    .fit-card {
+        padding: 22px 20px;
+    }
+
+    .fit-card-name {
+        font-size: 1rem;
+    }
+}

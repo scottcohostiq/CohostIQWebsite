@@ -31,47 +31,49 @@ require_once __DIR__ . '/includes/header.php';
                     We're not a PMS replacement. On the cleaning side, we do everything Turno does except run their marketplace, and we add the billing tie-in nobody else has. We're the layer that connects your operations to your owner billing so nothing gets dropped between systems.
                 </p>
             </div>
-            <div style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden;">
-                <div style="display: grid; grid-template-columns: 2fr repeat(4, 1fr); background: #f8fafc; padding: 16px 20px; font-size: 13px; font-weight: 600; color: #1d2144; border-bottom: 1px solid #e2e8f0;">
-                    <div>Capability</div>
-                    <div style="text-align: center; color: #4a6cf7;">CohostIQ</div>
-                    <div style="text-align: center;">PMS</div>
-                    <div style="text-align: center;">Breezeway</div>
-                    <div style="text-align: center;">Turno</div>
-                </div>
-                <?php
-                $rows = [
-                    ['Reservations and channel management', 'partial', 'full', 'no', 'no'],
-                    ['Owner statements and billing', 'full', 'no', 'no', 'no'],
-                    ['Cohost payout credit calculations', 'full', 'no', 'no', 'no'],
-                    ['Per-property fee rules and pass-throughs', 'full', 'no', 'no', 'no'],
-                    ['Cleaning job scheduling and dispatch', 'full', 'no', 'full', 'full'],
-                    ['Conditional checklists (day, guests, pets, season)', 'full', 'no', 'partial', 'no'],
-                    ['Cleaner marketplace (find new cleaners on demand)', 'no', 'no', 'no', 'full'],
-                    ['In-house crew payroll', 'full', 'no', 'partial', 'no'],
-                    ['Maintenance tickets and item tracking', 'full', 'partial', 'full', 'no'],
-                    ['Supplies and linen tracking', 'full', 'no', 'partial', 'no'],
-                    ['Owner-facing portal with statements', 'full', 'partial', 'no', 'no'],
-                    ['QuickBooks sync for billing', 'full', 'no', 'no', 'no'],
-                ];
-                foreach ($rows as $i => $r) {
-                    $bg = $i % 2 === 0 ? '#ffffff' : '#fafbfc';
-                    echo '<div style="display: grid; grid-template-columns: 2fr repeat(4, 1fr); padding: 14px 20px; font-size: 14px; color: #1d2144; background: ' . $bg . '; border-bottom: 1px solid #f1f5f9;">';
-                    echo '<div>' . htmlspecialchars($r[0]) . '</div>';
-                    for ($c = 1; $c <= 4; $c++) {
-                        $val = $r[$c];
-                        if ($val === 'full') {
-                            $mark = '<span style="display: inline-block; width: 22px; height: 22px; line-height: 22px; border-radius: 50%; background: #13c296; color: white; font-weight: 700; font-size: 13px;">&#10003;</span>';
-                        } elseif ($val === 'partial') {
-                            $mark = '<span style="display: inline-block; padding: 2px 10px; border-radius: 12px; background: #fff3cd; color: #856404; font-size: 11px; font-weight: 600;">Partial</span>';
-                        } else {
-                            $mark = '<span style="color: #cbd5e1; font-size: 18px;">&minus;</span>';
-                        }
-                        echo '<div style="text-align: center;">' . $mark . '</div>';
-                    }
-                    echo '</div>';
+            <?php
+            $vendors = ['CohostIQ', 'PMS', 'Breezeway', 'Turno'];
+            $rows = [
+                ['Reservations and channel management', 'partial', 'full', 'no', 'no'],
+                ['Owner statements and billing', 'full', 'no', 'no', 'no'],
+                ['Cohost payout credit calculations', 'full', 'no', 'no', 'no'],
+                ['Per-property fee rules and pass-throughs', 'full', 'no', 'no', 'no'],
+                ['Cleaning job scheduling and dispatch', 'full', 'no', 'full', 'full'],
+                ['Conditional checklists (day, guests, pets, season)', 'full', 'no', 'partial', 'no'],
+                ['Cleaner marketplace (find new cleaners on demand)', 'no', 'no', 'no', 'full'],
+                ['In-house crew payroll', 'full', 'no', 'partial', 'no'],
+                ['Maintenance tickets and item tracking', 'full', 'partial', 'full', 'no'],
+                ['Supplies and linen tracking', 'full', 'no', 'partial', 'no'],
+                ['Owner-facing portal with statements', 'full', 'partial', 'no', 'no'],
+                ['QuickBooks sync for billing', 'full', 'no', 'no', 'no'],
+            ];
+            function compareMark($val) {
+                if ($val === 'full') {
+                    return '<span class="compare-mark compare-mark-full" aria-label="Yes">&#10003;</span>';
+                } elseif ($val === 'partial') {
+                    return '<span class="compare-mark compare-mark-partial" aria-label="Partial">Partial</span>';
                 }
-                ?>
+                return '<span class="compare-mark compare-mark-none" aria-label="No">&minus;</span>';
+            }
+            ?>
+            <div class="compare-table">
+                <div class="compare-header">
+                    <div class="compare-feature">Capability</div>
+                    <?php foreach ($vendors as $i => $v): ?>
+                        <div class="compare-cell <?php echo $i === 0 ? 'compare-cell-cohost' : ''; ?>"><?php echo htmlspecialchars($v); ?></div>
+                    <?php endforeach; ?>
+                </div>
+                <?php foreach ($rows as $i => $r): ?>
+                    <div class="compare-row <?php echo $i % 2 === 0 ? 'compare-row-even' : 'compare-row-odd'; ?>">
+                        <div class="compare-feature"><?php echo htmlspecialchars($r[0]); ?></div>
+                        <?php for ($c = 1; $c <= 4; $c++): ?>
+                            <div class="compare-cell" data-vendor="<?php echo htmlspecialchars($vendors[$c - 1]); ?>">
+                                <span class="compare-cell-label"><?php echo htmlspecialchars($vendors[$c - 1]); ?></span>
+                                <span class="compare-cell-mark"><?php echo compareMark($r[$c]); ?></span>
+                            </div>
+                        <?php endfor; ?>
+                    </div>
+                <?php endforeach; ?>
             </div>
             <p style="text-align: center; color: #637381; font-size: 13px; margin-top: 16px;">
                 Comparison reflects core product surface area. Many of these tools integrate with CohostIQ rather than competing with it.

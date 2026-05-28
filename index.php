@@ -418,72 +418,72 @@ require_once __DIR__ . '/includes/header.php';
                     Most tools cover one slice of the cohost workflow. CohostIQ ties operations to the owner statement so every cleaning, repair, supply, and payout lands on the right bill automatically.
                 </p>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Your PMS</div>
-                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Hospitable, Guesty, OwnerRez</div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
-                        <div style="color: #1d2144; font-size: 14px;">Listings, channels, guest messaging, pricing, reservations.</div>
+            <div class="fit-grid">
+                <div class="fit-card">
+                    <div class="fit-card-name">Your PMS</div>
+                    <div class="fit-card-tag">Hospitable, Guesty, OwnerRez</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-handles">Handles</div>
+                        <div class="fit-card-text">Listings, channels, guest messaging, pricing, reservations.</div>
                     </div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
-                        <div style="color: #637381; font-size: 14px;">Owner billing, cohost payout credits, per-owner fee rules, operations beyond guest comms.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-gap">Gap</div>
+                        <div class="fit-card-text fit-card-text-muted">Owner billing, cohost payout credits, per-owner fee rules, operations beyond guest comms.</div>
                     </div>
-                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
-                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
-                        <div style="color: #1d2144; font-size: 14px;">We pull reservations from your PMS and run the business behind the property.</div>
-                    </div>
-                </div>
-
-                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Breezeway</div>
-                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Operations platform</div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
-                        <div style="color: #1d2144; font-size: 14px;">Cleaning and maintenance scheduling, inspections, task management.</div>
-                    </div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
-                        <div style="color: #637381; font-size: 14px;">Owner statements, cohost payout math, QuickBooks reconciliation, payroll for your crews.</div>
-                    </div>
-                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
-                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
-                        <div style="color: #1d2144; font-size: 14px;">We run operations and tie every cost directly to the owner who owes it.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-us">CohostIQ</div>
+                        <div class="fit-card-text">We pull reservations from your PMS and run the business behind the property.</div>
                     </div>
                 </div>
 
-                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">Turno</div>
-                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Cleaner marketplace</div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
-                        <div style="color: #1d2144; font-size: 14px;">A marketplace for finding new cleaners on demand.</div>
+                <div class="fit-card">
+                    <div class="fit-card-name">Breezeway</div>
+                    <div class="fit-card-tag">Operations platform</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-handles">Handles</div>
+                        <div class="fit-card-text">Cleaning and maintenance scheduling, inspections, task management.</div>
                     </div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
-                        <div style="color: #637381; font-size: 14px;">Conditional checklists, crew lead and sub pay splits, in-house payroll, supplies, linens, and owner billing.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-gap">Gap</div>
+                        <div class="fit-card-text fit-card-text-muted">Owner statements, cohost payout math, QuickBooks reconciliation, payroll for your crews.</div>
                     </div>
-                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
-                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
-                        <div style="color: #1d2144; font-size: 14px;">A full Turno replacement for the operations side, plus the billing tie-in Turno doesn't do. Keep Turno for the marketplace if you want, we import the projects.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-us">CohostIQ</div>
+                        <div class="fit-card-text">We run operations and tie every cost directly to the owner who owes it.</div>
                     </div>
                 </div>
 
-                <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #1d2144; font-size: 1.125rem; margin-bottom: 4px;">QuickBooks Alone</div>
-                    <div style="font-size: 12px; color: #637381; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Accounting only</div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #13c296; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Handles</div>
-                        <div style="color: #1d2144; font-size: 14px;">General ledger, taxes, P&amp;L, bank reconciliation.</div>
+                <div class="fit-card">
+                    <div class="fit-card-name">Turno</div>
+                    <div class="fit-card-tag">Cleaner marketplace</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-handles">Handles</div>
+                        <div class="fit-card-text">A marketplace for finding new cleaners on demand.</div>
                     </div>
-                    <div style="margin-bottom: 14px;">
-                        <div style="font-size: 12px; font-weight: 600; color: #ff6b6b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Gap</div>
-                        <div style="color: #637381; font-size: 14px;">Pulling reservations, calculating fees, cohost payout credits, per-property splits.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-gap">Gap</div>
+                        <div class="fit-card-text fit-card-text-muted">Conditional checklists, crew lead and sub pay splits, in-house payroll, supplies, linens, and owner billing.</div>
                     </div>
-                    <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
-                        <div style="font-size: 12px; font-weight: 600; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">CohostIQ</div>
-                        <div style="color: #1d2144; font-size: 14px;">We do the calculations, then push clean invoices and bills into QuickBooks.</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-us">CohostIQ</div>
+                        <div class="fit-card-text">A full Turno replacement for the operations side, plus the billing tie-in Turno doesn't do. Keep Turno for the marketplace if you want, we import the projects.</div>
+                    </div>
+                </div>
+
+                <div class="fit-card">
+                    <div class="fit-card-name">QuickBooks Alone</div>
+                    <div class="fit-card-tag">Accounting only</div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-handles">Handles</div>
+                        <div class="fit-card-text">General ledger, taxes, P&amp;L, bank reconciliation.</div>
+                    </div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-gap">Gap</div>
+                        <div class="fit-card-text fit-card-text-muted">Pulling reservations, calculating fees, cohost payout credits, per-property splits.</div>
+                    </div>
+                    <div class="fit-card-section">
+                        <div class="fit-card-label fit-card-label-us">CohostIQ</div>
+                        <div class="fit-card-text">We do the calculations, then push clean invoices and bills into QuickBooks.</div>
                     </div>
                 </div>
             </div>
