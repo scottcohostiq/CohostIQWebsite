@@ -149,21 +149,23 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Our guided onboarding takes you through these steps:
+                            Our guided wizard walks you through 13 steps. 5 are required to go live; the rest you can skip and return to anytime. Each step includes a worked example so you know what to enter.
                             <ol style="margin-top: 12px; padding-left: 20px;">
-                                <li><strong>What to Expect</strong> - Overview of the setup process and what you'll configure</li>
-                                <li><strong>Define Locations</strong> - Create your Markets, Cities, and Communities to organize properties</li>
-                                <li><strong>Payment Rules</strong> - Set up commission rulesets for how you get paid (management fees, owner-paid fees)</li>
-                                <li><strong>Connect Your PMS</strong> - Link to Hospitable or other property management systems (optional)</li>
-                                <li><strong>QuickBooks</strong> - Connect your QuickBooks account for accounting integration (optional)</li>
-                                <li><strong>Import Properties</strong> - Add properties from your PMS, manually, or via CSV import</li>
-                                <li><strong>Co-Host Rules</strong> - Configure billing rules and assign payment rulesets to properties</li>
-                                <li><strong>Taxes</strong> - Set up tax rates for your locations</li>
-                                <li><strong>Import Reservations</strong> - Bring in existing bookings from your calendar feeds</li>
-                                <li><strong>Team Members</strong> - Invite staff and assign roles (Cleaners, Maintenance, CSRs, etc.)</li>
-                                <li><strong>Company Settings</strong> - Configure company-wide preferences and defaults</li>
-                                <li><strong>Review & Go Live</strong> - Review your setup and activate your account!</li>
+                                <li><strong>Welcome</strong> (required). Quick orientation to what's ahead.</li>
+                                <li><strong>Locations</strong> (required). Set up your Market, City, and Community structure. Drives tax rates, reporting, and who can see which properties.</li>
+                                <li><strong>Connect PMS</strong> (optional). Link Hospitable or your other PMS so properties and reservations sync automatically.</li>
+                                <li><strong>QuickBooks</strong> (optional). Connect QuickBooks and import existing owners, products, and vendors.</li>
+                                <li><strong>Payments</strong> (optional). Connect Stripe for direct-booking deposits, damage charges, and owner payouts.</li>
+                                <li><strong>Payment Rules</strong> (required). Define how owners are billed: management commissions, cleaning passthroughs, pet fee splits, per-stay fees, and more.</li>
+                                <li><strong>Properties</strong> (required). Import from your PMS, upload a CSV, or add manually. Assign each property to a payment ruleset.</li>
+                                <li><strong>Taxes</strong> (optional). Per-jurisdiction rates with effective dates, plus platform handling (who collects, who remits, by channel).</li>
+                                <li><strong>Import Reservations</strong> (optional). Backfill historical bookings so you get year-over-year reporting and complete tax records from day one.</li>
+                                <li><strong>Cohost Rules</strong> (optional). Configure your Airbnb cohost payout method per property. 5 methods supported: Cleaning Only, Cleaning + %, % excluding Cleaning, % including Cleaning, or Fixed per Booking.</li>
+                                <li><strong>Users</strong> (optional). Invite team members with role-scoped access (Manager, Maintenance, Cleaner, etc.).</li>
+                                <li><strong>Company Settings</strong> (optional). Company name, logo, timezone, and contact info that appears on owner statements and notifications.</li>
+                                <li><strong>Review &amp; Go Live</strong> (required). Review everything and activate your account.</li>
                             </ol>
+                            <p style="margin-top: 12px;">Most users finish the required steps in 15 to 30 minutes. The optional steps can be done whenever you're ready.</p>
                         </div>
                     </div>
                 </div>
