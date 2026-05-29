@@ -502,13 +502,13 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="feature-detail-text">
                     <h3>&#128181; Every Airbnb Payout Method, Handled</h3>
                     <p>
-                        Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ supports all of them, and switching an owner from one method to another mid-month won't break your billing.
+                        Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ handles all of them. The fee math is right whether your owners are on cohost payouts, host-only fees, or split payouts, with no manual workarounds.
                     </p>
                     <ul class="feature-detail-list">
                         <li><strong>Cohost Payouts:</strong> Airbnb pays you directly, then you pay your owner their share</li>
                         <li><strong>Host-Only Fees:</strong> Airbnb pays the owner, and your management fee is deducted automatically</li>
                         <li><strong>Split Payouts:</strong> Airbnb splits the payout between you and the owner based on your agreement</li>
-                        <li>Switch an owner from one method to another mid-month without breaking your billing</li>
+                        <li>Different owners can be on different methods, and our calculations are correct for each</li>
                         <li>Per-property payout rules so different owners can be on different methods</li>
                         <li>Accurate fee calculations regardless of which method each property uses</li>
                     </ul>

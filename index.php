@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/header.php';
                         After years of managing vacation rentals as cohosts ourselves, we got tired of the spreadsheet chaos. Tracking different payout methods, calculating management fees, generating owner statements. It was eating up hours every month.
                     </p>
                     <p>
-                        We built CohostIQ to solve the problems we faced every day. No more guessing which payout method an owner is using. No more manual calculations when someone switches from cohost payouts to host-only fees.
+                        We built CohostIQ to solve the problems we faced every day. No more guessing which payout method an owner is using. No more manual fee math when half your owners are on cohost payouts and the other half are on host-only fees.
                     </p>
                     <p class="about-highlight">
                         We understand the complexities of cohosting because we live them too.
@@ -124,8 +124,8 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="about-feature-item">
                             <span class="about-check">&#10003;</span>
                             <div>
-                                <strong>Seamless Transitions</strong>
-                                <p>Switch owners from cohost payouts to host-only fees without breaking your billing</p>
+                                <strong>Effortless Billing</strong>
+                                <p>Handle cohost payouts and host-only fees with ease</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
@@ -359,7 +359,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="feature-icon">&#128181;</div>
                     <h3 class="feature-title">Cohost Payout Math</h3>
                     <p class="feature-description">
-                        Every Airbnb payout method handled: cohost payouts, host-only fees, split payouts. Owner credits calculated per reservation. Switch methods mid-month without breaking billing.
+                        Every Airbnb payout method handled: cohost payouts, host-only fees, split payouts. Owner credits calculated per reservation. Different owners on different methods, no spreadsheet workarounds.
                     </p>
                 </div>
                 <div class="feature-card">
