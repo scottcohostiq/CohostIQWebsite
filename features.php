@@ -181,6 +181,48 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Feature: Maintenance Mobile App -->
+    <section class="feature-detail">
+        <div class="container">
+            <div class="feature-detail-content">
+                <div class="feature-detail-text">
+                    <h3>&#128295; Mobile App for Maintenance Crews</h3>
+                    <p>
+                        A field-ready app for in-house maintenance staff and contractors. Tickets show on the technician's phone with full property and item history, so they walk in already knowing what they're working on. They mark complete with photos and parts used, and the cost lands on the right owner statement automatically.
+                    </p>
+                    <ul class="feature-detail-list">
+                        <li>Assigned tickets with property, item, and full repair history on hand</li>
+                        <li>Photo uploads of the problem and the completed fix</li>
+                        <li>Log parts used, labor hours, and notes per ticket</li>
+                        <li>Optional GPS check-in to confirm arrival</li>
+                        <li>Push notifications and SMS for new and updated assignments</li>
+                        <li>Single sign-on from the manager portal, no separate contractor accounts</li>
+                        <li>Costs flow straight to the owner statement with full audit trail</li>
+                    </ul>
+                </div>
+                <div class="feature-detail-image">
+                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 28px; color: white;">
+                        <div style="font-size: 12px; opacity: 0.7; margin-bottom: 4px;">Ticket #1184</div>
+                        <div style="font-weight: 700; font-size: 1.25rem; margin-bottom: 4px;">HVAC Not Cooling</div>
+                        <div style="font-size: 13px; opacity: 0.8; margin-bottom: 20px;">Lakeside Cabin, Samsung HVAC Unit</div>
+                        <div style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.35); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px;">
+                            <div style="font-size: 11px; font-weight: 600; color: #ff9b8a; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px;">Repeat Issue</div>
+                            <div style="font-size: 13px; opacity: 0.9;">4 repairs this year. Last service 47 days ago.</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px;">Photo: thermostat reading</span>
+                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 14px; font-weight: 600;">Log parts: capacitor + labor 1.5 hrs</span>
+                            <span style="font-size: 12px; opacity: 0.7;">In progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Feature: Cleaning Operations -->
     <section class="feature-detail">
         <div class="container">
