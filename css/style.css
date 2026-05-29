@@ -1139,7 +1139,7 @@ ul {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+    max-height: 3000px;
 }
 
 .faq-answer-content {
