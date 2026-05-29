@@ -206,7 +206,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
 
             <p class="pricing-enterprise">
-                Have questions about pricing? <a href="mailto:support@cohostiq.com" style="color: #4a6cf7;">Contact us</a> - we're happy to help.
+                Have questions about pricing? <a href="mailto:support@cohostiq.app" style="color: #4a6cf7;">Contact us</a>, we're happy to help.
             </p>
         </div>
     </section>

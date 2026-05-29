@@ -82,7 +82,7 @@ require_once __DIR__ . '/includes/header.php';
                     <ul>
                         <li>Replying <strong>STOP</strong> to any message you receive from us</li>
                         <li>Updating your notification preferences in your account settings</li>
-                        <li>Contacting us at <a href="mailto:support@cohostiq.com">support@cohostiq.com</a></li>
+                        <li>Contacting us at <a href="mailto:support@cohostiq.app">support@cohostiq.app</a></li>
                     </ul>
                     <p>
                         After opting out, you will receive a one-time confirmation message. You will not receive any further SMS/MMS messages from us unless you opt back in. Opting out of SMS/MMS does not affect other communications (e.g., email).
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/header.php';
                     <ul>
                         <li>Clicking the <strong>unsubscribe</strong> link at the bottom of any marketing email</li>
                         <li>Updating your email preferences in your account settings</li>
-                        <li>Contacting us at <a href="mailto:support@cohostiq.com">support@cohostiq.com</a></li>
+                        <li>Contacting us at <a href="mailto:support@cohostiq.app">support@cohostiq.app</a></li>
                     </ul>
                     <p>
                         Please note that even if you opt out of marketing emails, you will continue to receive transactional emails necessary for the operation of your account (e.g., billing receipts, security alerts).
@@ -181,7 +181,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li><strong>Opt-Out:</strong> Opt out of marketing communications (email, SMS/MMS) at any time</li>
                     </ul>
                     <p>
-                        To exercise any of these rights, please contact us at <a href="mailto:support@cohostiq.com">support@cohostiq.com</a>. We will respond to your request within 30 days.
+                        To exercise any of these rights, please contact us at <a href="mailto:support@cohostiq.app">support@cohostiq.app</a>. We will respond to your request within 30 days.
                     </p>
                 </div>
 
@@ -212,7 +212,7 @@ require_once __DIR__ . '/includes/header.php';
                         If you have any questions about this Privacy Policy, your personal information, or our SMS/MMS and email practices, please contact us:
                     </p>
                     <ul>
-                        <li><strong>Email:</strong> <a href="mailto:support@cohostiq.com">support@cohostiq.com</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:support@cohostiq.app">support@cohostiq.app</a></li>
                         <li><strong>Website:</strong> <a href="https://www.cohostiq.com">www.cohostiq.com</a></li>
                     </ul>
                 </div>

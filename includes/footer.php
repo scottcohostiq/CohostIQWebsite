@@ -24,8 +24,8 @@
                 <div class="footer-column">
                     <h4>Company</h4>
                     <nav class="footer-links" aria-label="Company links">
-                        <a href="mailto:support@cohostiq.com">Contact</a>
-                        <a href="mailto:support@cohostiq.com">Support</a>
+                        <a href="mailto:support@cohostiq.app">Contact</a>
+                        <a href="mailto:support@cohostiq.app">Support</a>
                     </nav>
                 </div>
                 <div class="footer-column">
