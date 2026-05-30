@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/header.php';
                         CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging.
                     </p>
                     <ul class="feature-detail-list">
-                        <li>Seamless connection to Hospitable and other PMS platforms</li>
+                        <li>OAuth connection to Hospitable, with more PMS platforms on the way</li>
                         <li>Automatic reservation sync for accurate billing calculations</li>
                         <li>Enhanced reporting beyond what your PMS offers</li>
                         <li>Keep using your PMS for guest communication and channel management</li>
@@ -455,7 +455,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Support for management fees, cleaning fees, and pass-through costs</li>
                         <li>PDF export for easy sharing with owners</li>
                         <li>All Airbnb payout methods: cohost payouts, host-only fees, and split payouts</li>
-                        <li>QuickBooks integration for seamless accounting</li>
+                        <li>QuickBooks integration so statements post directly without double entry</li>
                     </ul>
                 </div>
                 <div class="feature-detail-image">

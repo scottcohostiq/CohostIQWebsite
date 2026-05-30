@@ -110,7 +110,7 @@ require_once __DIR__ . '/includes/header.php';
                             Start Free Trial
                         </a>
                         <p class="form-note" style="margin-top: 16px; text-align: center;">
-                            First 2 months free — limited time offer. No contracts, cancel anytime.
+                            First 2 months free (limited time offer). No contracts, cancel anytime.
                         </p>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Pricing</span>
                 <h2 class="section-title">Simple Per-Property Pricing</h2>
                 <p class="section-description">
-                    Start with 2 months free, then pay per property — with volume discounts as you grow.
+                    Start with 2 months free, then pay per property with volume discounts as you grow.
                 </p>
             </div>
 
@@ -325,7 +325,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes! Your first 2 calendar months are completely free with all core features — it's our limited time launch offer. You'll get a 30-minute onboarding call to get you up and running. After your trial, pay per property with volume discounts.
+                            Yes. Your first 2 calendar months are completely free with all core features (limited time launch offer). You'll get a 30-minute onboarding call to help you get up and running. After your trial, pay per property with volume discounts.
                         </div>
                     </div>
                 </div>

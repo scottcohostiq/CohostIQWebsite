@@ -29,7 +29,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="policy-section">
                     <h2>Introduction</h2>
                     <p>
-                        CohostIQ ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at www.cohostiq.com, use our application at cohostiq.app, or interact with us through email, SMS/MMS messaging, or other communications.
+                        CohostIQ ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at www.cohostiq.app, use our application at cohostiq.app, or interact with us through email, SMS/MMS messaging, or other communications.
                     </p>
                     <p>
                         By using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree with this policy, please do not use our services.
@@ -213,7 +213,7 @@ require_once __DIR__ . '/includes/header.php';
                     </p>
                     <ul>
                         <li><strong>Email:</strong> <a href="mailto:support@cohostiq.app">support@cohostiq.app</a></li>
-                        <li><strong>Website:</strong> <a href="https://www.cohostiq.com">www.cohostiq.com</a></li>
+                        <li><strong>Website:</strong> <a href="https://www.cohostiq.app">www.cohostiq.app</a></li>
                     </ul>
                 </div>
 

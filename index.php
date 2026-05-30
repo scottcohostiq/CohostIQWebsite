@@ -17,14 +17,16 @@ $pageSchema = '{
         "description": "2 months free trial, then volume pricing from $7.25-$10/property/month"
     },
     "featureList": [
-        "PMS Integration",
-        "Automated Billing & Owner Statements",
-        "Maintenance Tracking",
-        "Team Management",
-        "Reporting & Analytics",
+        "Owner Billing and Statements",
+        "Cohost Payout Math (5 methods)",
+        "Cleaning Operations and Crew Payroll",
+        "Maintenance and Property Item Tracking",
+        "Supplies and Linen Tracking",
+        "PMS Integration (Hospitable)",
+        "QuickBooks Sync",
+        "Mobile Apps for Cleaners and Maintenance",
         "Owner Portal",
-        "QuickBooks Integration",
-        "All Airbnb Payout Methods"
+        "Ask CohostIQ Assistant"
     ]
 }';
 require_once __DIR__ . '/includes/header.php';
