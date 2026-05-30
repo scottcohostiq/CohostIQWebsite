@@ -156,37 +156,136 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                     <div class="pricing-note">
-                        <p><strong>Volume pricing:</strong> Pricing uses graduated tiers. For example, 55 properties = 25 × $10 + 25 × $9 + 5 × $8 = $465/mo.</p>
+                        <p><strong>Volume pricing:</strong> Pricing uses graduated tiers. For example, 55 properties = 25 &times; $10 + 25 &times; $9 + 5 &times; $8 = $515/mo.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Example Calculations -->
-            <div class="pricing-examples">
-                <h3>Example Monthly Costs</h3>
-                <div class="pricing-examples-grid">
-                    <div class="pricing-example-item">
-                        <div class="example-label">5 properties</div>
-                        <div class="example-price">$50</div>
-                        <div class="example-calc">5 x $10/ea</div>
-                    </div>
-                    <div class="pricing-example-item">
-                        <div class="example-label">10 properties</div>
-                        <div class="example-price">$100</div>
-                        <div class="example-calc">10 x $10/ea</div>
-                    </div>
-                    <div class="pricing-example-item">
-                        <div class="example-label">25 properties</div>
-                        <div class="example-price">$250</div>
-                        <div class="example-calc">25 x $10/ea</div>
-                    </div>
-                    <div class="pricing-example-item">
-                        <div class="example-label">50 properties</div>
-                        <div class="example-price">$475</div>
-                        <div class="example-calc">25 x $10 + 25 x $9</div>
+            <!-- Pricing Calculator -->
+            <div class="pricing-calculator" id="pricingCalculator">
+                <h3>Estimate Your Monthly Cost</h3>
+                <p class="pricing-calculator-sub">Drag the slider or type a property count.</p>
+
+                <div class="pricing-calc-input-row">
+                    <input type="range" id="calcSlider" class="pricing-calc-slider"
+                           min="1" max="300" value="25" step="1"
+                           aria-label="Property count slider">
+                    <div class="pricing-calc-input-wrap">
+                        <input type="number" id="calcInput" class="pricing-calc-input"
+                               min="1" max="9999" value="25"
+                               aria-label="Property count">
+                        <span class="pricing-calc-input-label">properties</span>
                     </div>
                 </div>
+
+                <div class="pricing-calc-result">
+                    <div class="pricing-calc-result-main">
+                        <div class="pricing-calc-result-value" id="calcTotal">$250</div>
+                        <div class="pricing-calc-result-label">per month</div>
+                    </div>
+                    <div class="pricing-calc-result-meta">
+                        <div class="pricing-calc-result-row">
+                            <span>Effective rate</span>
+                            <strong id="calcEffective">$10.00 / property</strong>
+                        </div>
+                        <div class="pricing-calc-result-row">
+                            <span>Annual</span>
+                            <strong id="calcAnnual">$3,000 / year</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-calc-breakdown" id="calcBreakdown">
+                    <div class="pricing-calc-breakdown-label">Tier breakdown</div>
+                    <div class="pricing-calc-breakdown-rows" id="calcBreakdownRows"></div>
+                </div>
+
+                <p class="pricing-calc-foot">First 2 months are free. After that, you pay only for what you use.</p>
             </div>
+            <script>
+            (function() {
+                var slider     = document.getElementById('calcSlider');
+                var input      = document.getElementById('calcInput');
+                var totalEl    = document.getElementById('calcTotal');
+                var effEl      = document.getElementById('calcEffective');
+                var annualEl   = document.getElementById('calcAnnual');
+                var rowsEl     = document.getElementById('calcBreakdownRows');
+                if (!slider || !input || !totalEl) return;
+
+                // Graduated tiers: [upperBound, rate]
+                // Properties 1..25 at $10, 26..50 at $9, 51..100 at $8, 101+ at $7.25
+                var tiers = [
+                    { upTo: 25,  rate: 10.00, label: '1 to 25'   },
+                    { upTo: 50,  rate: 9.00,  label: '26 to 50'  },
+                    { upTo: 100, rate: 8.00,  label: '51 to 100' },
+                    { upTo: Infinity, rate: 7.25, label: '101+' }
+                ];
+
+                function fmt(n) {
+                    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+                }
+
+                function calculate(count) {
+                    count = Math.max(1, Math.floor(Number(count) || 1));
+                    var remaining = count;
+                    var prevBound = 0;
+                    var total = 0;
+                    var breakdown = [];
+                    for (var i = 0; i < tiers.length && remaining > 0; i++) {
+                        var tier = tiers[i];
+                        var capacity = tier.upTo - prevBound;
+                        var used = Math.min(remaining, capacity);
+                        if (used > 0) {
+                            var sub = used * tier.rate;
+                            total += sub;
+                            breakdown.push({ label: tier.label, count: used, rate: tier.rate, sub: sub });
+                        }
+                        remaining -= used;
+                        prevBound = tier.upTo;
+                    }
+                    return { count: count, total: total, breakdown: breakdown };
+                }
+
+                function render(count) {
+                    var r = calculate(count);
+                    totalEl.textContent = fmt(r.total);
+                    effEl.textContent = fmt(r.total / r.count) + ' / property';
+                    annualEl.textContent = fmt(r.total * 12) + ' / year';
+                    var html = '';
+                    for (var i = 0; i < r.breakdown.length; i++) {
+                        var b = r.breakdown[i];
+                        html += '<div class="pricing-calc-breakdown-row">'
+                            + '<span>' + b.count + ' &times; ' + fmt(b.rate) + ' (' + b.label + ')</span>'
+                            + '<strong>' + fmt(b.sub) + '</strong>'
+                            + '</div>';
+                    }
+                    rowsEl.innerHTML = html;
+                }
+
+                function syncFromSlider() {
+                    input.value = slider.value;
+                    render(slider.value);
+                }
+                function syncFromInput() {
+                    var n = Math.max(1, Math.floor(Number(input.value) || 1));
+                    if (n > 300) {
+                        slider.value = 300;
+                    } else {
+                        slider.value = n;
+                    }
+                    render(n);
+                }
+
+                slider.addEventListener('input', syncFromSlider);
+                input.addEventListener('input', syncFromInput);
+                input.addEventListener('blur', function() {
+                    var n = Math.max(1, Math.floor(Number(input.value) || 1));
+                    input.value = n;
+                });
+
+                render(slider.value);
+            })();
+            </script>
 
             <!-- What's Included -->
             <div class="pricing-included">
