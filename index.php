@@ -91,11 +91,26 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Integrations strip -->
+    <section class="integrations-strip" aria-label="Integrations">
+        <div class="container">
+            <p class="integrations-strip-label">Connects with the tools you already use</p>
+            <div class="integrations-strip-logos">
+                <span>Hospitable</span>
+                <span>QuickBooks</span>
+                <span>Stripe</span>
+                <span>Turno</span>
+                <span>HostBuddy</span>
+                <span>Airbnb</span>
+                <span>VRBO</span>
+            </div>
+        </div>
+    </section>
+
     <!-- About / Built by Cohosts -->
     <section class="section" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Our Story</span>
                 <h2 class="section-title">Built for Cohosts, by Cohosts</h2>
                 <p class="section-description">
                     We've been in your shoes. We know the pain of cohost billing because we've lived it.
@@ -343,7 +358,6 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Features</span>
                 <h2 class="section-title">Everything You Need to Run Your Rentals</h2>
                 <p class="section-description">
                     Reservations, maintenance, cleaning, billing, reporting. The whole operational layer in one place.
@@ -587,7 +601,6 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="benefits-content">
                 <div class="benefits-text">
-                    <span class="section-label">Benefits</span>
                     <h2 class="section-title">Save Time, Save Money, Stay Organized</h2>
                     <p class="section-description" style="max-width: none;">
                         The operational backbone for your portfolio.
@@ -624,34 +637,128 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </div>
                 <div class="benefits-image">
-                    <div class="benefits-card">
-                        <div class="benefits-card-header">
-                            <span class="benefits-card-title">Time Savings Example</span>
-                            <span class="benefits-card-badge">Per Month</span>
+                    <div class="ts-calc">
+                        <div class="ts-calc-header">
+                            <h3>Estimate Your Time Savings</h3>
+                            <p>Plug in your portfolio. The math uses the same benchmarks shown in the Common Problems section above.</p>
                         </div>
-                        <div class="savings-display">
-                            <div class="savings-amount">30+ hrs</div>
-                            <div class="savings-label">Saved on invoicing alone</div>
-                        </div>
-                        <div class="savings-breakdown">
-                            <div class="savings-item">
-                                <span class="savings-item-label">Owner statement generation</span>
-                                <span class="savings-item-value">Automated</span>
-                            </div>
-                            <div class="savings-item">
-                                <span class="savings-item-label">Owner chargeside tracking</span>
-                                <span class="savings-item-value">Centralized</span>
-                            </div>
-                            <div class="savings-item">
-                                <span class="savings-item-label">Missed charges</span>
-                                <span class="savings-item-value">Eliminated</span>
-                            </div>
-                            <div class="savings-item">
-                                <span class="savings-item-label">Manual data entry</span>
-                                <span class="savings-item-value">Reduced</span>
+
+                        <div class="ts-calc-input">
+                            <label for="tsProps">Properties</label>
+                            <div class="ts-calc-input-row">
+                                <input type="range" id="tsPropsSlider" min="1" max="200" value="25" step="1" aria-label="Properties slider">
+                                <input type="number" id="tsProps" min="1" max="9999" value="25" aria-label="Properties">
                             </div>
                         </div>
+
+                        <div class="ts-calc-input">
+                            <label for="tsOwners">Owners</label>
+                            <div class="ts-calc-input-row">
+                                <input type="range" id="tsOwnersSlider" min="1" max="200" value="20" step="1" aria-label="Owners slider">
+                                <input type="number" id="tsOwners" min="1" max="9999" value="20" aria-label="Owners">
+                            </div>
+                        </div>
+
+                        <div class="ts-calc-toggle">
+                            <label class="ts-calc-check">
+                                <input type="checkbox" id="tsCohost" checked>
+                                <span>Some properties use Airbnb cohost payouts</span>
+                            </label>
+                        </div>
+
+                        <div class="ts-calc-results">
+                            <div class="ts-calc-row ts-calc-row-manual">
+                                <div class="ts-calc-row-label">Manual approach</div>
+                                <div class="ts-calc-row-value" id="tsManual">~47 hrs</div>
+                                <div class="ts-calc-row-sub">per month on owner billing</div>
+                            </div>
+                            <div class="ts-calc-row ts-calc-row-cohostiq">
+                                <div class="ts-calc-row-label">With CohostIQ</div>
+                                <div class="ts-calc-row-value" id="tsCohostiq">~1.3 hrs</div>
+                                <div class="ts-calc-row-sub">review and send</div>
+                            </div>
+                            <div class="ts-calc-row ts-calc-row-saved">
+                                <div class="ts-calc-row-label">Time back every month</div>
+                                <div class="ts-calc-row-value" id="tsSaved">~45 hrs</div>
+                                <div class="ts-calc-row-sub" id="tsSavedSub">that's ~6 working days</div>
+                            </div>
+                        </div>
+
+                        <p class="ts-calc-note">Estimates based on benchmarks from the Common Problems section. Your actual numbers will vary with portfolio mix and current process.</p>
                     </div>
+                    <script>
+                    (function() {
+                        var propsSlider = document.getElementById('tsPropsSlider');
+                        var props       = document.getElementById('tsProps');
+                        var ownSlider   = document.getElementById('tsOwnersSlider');
+                        var owners      = document.getElementById('tsOwners');
+                        var cohost      = document.getElementById('tsCohost');
+                        var manualEl    = document.getElementById('tsManual');
+                        var ciqEl       = document.getElementById('tsCohostiq');
+                        var savedEl     = document.getElementById('tsSaved');
+                        var savedSub    = document.getElementById('tsSavedSub');
+                        if (!propsSlider) return;
+
+                        // Benchmarks pulled from the site's own Common Problems section:
+                        // 25 properties = 40-55 hours/month manually. Midpoint 47.5 = ~1.9 hrs/property.
+                        var HRS_PER_PROPERTY_MANUAL = 1.9;
+                        // Cohost reconciliation adds ~0.3 hrs/property/month per the same breakdown.
+                        var HRS_PER_PROPERTY_COHOST = 0.3;
+                        // CohostIQ: ~3 minutes per owner statement review + 30 min monthly review.
+                        var MIN_PER_OWNER_CIQ = 3;
+                        var MIN_FIXED_CIQ     = 30;
+
+                        function fmtHrs(hrs) {
+                            if (hrs < 1) return '~' + Math.round(hrs * 60) + ' min';
+                            if (hrs < 10) return '~' + hrs.toFixed(1) + ' hrs';
+                            return '~' + Math.round(hrs) + ' hrs';
+                        }
+
+                        function calculate() {
+                            var p = Math.max(1, parseInt(props.value, 10) || 1);
+                            var o = Math.max(1, parseInt(owners.value, 10) || 1);
+                            var cohostOn = cohost.checked;
+
+                            var manualHrs = p * HRS_PER_PROPERTY_MANUAL;
+                            if (cohostOn) manualHrs += p * HRS_PER_PROPERTY_COHOST;
+
+                            var ciqMin = (o * MIN_PER_OWNER_CIQ) + MIN_FIXED_CIQ;
+                            var ciqHrs = ciqMin / 60;
+
+                            var savedHrs = Math.max(0, manualHrs - ciqHrs);
+                            var workingDays = savedHrs / 8;
+
+                            manualEl.textContent = fmtHrs(manualHrs);
+                            ciqEl.textContent = fmtHrs(ciqHrs);
+                            savedEl.textContent = fmtHrs(savedHrs);
+
+                            var subText;
+                            if (workingDays >= 1) {
+                                subText = "that's ~" + (workingDays < 10 ? workingDays.toFixed(1) : Math.round(workingDays)) + ' working days';
+                            } else {
+                                subText = 'reclaimed every month';
+                            }
+                            savedSub.textContent = subText;
+                        }
+
+                        function syncPair(slider, input) {
+                            slider.addEventListener('input', function() {
+                                input.value = slider.value;
+                                calculate();
+                            });
+                            input.addEventListener('input', function() {
+                                var n = Math.max(1, parseInt(input.value, 10) || 1);
+                                if (n <= parseInt(slider.max, 10)) slider.value = n;
+                                else slider.value = slider.max;
+                                calculate();
+                            });
+                        }
+                        syncPair(propsSlider, props);
+                        syncPair(ownSlider, owners);
+                        cohost.addEventListener('change', calculate);
+                        calculate();
+                    })();
+                    </script>
                 </div>
             </div>
         </div>

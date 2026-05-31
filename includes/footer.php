@@ -19,6 +19,7 @@
                         <a href="features.php">Features</a>
                         <a href="signup.php#pricing">Pricing</a>
                         <a href="faq.php">FAQ</a>
+                        <a href="changelog.php">What's New</a>
                     </nav>
                 </div>
                 <div class="footer-column">
