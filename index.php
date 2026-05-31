@@ -107,6 +107,135 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Time Savings Calculator -->
+    <section class="section section-gray" id="savings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Much Time Could You Get Back?</h2>
+                <p class="section-description">
+                    Plug in your portfolio. The math uses the same hourly benchmarks shown in the Common Problems section below.
+                </p>
+            </div>
+            <div class="ts-calc ts-calc-wide">
+                <div class="ts-calc-input">
+                    <label for="tsProps">Properties</label>
+                    <div class="ts-calc-input-row">
+                        <input type="range" id="tsPropsSlider" min="1" max="200" value="25" step="1" aria-label="Properties slider">
+                        <input type="number" id="tsProps" min="1" max="9999" value="25" aria-label="Properties">
+                    </div>
+                </div>
+
+                <div class="ts-calc-input">
+                    <label for="tsOwners">Owners</label>
+                    <div class="ts-calc-input-row">
+                        <input type="range" id="tsOwnersSlider" min="1" max="200" value="20" step="1" aria-label="Owners slider">
+                        <input type="number" id="tsOwners" min="1" max="9999" value="20" aria-label="Owners">
+                    </div>
+                </div>
+
+                <div class="ts-calc-toggle">
+                    <label class="ts-calc-check">
+                        <input type="checkbox" id="tsCohost" checked>
+                        <span>Some properties use Airbnb cohost payouts</span>
+                    </label>
+                </div>
+
+                <div class="ts-calc-results">
+                    <div class="ts-calc-row ts-calc-row-manual">
+                        <div class="ts-calc-row-label">Manual approach</div>
+                        <div class="ts-calc-row-value" id="tsManual">~47 hrs</div>
+                        <div class="ts-calc-row-sub">per month on owner billing</div>
+                    </div>
+                    <div class="ts-calc-row ts-calc-row-cohostiq">
+                        <div class="ts-calc-row-label">With CohostIQ</div>
+                        <div class="ts-calc-row-value" id="tsCohostiq">~1.3 hrs</div>
+                        <div class="ts-calc-row-sub">review and send</div>
+                    </div>
+                    <div class="ts-calc-row ts-calc-row-saved">
+                        <div class="ts-calc-row-label">Time back every month</div>
+                        <div class="ts-calc-row-value" id="tsSaved">~45 hrs</div>
+                        <div class="ts-calc-row-sub" id="tsSavedSub">that's ~6 working days</div>
+                    </div>
+                </div>
+
+                <p class="ts-calc-note">Estimates based on benchmarks from the Common Problems section. Your actual numbers will vary with portfolio mix and current process.</p>
+            </div>
+            <script>
+            (function() {
+                var propsSlider = document.getElementById('tsPropsSlider');
+                var props       = document.getElementById('tsProps');
+                var ownSlider   = document.getElementById('tsOwnersSlider');
+                var owners      = document.getElementById('tsOwners');
+                var cohost      = document.getElementById('tsCohost');
+                var manualEl    = document.getElementById('tsManual');
+                var ciqEl       = document.getElementById('tsCohostiq');
+                var savedEl     = document.getElementById('tsSaved');
+                var savedSub    = document.getElementById('tsSavedSub');
+                if (!propsSlider) return;
+
+                // Benchmarks pulled from the site's own Common Problems section:
+                // 25 properties = 40-55 hours/month manually. Midpoint 47.5 = ~1.9 hrs/property.
+                var HRS_PER_PROPERTY_MANUAL = 1.9;
+                // Cohost reconciliation adds ~0.3 hrs/property/month per the same breakdown.
+                var HRS_PER_PROPERTY_COHOST = 0.3;
+                // CohostIQ: ~3 minutes per owner statement review + 30 min monthly review.
+                var MIN_PER_OWNER_CIQ = 3;
+                var MIN_FIXED_CIQ     = 30;
+
+                function fmtHrs(hrs) {
+                    if (hrs < 1) return '~' + Math.round(hrs * 60) + ' min';
+                    if (hrs < 10) return '~' + hrs.toFixed(1) + ' hrs';
+                    return '~' + Math.round(hrs) + ' hrs';
+                }
+
+                function calculate() {
+                    var p = Math.max(1, parseInt(props.value, 10) || 1);
+                    var o = Math.max(1, parseInt(owners.value, 10) || 1);
+                    var cohostOn = cohost.checked;
+
+                    var manualHrs = p * HRS_PER_PROPERTY_MANUAL;
+                    if (cohostOn) manualHrs += p * HRS_PER_PROPERTY_COHOST;
+
+                    var ciqMin = (o * MIN_PER_OWNER_CIQ) + MIN_FIXED_CIQ;
+                    var ciqHrs = ciqMin / 60;
+
+                    var savedHrs = Math.max(0, manualHrs - ciqHrs);
+                    var workingDays = savedHrs / 8;
+
+                    manualEl.textContent = fmtHrs(manualHrs);
+                    ciqEl.textContent = fmtHrs(ciqHrs);
+                    savedEl.textContent = fmtHrs(savedHrs);
+
+                    var subText;
+                    if (workingDays >= 1) {
+                        subText = "that's ~" + (workingDays < 10 ? workingDays.toFixed(1) : Math.round(workingDays)) + ' working days';
+                    } else {
+                        subText = 'reclaimed every month';
+                    }
+                    savedSub.textContent = subText;
+                }
+
+                function syncPair(slider, input) {
+                    slider.addEventListener('input', function() {
+                        input.value = slider.value;
+                        calculate();
+                    });
+                    input.addEventListener('input', function() {
+                        var n = Math.max(1, parseInt(input.value, 10) || 1);
+                        if (n <= parseInt(slider.max, 10)) slider.value = n;
+                        else slider.value = slider.max;
+                        calculate();
+                    });
+                }
+                syncPair(propsSlider, props);
+                syncPair(ownSlider, owners);
+                cohost.addEventListener('change', calculate);
+                calculate();
+            })();
+            </script>
+        </div>
+    </section>
+
     <!-- About / Built by Cohosts -->
     <section class="section" id="about">
         <div class="container">
@@ -122,17 +251,17 @@ require_once __DIR__ . '/includes/header.php';
                         <img src="images/scott.jpg" alt="Scott, founder of CohostIQ" class="founder-photo" loading="lazy">
                         <div>
                             <div class="founder-greeting">Hi, I'm Scott.</div>
-                            <div class="founder-role">Founder, CohostIQ &middot; Cohost, Branson Lakes Lodging</div>
+                            <div class="founder-role">Founder, CohostIQ &middot; Cohost at Branson Lakes Lodging with my wife Christene</div>
                         </div>
                     </div>
                     <p>
-                        I run Branson Lakes Lodging, where we cohost 78 vacation rentals. For years, every month started with the same routine: rebuilding the owner billing spreadsheet, manually calculating commissions, reconciling cohost payouts, and chasing the credits Airbnb's math always got slightly wrong.
+                        My wife Christene and I cohost 78 vacation rentals through Branson Lakes Lodging. For years, every month started with the same routine: rebuilding the owner billing spreadsheet, manually calculating commissions, reconciling cohost payouts, and chasing the credits Airbnb's math always got slightly wrong.
                     </p>
                     <p>
-                        I built CohostIQ to solve those problems for myself. There were tools that handled the guest side. Tools for cleaning. Tools for accounting. But nothing connected the operations to the owner billing, and nothing got the cohost payout math right.
+                        I built CohostIQ to solve those problems for the two of us. There were tools that handled the guest side. Tools for cleaning. Tools for accounting. But nothing connected the operations to the owner billing, and nothing got the cohost payout math right.
                     </p>
                     <p class="about-highlight">
-                        Branson Lakes Lodging runs on CohostIQ today. If you've felt the same spreadsheet fatigue, I'd love to help.
+                        Branson Lakes Lodging runs on CohostIQ today. If you've felt the same spreadsheet fatigue, we'd love to help.
                     </p>
                 </div>
                 <div class="about-features">
