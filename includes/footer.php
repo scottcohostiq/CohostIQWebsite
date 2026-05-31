@@ -32,7 +32,7 @@
                     <h4>Legal</h4>
                     <nav class="footer-links" aria-label="Legal links">
                         <a href="privacy.php">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <a href="https://cohostiq.app/terms.html">Terms of Service</a>
                     </nav>
                 </div>
             </div>
