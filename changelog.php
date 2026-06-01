@@ -3,6 +3,7 @@ $pageTitle = 'What\'s New - CohostIQ';
 $pageDescription = 'Recently shipped features and improvements to CohostIQ. Plain English, no engineering jargon.';
 $currentPage = 'changelog';
 $pageCanonical = '/changelog.php';
+$pageNoindex = true; // Internal-only page, not linked from nav/footer
 
 /**
  * Maintained as part of regular website updates. To add new entries, prepend

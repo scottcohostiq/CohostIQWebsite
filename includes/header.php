@@ -46,6 +46,7 @@ if (!isset($pageDescription)) $pageDescription = 'CohostIQ - Operational tools f
 if (!isset($currentPage)) $currentPage = '';
 if (!isset($pageCanonical)) $pageCanonical = '';
 if (!isset($pageSchema)) $pageSchema = '';
+if (!isset($pageNoindex)) $pageNoindex = false;
 
 // Base URL for canonical/OG tags
 $siteUrl = 'https://www.cohostiq.app';
@@ -57,7 +58,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="<?php echo $pageNoindex ? 'noindex, nofollow' : 'index, follow'; ?>">
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
 
     <!-- Canonical URL -->
