@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cohostiq.com/sitemap.xml
+Sitemap: https://www.cohostiq.app/sitemap.xml
