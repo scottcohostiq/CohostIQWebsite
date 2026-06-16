@@ -118,7 +118,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
                     <a href="index.php"<?php echo $currentPage === 'home' ? ' class="active" aria-current="page"' : ''; ?>>Home</a>
                     <a href="index.php#about">About</a>
                     <a href="features.php"<?php echo $currentPage === 'features' ? ' class="active" aria-current="page"' : ''; ?>>Features</a>
-                    <a href="index.php#savings">Savings</a>
+                    <a href="integrations.php"<?php echo $currentPage === 'integrations' ? ' class="active" aria-current="page"' : ''; ?>>Integrations</a>
                     <a href="signup.php#pricing"<?php echo $currentPage === 'signup' ? ' class="active" aria-current="page"' : ''; ?>>Pricing</a>
                     <a href="faq.php"<?php echo $currentPage === 'faq' ? ' class="active" aria-current="page"' : ''; ?>>FAQ</a>
                 </div>
@@ -138,7 +138,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
             <a href="index.php">Home</a>
             <a href="index.php#about">About</a>
             <a href="features.php">Features</a>
-            <a href="index.php#savings">Savings</a>
+            <a href="integrations.php">Integrations</a>
             <a href="signup.php#pricing">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
