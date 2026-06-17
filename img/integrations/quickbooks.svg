@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
-  <rect width="200" height="60" rx="8" fill="#2CA01C"/>
-  <circle cx="30" cy="30" r="16" fill="#fff"/>
-  <text x="22" y="37" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#2CA01C">QB</text>
-  <text x="54" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" fill="#fff">QuickBooks</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <circle cx="22" cy="30" r="16" fill="#2CA01C"/>
+  <text x="22" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" fill="#fff" text-anchor="middle">Q</text>
+  <text x="46" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="17" fill="#2CA01C">QuickBooks</text>
 </svg>
