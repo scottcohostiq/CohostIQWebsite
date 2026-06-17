@@ -2350,6 +2350,222 @@ ul {
 }
 
 /* ============================================
+   Integrations Page
+   ============================================ */
+.integration-category {
+    margin-bottom: 60px;
+}
+
+.integration-category:last-child {
+    margin-bottom: 0;
+}
+
+.integration-category-header {
+    margin-bottom: 30px;
+}
+
+.integration-category-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.integration-category-header p {
+    color: var(--body-color);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.integrations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.integrations-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.integration-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: var(--transition);
+}
+
+.integration-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+}
+
+.integration-card-featured {
+    border-color: var(--primary);
+    border-width: 2px;
+}
+
+.integration-card-coming {
+    background: var(--body-bg);
+    border-style: dashed;
+}
+
+.integration-card-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(19, 194, 150, 0.15);
+    color: #16a34a;
+    margin-bottom: 16px;
+}
+
+.integration-card-badge-soon {
+    background: rgba(245, 158, 11, 0.15);
+    color: #d97706;
+}
+
+.integration-card-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.integration-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.integration-card > p {
+    color: var(--body-color);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.integration-features {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.integration-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--body-color);
+}
+
+.integration-features li::before {
+    content: '\2713';
+    color: var(--secondary);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Integration Flow */
+.integration-flow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.integration-flow-step {
+    flex: 1;
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.integration-flow-number {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0 auto 16px;
+}
+
+.integration-flow-step h4 {
+    margin-bottom: 8px;
+}
+
+.integration-flow-step p {
+    color: var(--body-color);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.integration-flow-arrow {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-top: 56px;
+    flex-shrink: 0;
+}
+
+/* Integrations Responsive */
+@media (max-width: 1024px) {
+    .integrations-grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .integrations-grid,
+    .integrations-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .integration-flow {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .integration-flow-arrow {
+        margin-top: 0;
+        transform: rotate(90deg);
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .integration-card {
+        padding: 24px 20px;
+    }
+
+    .integration-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .integration-flow-step {
+        padding: 24px 16px;
+    }
+}
+
+/* ============================================
    Accessibility - Skip Link
    ============================================ */
 
