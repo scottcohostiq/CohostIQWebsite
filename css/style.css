@@ -2367,6 +2367,9 @@ ul {
     height: 48px;
     width: auto;
     object-fit: contain;
+    background: #1a1a2e;
+    border-radius: 8px;
+    padding: 8px 16px;
     transition: var(--transition);
 }
 
@@ -2472,6 +2475,9 @@ ul {
     max-height: 54px;
     width: auto;
     object-fit: contain;
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 .integration-card h4 {
@@ -2483,6 +2489,22 @@ ul {
     color: var(--body-color);
     font-size: 0.95rem;
     line-height: 1.7;
+}
+
+/* Card Website Link */
+.integration-card-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.integration-card-link:hover {
+    color: var(--primary-dark, #3a5ce5);
+    text-decoration: underline;
 }
 
 /* Capability Tags */
