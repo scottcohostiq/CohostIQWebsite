@@ -149,11 +149,11 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="integration-card-logo-wrap" style="min-height: 48px; display: flex; align-items: center;">
                             <div style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; font-weight: 800; font-size: 1.1rem; padding: 10px 24px; border-radius: 8px;">Direct Bookings</div>
                         </div>
-                        <p>Manually add or CSV-import reservations from direct booking channels. All bookings flow into the same billing and reporting engine.</p>
+                        <p>Direct bookings sync through Hospitable alongside your Airbnb and VRBO reservations. All bookings flow into the same billing and reporting engine.</p>
                         <div class="integration-capabilities">
-                            <span class="capability-tag">CSV Import</span>
-                            <span class="capability-tag">Manual Entry</span>
-                            <span class="capability-tag">iCal Feeds</span>
+                            <span class="capability-tag">Via Hospitable</span>
+                            <span class="capability-tag">Unified Billing</span>
+                            <span class="capability-tag">All Channels Combined</span>
                         </div>
                     </div>
                 </div>
