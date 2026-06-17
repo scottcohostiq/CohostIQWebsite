@@ -2367,7 +2367,7 @@ ul {
     height: 48px;
     width: auto;
     object-fit: contain;
-    background: #1a1a2e;
+    background: #fff;
     border-radius: 8px;
     padding: 8px 16px;
     transition: var(--transition);
@@ -2475,7 +2475,7 @@ ul {
     max-height: 54px;
     width: auto;
     object-fit: contain;
-    background: #1a1a2e;
+    background: #fff;
     border-radius: 10px;
     padding: 10px 20px;
 }
