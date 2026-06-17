@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section" style="padding: 40px 0;">
         <div class="container">
             <div class="partner-logo-strip">
-                <img src="img/integrations/hospitable.svg" alt="Hospitable" width="160" height="48">
-                <img src="img/integrations/airbnb.svg" alt="Airbnb" width="140" height="48">
-                <img src="img/integrations/quickbooks.svg" alt="QuickBooks" width="160" height="48">
-                <img src="img/integrations/turno.svg" alt="Turno" width="130" height="48">
-                <img src="img/integrations/hostbuddy.svg" alt="HostBuddy" width="160" height="48">
-                <img src="img/integrations/stripe.svg" alt="Stripe" width="130" height="48">
+                <img src="https://cohostiq.app/img/integrations/hospitable.png" alt="Hospitable" height="48">
+                <img src="img/integrations/airbnb.svg" alt="Airbnb" height="48">
+                <img src="https://cohostiq.app/img/integrations/quickbooks.png" alt="QuickBooks" height="48">
+                <img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno" height="48">
+                <img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy" height="48">
+                <img src="https://cohostiq.app/img/integrations/stripe.png" alt="Stripe" height="48">
             </div>
         </div>
     </section>
@@ -80,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card integration-card-featured">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/hospitable.svg" alt="Hospitable logo" width="180" height="54">
+                            <img src="https://cohostiq.app/img/integrations/hospitable.png" alt="Hospitable logo" height="54">
                         </div>
                         <p>Full OAuth integration. Properties, reservations, and guest data sync automatically. CohostIQ enhances Hospitable with billing, owner statements, and operational tools it doesn't provide.</p>
                         <div class="integration-capabilities">
@@ -171,7 +171,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card integration-card-featured">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/quickbooks.svg" alt="QuickBooks logo" width="180" height="54">
+                            <img src="https://cohostiq.app/img/integrations/quickbooks.png" alt="QuickBooks logo" height="54">
                         </div>
                         <p>Automatically sync owner statements, expenses, and payouts to QuickBooks. Map to your chart of accounts, push invoices, and keep your books clean without manual data entry.</p>
                         <div class="integration-capabilities">
@@ -185,7 +185,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Active</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/stripe.svg" alt="Stripe logo" width="140" height="48">
+                            <img src="https://cohostiq.app/img/integrations/stripe.png" alt="Stripe logo" height="48">
                         </div>
                         <p>Secure subscription billing powered by Stripe. PCI-compliant payment processing for your CohostIQ subscription with all major credit cards accepted.</p>
                         <div class="integration-capabilities">
@@ -212,7 +212,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/turno.svg" alt="Turno logo" width="150" height="48">
+                            <img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno logo" height="48">
                         </div>
                         <p>Cleaning issues flagged in Turno automatically create maintenance tickets in CohostIQ. No more missed repairs from turnover reports.</p>
                         <div class="integration-capabilities">
@@ -224,7 +224,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/hostbuddy.svg" alt="HostBuddy logo" width="170" height="48">
+                            <img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy logo" height="48">
                         </div>
                         <p>Guest messages flagged in HostBuddy automatically create maintenance tickets in CohostIQ. Catch issues the moment a guest reports them.</p>
                         <div class="integration-capabilities">

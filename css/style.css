@@ -2366,6 +2366,7 @@ ul {
 .partner-logo-strip img {
     height: 48px;
     width: auto;
+    object-fit: contain;
     transition: var(--transition);
 }
 
@@ -2461,11 +2462,16 @@ ul {
 /* Logo Wrap */
 .integration-card-logo-wrap {
     margin-bottom: 20px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
 }
 
 .integration-card-logo-wrap img {
-    border-radius: 10px;
     display: block;
+    max-height: 54px;
+    width: auto;
+    object-fit: contain;
 }
 
 .integration-card h4 {
