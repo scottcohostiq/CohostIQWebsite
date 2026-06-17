@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section" style="padding: 40px 0;">
         <div class="container">
             <div class="partner-logo-strip">
-                <img src="https://cohostiq.app/img/integrations/hospitable.png" alt="Hospitable" height="48">
-                <img src="https://cohostiq.app/img/integrations/airbnb.png" alt="Airbnb" height="48">
-                <img src="https://cohostiq.app/img/integrations/quickbooks.png" alt="QuickBooks" height="48">
-                <img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno" height="48">
-                <img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy" height="48">
-                <img src="https://cohostiq.app/img/integrations/stripe.png" alt="Stripe" height="48">
+                <a href="https://hospitable.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/hospitable.png" alt="Hospitable" height="48"></a>
+                <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/airbnb.png" alt="Airbnb" height="48"></a>
+                <a href="https://quickbooks.intuit.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/quickbooks.png" alt="QuickBooks" height="48"></a>
+                <a href="https://turno.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno" height="48"></a>
+                <a href="https://www.hostbuddy.ai" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy" height="48"></a>
+                <a href="https://stripe.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/stripe.png" alt="Stripe" height="48"></a>
             </div>
         </div>
     </section>
@@ -91,6 +91,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Guest Data</span>
                             <span class="capability-tag">Ticket Creation</span>
                         </div>
+                        <a href="https://hospitable.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit Hospitable &rarr;</a>
                     </div>
                     <div class="integration-card integration-card-coming">
                         <div class="integration-card-status"><span class="status-dot status-soon"></span> Coming Soon</div>
@@ -128,6 +129,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Split Payouts</span>
                             <span class="capability-tag">Auto Overage Calc</span>
                         </div>
+                        <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit Airbnb &rarr;</a>
                     </div>
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
@@ -140,6 +142,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Cross-Channel Reporting</span>
                             <span class="capability-tag">Unified Statements</span>
                         </div>
+                        <a href="https://www.vrbo.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit VRBO &rarr;</a>
                     </div>
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
@@ -181,6 +184,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Chart of Accounts</span>
                             <span class="capability-tag">Per-Owner Records</span>
                         </div>
+                        <a href="https://quickbooks.intuit.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit QuickBooks &rarr;</a>
                     </div>
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Active</div>
@@ -193,6 +197,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">All Major Cards</span>
                             <span class="capability-tag">Auto Billing</span>
                         </div>
+                        <a href="https://stripe.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit Stripe &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -220,6 +225,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Cleaning Reports</span>
                             <span class="capability-tag">Property Item Linking</span>
                         </div>
+                        <a href="https://turno.com" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit Turno &rarr;</a>
                     </div>
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
@@ -232,6 +238,7 @@ require_once __DIR__ . '/includes/header.php';
                             <span class="capability-tag">Guest Messages</span>
                             <span class="capability-tag">Message Context</span>
                         </div>
+                        <a href="https://www.hostbuddy.ai" target="_blank" rel="noopener noreferrer" class="integration-card-link">Visit HostBuddy &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -267,8 +274,8 @@ require_once __DIR__ . '/includes/header.php';
                     Start with 2 months free. No contracts, cancel anytime.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://cohostiq.app/signup/waitlist.php" class="btn btn-white btn-lg">Join Waitlist</a>
-                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Request a Demo</a>
+                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-white btn-lg">Request a Demo</a>
+                    <a href="signup.php" class="btn btn-outline btn-lg" style="border-color: white; color: white;">View Pricing</a>
                 </div>
             </div>
         </div>
