@@ -2352,21 +2352,40 @@ ul {
 /* ============================================
    Integrations Page
    ============================================ */
-.integration-category {
-    margin-bottom: 60px;
+
+/* Partner Logo Strip */
+.partner-logo-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    opacity: 0.85;
 }
 
-.integration-category:last-child {
+.partner-logo-strip img {
+    height: 48px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.partner-logo-strip img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Integration Categories */
+.integration-category {
     margin-bottom: 0;
 }
 
 .integration-category-header {
-    margin-bottom: 30px;
-}
-
-.integration-category-header h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 .integration-category-header p {
@@ -2375,6 +2394,7 @@ ul {
     margin: 0;
 }
 
+/* Integration Grid */
 .integrations-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2385,6 +2405,7 @@ ul {
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Integration Cards */
 .integration-card {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -2409,35 +2430,42 @@ ul {
     border-style: dashed;
 }
 
-.integration-card-badge {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    background: rgba(19, 194, 150, 0.15);
-    color: #16a34a;
-    margin-bottom: 16px;
-}
-
-.integration-card-badge-soon {
-    background: rgba(245, 158, 11, 0.15);
-    color: #d97706;
-}
-
-.integration-card-logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
+/* Status Indicator */
+.integration-card-status {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-weight: 800;
-    font-size: 1.25rem;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
     margin-bottom: 16px;
+    color: var(--body-color);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-dot.status-live {
+    background: #16a34a;
+    box-shadow: 0 0 6px rgba(22, 163, 74, 0.4);
+}
+
+.status-dot.status-soon {
+    background: #d97706;
+    box-shadow: 0 0 6px rgba(217, 119, 6, 0.4);
+}
+
+/* Logo Wrap */
+.integration-card-logo-wrap {
+    margin-bottom: 20px;
+}
+
+.integration-card-logo-wrap img {
+    border-radius: 10px;
+    display: block;
 }
 
 .integration-card h4 {
@@ -2451,28 +2479,23 @@ ul {
     line-height: 1.7;
 }
 
-.integration-features {
-    margin-top: 16px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border-color);
+/* Capability Tags */
+.integration-capabilities {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
-.integration-features li {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    font-size: 0.9rem;
-    color: var(--body-color);
-}
-
-.integration-features li::before {
-    content: '\2713';
-    color: var(--secondary);
-    font-weight: 700;
-    flex-shrink: 0;
+.capability-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--body-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--dark);
 }
 
 /* Integration Flow */
@@ -2531,6 +2554,14 @@ ul {
     .integrations-grid-3 {
         grid-template-columns: 1fr 1fr;
     }
+
+    .partner-logo-strip {
+        gap: 24px;
+    }
+
+    .partner-logo-strip img {
+        height: 40px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2549,6 +2580,14 @@ ul {
         transform: rotate(90deg);
         align-self: center;
     }
+
+    .partner-logo-strip {
+        gap: 16px;
+    }
+
+    .partner-logo-strip img {
+        height: 36px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2562,6 +2601,10 @@ ul {
 
     .integration-flow-step {
         padding: 24px 16px;
+    }
+
+    .partner-logo-strip img {
+        height: 32px;
     }
 }
 

@@ -21,159 +21,21 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <!-- Integration Categories -->
-    <section class="section">
+    <!-- Logo Strip -->
+    <section class="section" style="padding: 40px 0;">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Connected Ecosystem</span>
-                <h2 class="section-title">Built to Work With Your Stack</h2>
-                <p class="section-description">
-                    We don't replace your PMS or your accounting software. We sit on top of them and handle the operational layer they don't cover.
-                </p>
-            </div>
-
-            <!-- PMS Integrations -->
-            <div class="integration-category">
-                <div class="integration-category-header">
-                    <h3>Property Management Systems</h3>
-                    <p>Connect your PMS to automatically sync properties and reservations into CohostIQ.</p>
-                </div>
-                <div class="integrations-grid">
-                    <div class="integration-card integration-card-featured">
-                        <div class="integration-card-badge">Live</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #4a6cf7, #6b8aff);">H</div>
-                        <h4>Hospitable</h4>
-                        <p>Full OAuth integration. Properties, reservations, and guest data sync automatically. CohostIQ enhances Hospitable with billing, owner statements, and operational tools it doesn't provide.</p>
-                        <ul class="integration-features">
-                            <li>Automatic property &amp; reservation sync</li>
-                            <li>Real-time data updates</li>
-                            <li>OAuth secure connection</li>
-                            <li>Auto-create maintenance tickets from guest messages</li>
-                        </ul>
-                    </div>
-                    <div class="integration-card integration-card-coming">
-                        <div class="integration-card-badge integration-card-badge-soon">Coming Soon</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #637381, #8a9bae);">+</div>
-                        <h4>More PMS Platforms</h4>
-                        <p>We're actively building integrations with additional Property Management Systems. Have a PMS you'd like us to support?</p>
-                        <a href="mailto:support@cohostiq.com" class="btn btn-outline" style="margin-top: 16px; font-size: 14px; padding: 10px 20px;">Request an Integration</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Booking Channels -->
-            <div class="integration-category">
-                <div class="integration-category-header">
-                    <h3>Booking Channels &amp; Payout Methods</h3>
-                    <p>CohostIQ supports all major booking platforms and handles the complex payout math so you don't have to.</p>
-                </div>
-                <div class="integrations-grid integrations-grid-3">
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Supported</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #FF5A5F, #FF385C);">A</div>
-                        <h4>Airbnb</h4>
-                        <p>Full support for every Airbnb payout method — cohost payouts, host-only fees, and split payouts. Switch methods mid-month without breaking your billing.</p>
-                        <ul class="integration-features">
-                            <li>All payout methods supported</li>
-                            <li>Cohost payout overage auto-calculated</li>
-                            <li>Per-property payout rules</li>
-                            <li>Seamless method transitions</li>
-                        </ul>
-                    </div>
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Supported</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #1a3e72, #2d5ba4);">V</div>
-                        <h4>VRBO</h4>
-                        <p>Import reservations via iCal feeds. Track VRBO bookings alongside Airbnb for unified owner statements and reporting across all channels.</p>
-                        <ul class="integration-features">
-                            <li>iCal reservation sync</li>
-                            <li>Unified cross-channel reporting</li>
-                            <li>Combined owner statements</li>
-                        </ul>
-                    </div>
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Supported</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #f59e0b, #d97706);">D</div>
-                        <h4>Direct Bookings</h4>
-                        <p>Manually add or CSV-import reservations from direct booking channels. All bookings flow into the same billing and reporting engine.</p>
-                        <ul class="integration-features">
-                            <li>CSV import</li>
-                            <li>Manual reservation entry</li>
-                            <li>iCal feed support</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Accounting & Payments -->
-            <div class="integration-category">
-                <div class="integration-category-header">
-                    <h3>Accounting &amp; Payments</h3>
-                    <p>Eliminate double entry. CohostIQ pushes financial data directly into your accounting software.</p>
-                </div>
-                <div class="integrations-grid">
-                    <div class="integration-card integration-card-featured">
-                        <div class="integration-card-badge">Live</div>
-                        <div class="integration-card-logo" style="background: #2CA01C;">QB</div>
-                        <h4>QuickBooks</h4>
-                        <p>Automatically sync owner statements, expenses, and payouts to QuickBooks. Map to your chart of accounts, push invoices, and keep your books clean without manual data entry.</p>
-                        <ul class="integration-features">
-                            <li>Owner statements sync as invoices</li>
-                            <li>Expenses mapped to your chart of accounts</li>
-                            <li>Payout reconciliation</li>
-                            <li>Per-owner and per-property records</li>
-                            <li>Eliminates manual data entry</li>
-                        </ul>
-                    </div>
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Supported</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #635bff, #7a73ff);">S</div>
-                        <h4>Stripe</h4>
-                        <p>Secure subscription billing powered by Stripe. Your CohostIQ subscription is managed through Stripe for reliable, PCI-compliant payment processing.</p>
-                        <ul class="integration-features">
-                            <li>PCI-compliant payment processing</li>
-                            <li>All major credit cards accepted</li>
-                            <li>Automatic subscription management</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Operations & Cleaning -->
-            <div class="integration-category">
-                <div class="integration-category-header">
-                    <h3>Operations &amp; Cleaning</h3>
-                    <p>Connect your cleaning and guest communication tools to auto-create maintenance tickets and keep your operations running smoothly.</p>
-                </div>
-                <div class="integrations-grid">
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Live</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">T</div>
-                        <h4>Turno</h4>
-                        <p>Cleaning issues flagged in Turno automatically create maintenance tickets in CohostIQ. No more missed repairs from turnover reports.</p>
-                        <ul class="integration-features">
-                            <li>Auto-create tickets from cleaning reports</li>
-                            <li>Issue details carry over automatically</li>
-                            <li>Link cleaning issues to property items</li>
-                        </ul>
-                    </div>
-                    <div class="integration-card">
-                        <div class="integration-card-badge">Live</div>
-                        <div class="integration-card-logo" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">HB</div>
-                        <h4>HostBuddy</h4>
-                        <p>Guest messages flagged in HostBuddy automatically create maintenance tickets in CohostIQ. Catch issues the moment a guest reports them.</p>
-                        <ul class="integration-features">
-                            <li>Auto-create tickets from guest messages</li>
-                            <li>Guest-reported issues captured instantly</li>
-                            <li>Ticket includes message context</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="partner-logo-strip">
+                <img src="img/integrations/hospitable.svg" alt="Hospitable" width="160" height="48">
+                <img src="img/integrations/airbnb.svg" alt="Airbnb" width="140" height="48">
+                <img src="img/integrations/quickbooks.svg" alt="QuickBooks" width="160" height="48">
+                <img src="img/integrations/turno.svg" alt="Turno" width="130" height="48">
+                <img src="img/integrations/hostbuddy.svg" alt="HostBuddy" width="160" height="48">
+                <img src="img/integrations/stripe.svg" alt="Stripe" width="130" height="48">
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
+    <!-- How It Fits Together -->
     <section class="section section-gray">
         <div class="container">
             <div class="section-header">
@@ -205,6 +67,177 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- PMS Integrations -->
+    <section class="section">
+        <div class="container">
+            <div class="integration-category">
+                <div class="integration-category-header">
+                    <span class="section-label">Property Management</span>
+                    <h2 class="section-title">PMS Integrations</h2>
+                    <p>Connect your PMS to automatically sync properties and reservations into CohostIQ.</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card integration-card-featured">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/hospitable.svg" alt="Hospitable logo" width="180" height="54">
+                        </div>
+                        <p>Full OAuth integration. Properties, reservations, and guest data sync automatically. CohostIQ enhances Hospitable with billing, owner statements, and operational tools it doesn't provide.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Auto Sync</span>
+                            <span class="capability-tag">OAuth</span>
+                            <span class="capability-tag">Properties</span>
+                            <span class="capability-tag">Reservations</span>
+                            <span class="capability-tag">Guest Data</span>
+                            <span class="capability-tag">Ticket Creation</span>
+                        </div>
+                    </div>
+                    <div class="integration-card integration-card-coming">
+                        <div class="integration-card-status"><span class="status-dot status-soon"></span> Coming Soon</div>
+                        <div class="integration-card-logo-wrap" style="min-height: 54px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: #a0aec0;">+</span>
+                        </div>
+                        <h4>More PMS Platforms</h4>
+                        <p>We're actively building integrations with additional Property Management Systems. Have a PMS you'd like us to support?</p>
+                        <a href="mailto:support@cohostiq.app" class="btn btn-outline" style="margin-top: 16px; font-size: 14px; padding: 10px 20px;">Request an Integration</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Channels -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="integration-category">
+                <div class="integration-category-header">
+                    <span class="section-label">Booking Channels</span>
+                    <h2 class="section-title">Every Payout Method, Handled</h2>
+                    <p>CohostIQ supports all major booking platforms and handles the complex payout math so you don't have to.</p>
+                </div>
+                <div class="integrations-grid integrations-grid-3">
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/airbnb.svg" alt="Airbnb logo" width="160" height="48">
+                        </div>
+                        <p>Every Airbnb payout method — cohost payouts, host-only fees, and split payouts. Switch methods mid-month without breaking your billing.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Cohost Payouts</span>
+                            <span class="capability-tag">Host-Only Fees</span>
+                            <span class="capability-tag">Split Payouts</span>
+                            <span class="capability-tag">Auto Overage Calc</span>
+                        </div>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/vrbo.svg" alt="VRBO logo" width="140" height="48">
+                        </div>
+                        <p>Import reservations via iCal feeds. Track VRBO bookings alongside Airbnb for unified owner statements and reporting across all channels.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">iCal Sync</span>
+                            <span class="capability-tag">Cross-Channel Reporting</span>
+                            <span class="capability-tag">Unified Statements</span>
+                        </div>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
+                        <div class="integration-card-logo-wrap" style="min-height: 48px; display: flex; align-items: center;">
+                            <div style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; font-weight: 800; font-size: 1.1rem; padding: 10px 24px; border-radius: 8px;">Direct Bookings</div>
+                        </div>
+                        <p>Manually add or CSV-import reservations from direct booking channels. All bookings flow into the same billing and reporting engine.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">CSV Import</span>
+                            <span class="capability-tag">Manual Entry</span>
+                            <span class="capability-tag">iCal Feeds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accounting & Payments -->
+    <section class="section">
+        <div class="container">
+            <div class="integration-category">
+                <div class="integration-category-header">
+                    <span class="section-label">Accounting &amp; Payments</span>
+                    <h2 class="section-title">Eliminate Double Entry</h2>
+                    <p>CohostIQ pushes financial data directly into your accounting software.</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card integration-card-featured">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/quickbooks.svg" alt="QuickBooks logo" width="180" height="54">
+                        </div>
+                        <p>Automatically sync owner statements, expenses, and payouts to QuickBooks. Map to your chart of accounts, push invoices, and keep your books clean without manual data entry.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Statement Sync</span>
+                            <span class="capability-tag">Expense Mapping</span>
+                            <span class="capability-tag">Payout Reconciliation</span>
+                            <span class="capability-tag">Chart of Accounts</span>
+                            <span class="capability-tag">Per-Owner Records</span>
+                        </div>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Active</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/stripe.svg" alt="Stripe logo" width="140" height="48">
+                        </div>
+                        <p>Secure subscription billing powered by Stripe. PCI-compliant payment processing for your CohostIQ subscription with all major credit cards accepted.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">PCI Compliant</span>
+                            <span class="capability-tag">All Major Cards</span>
+                            <span class="capability-tag">Auto Billing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations & Cleaning -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="integration-category">
+                <div class="integration-category-header">
+                    <span class="section-label">Operations &amp; Cleaning</span>
+                    <h2 class="section-title">Auto-Create Tickets From Your Existing Tools</h2>
+                    <p>Connect your cleaning and guest communication tools to automatically create maintenance tickets in CohostIQ.</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/turno.svg" alt="Turno logo" width="150" height="48">
+                        </div>
+                        <p>Cleaning issues flagged in Turno automatically create maintenance tickets in CohostIQ. No more missed repairs from turnover reports.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Auto Tickets</span>
+                            <span class="capability-tag">Cleaning Reports</span>
+                            <span class="capability-tag">Property Item Linking</span>
+                        </div>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="img/integrations/hostbuddy.svg" alt="HostBuddy logo" width="170" height="48">
+                        </div>
+                        <p>Guest messages flagged in HostBuddy automatically create maintenance tickets in CohostIQ. Catch issues the moment a guest reports them.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Auto Tickets</span>
+                            <span class="capability-tag">Guest Messages</span>
+                            <span class="capability-tag">Message Context</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Request Integration -->
     <section class="section">
         <div class="container">
@@ -214,7 +247,7 @@ require_once __DIR__ . '/includes/header.php';
                     We're constantly building new integrations. If there's a tool you rely on that you'd like to see connected to CohostIQ, let us know.
                 </p>
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="mailto:support@cohostiq.com" class="btn btn-primary">
+                    <a href="mailto:support@cohostiq.app" class="btn btn-primary">
                         Request an Integration
                     </a>
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline">
