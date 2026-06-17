@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="partner-logo-strip">
                 <img src="https://cohostiq.app/img/integrations/hospitable.png" alt="Hospitable" height="48">
-                <img src="img/integrations/airbnb.svg" alt="Airbnb" height="48">
+                <img src="https://cohostiq.app/img/integrations/airbnb.png" alt="Airbnb" height="48">
                 <img src="https://cohostiq.app/img/integrations/quickbooks.png" alt="QuickBooks" height="48">
                 <img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno" height="48">
                 <img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy" height="48">
@@ -119,7 +119,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/airbnb.svg" alt="Airbnb logo" width="160" height="48">
+                            <img src="https://cohostiq.app/img/integrations/airbnb.png" alt="Airbnb logo" height="48">
                         </div>
                         <p>Every Airbnb payout method — cohost payouts, host-only fees, and split payouts. Switch methods mid-month without breaking your billing.</p>
                         <div class="integration-capabilities">
@@ -132,7 +132,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Full Support</div>
                         <div class="integration-card-logo-wrap">
-                            <img src="img/integrations/vrbo.svg" alt="VRBO logo" width="140" height="48">
+                            <img src="https://cohostiq.app/img/integrations/vrbo.png" alt="VRBO logo" height="48">
                         </div>
                         <p>Import reservations via iCal feeds. Track VRBO bookings alongside Airbnb for unified owner statements and reporting across all channels.</p>
                         <div class="integration-capabilities">
