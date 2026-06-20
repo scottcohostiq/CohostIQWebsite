@@ -17,6 +17,7 @@
                     <h4>Product</h4>
                     <nav class="footer-links" aria-label="Product links">
                         <a href="features.php">Features</a>
+                        <a href="hoa.php">HOA &amp; COA</a>
                         <a href="integrations.php">Integrations</a>
                         <a href="signup.php#pricing">Pricing</a>
                         <a href="faq.php">FAQ</a>
