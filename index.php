@@ -536,59 +536,72 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section" id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Everything You Need to Run Your Rentals</h2>
+                <h2 class="section-title">A Core You Can Count On, Plus Modules You Add</h2>
                 <p class="section-description">
-                    Reservations, maintenance, cleaning, billing, reporting. The whole operational layer in one place.
+                    Every account runs on the same core &mdash; accounting, PMS sync, maintenance, and reporting. Switch on the add-on modules you need, and everything flows back into the core.
                 </p>
             </div>
-            <div class="features-grid">
+
+            <div style="margin-bottom: 12px; font-weight: 700; color: #0a9d78; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">The Core &mdash; on every account</div>
+            <div class="features-grid" style="margin-bottom: 40px;">
                 <div class="feature-card">
                     <div class="feature-icon">&#128176;</div>
-                    <h3 class="feature-title">Owner Billing &amp; Statements</h3>
+                    <h3 class="feature-title">Accounting &amp; Owner Billing</h3>
                     <p class="feature-description">
-                        Per-property fee rules, expense pass-throughs, recurring charges, and management fees. Statements generate themselves from synced reservations.
+                        Owner statements, per-property fee rules, recurring charges, and every Airbnb payout method. Cohost payout math and two-way QuickBooks sync, no spreadsheet workarounds.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128181;</div>
-                    <h3 class="feature-title">Cohost Payout Math</h3>
+                    <div class="feature-icon">&#128279;</div>
+                    <h3 class="feature-title">PMS Sync</h3>
                     <p class="feature-description">
-                        Every Airbnb payout method handled: cohost payouts, host-only fees, split payouts. Owner credits calculated per reservation. Different owners on different methods, no spreadsheet workarounds.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#129529;</div>
-                    <h3 class="feature-title">Cleaning Operations</h3>
-                    <p class="feature-description">
-                        Jobs auto-created from reservations. Preferred cleaner assignment, mobile checklists with photos, conditional task lists, and cleaner payroll. Cleaning costs flow straight to the owner statement.
+                        Reservations and properties sync from Hospitable automatically. Smart lock and thermostat control included on Hospitable. Keep your PMS for guests and channels.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128736;</div>
                     <h3 class="feature-title">Maintenance &amp; Items</h3>
                     <p class="feature-description">
-                        Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable, HostBuddy, and Turno.
+                        Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable, HostBuddy, and Turno, and dispatch to a mobile app.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128230;</div>
-                    <h3 class="feature-title">Supplies &amp; Linens</h3>
+                    <div class="feature-icon">&#128202;</div>
+                    <h3 class="feature-title">Reporting</h3>
                     <p class="feature-description">
-                        Kit-based supply scaling per property. Auto-restock jobs when stock runs low. Off-site linen checkout tracking so nothing goes missing.
+                        Year-over-year revenue, occupancy, expenses, ADR, and cleaning P&amp;L. Filter by date and property, export to CSV or PDF.
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px; font-weight: 700; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">Add-on Modules &mdash; switch on what you need</div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#129529;</div>
+                    <h3 class="feature-title">Cleaning Operations</h3>
+                    <p class="feature-description">
+                        Jobs auto-created from reservations, conditional checklists, crews, a cleaner app, payroll, and supplies &amp; linens. Costs flow straight to the owner statement.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128279;</div>
-                    <h3 class="feature-title">PMS Integration</h3>
+                    <div class="feature-icon">&#129302;</div>
+                    <h3 class="feature-title">AI Guest Messaging</h3>
                     <p class="feature-description">
-                        Connect to Hospitable and other PMS platforms. Reservations and properties sync automatically. Keep using your PMS for guests, channels, and messaging.
+                        CIQ Concierge drafts or auto-sends guest replies grounded in your real property data, checks live availability, and handles early check-in, never inventing details.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128218;</div>
-                    <h3 class="feature-title">QuickBooks Sync</h3>
+                    <div class="feature-icon">&#128241;</div>
+                    <h3 class="feature-title">InboxIQ Unified Inbox</h3>
                     <p class="feature-description">
-                        Owner statements, expenses, and payouts post to QuickBooks automatically. Mapped to your chart of accounts. No double entry, no reclassifying.
+                        Every guest channel in one installable app, with tickets, live presence, a property calendar, and door control right from the conversation.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127881;</div>
+                    <h3 class="feature-title">Upsells &amp; Guest Portal</h3>
+                    <p class="feature-description">
+                        Sell early check-in, mid-stay cleans, and local experiences with vendor fulfillment, and give guests a branded stay portal with live chat.
                     </p>
                 </div>
                 <div class="feature-card">
@@ -598,7 +611,18 @@ require_once __DIR__ . '/includes/header.php';
                         Owners log in to view statements, upcoming reservations, performance, and maintenance history. Cuts down on owner email threads.
                     </p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127962;</div>
+                    <h3 class="feature-title">HOA Management</h3>
+                    <p class="feature-description">
+                        A dedicated business type for homeowners associations: board roles, a member request queue, CSV import, and a daily action center.
+                    </p>
+                </div>
             </div>
+
+            <p style="text-align: center; margin-top: 32px;">
+                <a href="features.php" class="btn btn-outline">See all features</a>
+            </p>
         </div>
     </section>
 
@@ -720,6 +744,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="ai-inside-block">
                 <div class="ai-inside-label">Where AI Fits Inside CohostIQ</div>
                 <div class="ai-inside-grid">
+                    <div class="ai-inside-card">
+                        <h4 class="ai-inside-title">CIQ Concierge <span class="ai-inside-badge" style="background:#eef2ff;color:#4a6cf7;">Add-on module</span></h4>
+                        <p class="ai-inside-text">AI guest messaging that answers like your team, grounded in each property's real data. It drafts or auto-sends replies, checks live availability, and handles early check-in, without ever inventing details. A human can step in anytime.</p>
+                    </div>
                     <div class="ai-inside-card">
                         <h4 class="ai-inside-title">Ask CohostIQ</h4>
                         <p class="ai-inside-text">Built-in assistant grounded in your actual data. Ask "what was Sunset Villa's revenue last March?" or "any open maintenance at Lakeside?" and get real answers. Spot a problem mid-conversation? It can create the maintenance ticket for you.</p>
