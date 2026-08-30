@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'HOA & COA Management Software - CohostIQ';
-$pageDescription = 'CohostIQ for homeowner and condo associations: dues billing and online payments, board elections with certified ballots, violations and architectural review, buildings and common areas, meetings, a branded member portal, and QuickBooks sync.';
+$pageDescription = 'CohostIQ for homeowner and condo associations: dues billing and online payments, board elections with certified ballots, violations and architectural review, buildings and common areas, automatic duty discovery from your governing documents, a branded member portal, and QuickBooks sync.';
 $currentPage = 'hoa';
 $pageCanonical = '/hoa.php';
 require_once __DIR__ . '/includes/header.php';
@@ -97,8 +97,19 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </div>
                 <div class="integration-card">
-                    <h4>Automated Duties &amp; Scheduling</h4>
-                    <p>Assign a duty to a homeowner or a board member and CohostIQ emails them, puts it in their portal task list with a due date, and holds it open until it's done. Duties that need proof — an insurance certificate, a signed acknowledgment — aren't complete until the document is uploaded. Recurring work runs on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually.</p>
+                    <h4>Automated Duty Discovery &amp; Scheduling</h4>
+                    <p>Upload your CC&amp;Rs, meeting minutes, a vendor contract, a reserve study, or an inspection report, and CohostIQ reads it and pulls out what someone actually has to do &mdash; the annual backflow inspection, the quarterly board meeting, the reserve contribution &mdash; with the due date, how often it repeats, and the section it came from. Accept the ones that matter as duties and dismiss the rest, then turn a duty into a schedule that repeats or a work order for your team. When a document states a rule but never says when to enforce it, CohostIQ tells you what's missing and suggests the duty you'd need.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Reads Your Documents</span>
+                        <span class="capability-tag">Finds Dates &amp; Recurrence</span>
+                        <span class="capability-tag">Cites the Section</span>
+                        <span class="capability-tag">Accept or Dismiss</span>
+                        <span class="capability-tag">Becomes a Schedule</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Member Duties &amp; Recurring Work</h4>
+                    <p>Assign a duty to a homeowner or a board member and CohostIQ emails them and puts it in their portal task list with a due date. Duties that need proof — an insurance certificate, a signed acknowledgment — stay open until the document is actually uploaded. Recurring work runs on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Assigned Duties</span>
                         <span class="capability-tag">Due Dates</span>
@@ -275,7 +286,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="integrations-grid integrations-grid-3" style="margin-top: 44px;">
                 <div class="integration-card">
                     <h4>No Feature Tiers</h4>
-                    <p>Every association gets the whole toolset &mdash; dues billing, the branded member portal, board elections, violations, architectural review, buildings and common areas, meetings, maintenance, documents, reporting, and QuickBooks sync. Nothing is held back for a higher plan.</p>
+                    <p>Every association gets the whole toolset &mdash; dues billing, the branded member portal, board elections, violations, architectural review, buildings and common areas, duty discovery from your documents, meetings, maintenance, reporting, and QuickBooks sync. Nothing is held back for a higher plan.</p>
                 </div>
                 <div class="integration-card">
                     <h4>Keep Your Accountant</h4>
