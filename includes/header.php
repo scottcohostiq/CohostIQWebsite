@@ -120,7 +120,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
                     <a href="index.php#about">About</a>
                     <a href="features.php"<?php echo $currentPage === 'features' ? ' class="active" aria-current="page"' : ''; ?>>Features</a>
                     <a href="integrations.php"<?php echo $currentPage === 'integrations' ? ' class="active" aria-current="page"' : ''; ?>>Integrations</a>
-                    <a href="signup.php#pricing"<?php echo $currentPage === 'signup' ? ' class="active" aria-current="page"' : ''; ?>>Pricing</a>
+                    <a href="<?php echo $currentPage === 'hoa' ? 'hoa.php#hoa-pricing' : 'signup.php#pricing'; ?>"<?php echo $currentPage === 'signup' ? ' class="active" aria-current="page"' : ''; ?>>Pricing</a>
                     <a href="faq.php"<?php echo $currentPage === 'faq' ? ' class="active" aria-current="page"' : ''; ?>>FAQ</a>
                 </div>
                 <div class="nav-actions">
@@ -140,7 +140,7 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
             <a href="index.php#about">About</a>
             <a href="features.php">Features</a>
             <a href="integrations.php">Integrations</a>
-            <a href="signup.php#pricing">Pricing</a>
+            <a href="<?php echo $currentPage === 'hoa' ? 'hoa.php#hoa-pricing' : 'signup.php#pricing'; ?>">Pricing</a>
             <a href="faq.php">FAQ</a>
             <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
             <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-secondary">Request a Demo</a>

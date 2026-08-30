@@ -2429,6 +2429,73 @@ ul {
     border-width: 2px;
 }
 
+/* HOA pricing tier row — 4 up, collapses to 2 then 1 */
+.price-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.price-tier {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 22px;
+}
+
+.price-tier-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.price-tier-amount {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1;
+}
+
+.price-tier-amount span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+.price-tier-units {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: var(--body-color);
+}
+
+.price-tier-compare {
+    margin: 18px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.82rem;
+    color: var(--body-color);
+    line-height: 1.5;
+}
+
+.price-tier-save {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 700;
+    color: #0a9d78;
+}
+
+@media (max-width: 992px) {
+    .price-grid-4 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+    .price-grid-4 { grid-template-columns: 1fr; }
+}
+
 .integration-card-coming {
     background: var(--body-bg);
     border-style: dashed;

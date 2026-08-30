@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Integrations & Partners - CohostIQ';
-$pageDescription = 'CohostIQ integrates with Hospitable, QuickBooks, Airbnb, Turno, HostBuddy, and more. Connect your existing tools and streamline your vacation rental operations.';
+$pageDescription = 'CohostIQ integrates with Hospitable, QuickBooks, Airbnb, Turno, HostBuddy, Quo, and more. Connect your existing tools and streamline your vacation rental operations.';
 $currentPage = 'integrations';
 $pageCanonical = '/integrations.php';
 require_once __DIR__ . '/includes/header.php';
@@ -31,6 +31,7 @@ require_once __DIR__ . '/includes/header.php';
                 <a href="https://turno.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/turno.png" alt="Turno" height="48"></a>
                 <a href="https://www.hostbuddy.ai" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/hostbuddy.png" alt="HostBuddy" height="48"></a>
                 <a href="https://stripe.com" target="_blank" rel="noopener noreferrer"><img src="https://cohostiq.app/img/integrations/stripe.png" alt="Stripe" height="48"></a>
+                <img src="https://cohostiq.app/img/integrations/quo.png" alt="Quo" height="48">
             </div>
         </div>
     </section>
@@ -245,8 +246,51 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <!-- Request Integration -->
+    <!-- Phone & Communications -->
     <section class="section">
+        <div class="container">
+            <div class="integration-category">
+                <div class="integration-category-header">
+                    <span class="section-label">Phone &amp; Communications</span>
+                    <h2 class="section-title">Know Who's Calling Before You Pick Up</h2>
+                    <p>Connect your business phone through Quo and every incoming call pops the caller right on your screen, matched against your CohostIQ data.</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card integration-card-featured">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Live Integration</div>
+                        <div class="integration-card-logo-wrap">
+                            <img src="https://cohostiq.app/img/integrations/quo.png" alt="Quo logo" height="54">
+                        </div>
+                        <p>When the phone rings, CohostIQ pops a rich caller card on screen. It matches the number to your owners, contractors, and staff first, then your guests, and pulls up their stay details, property operations, and call history so you're up to speed before you say hello. Toggle pop-ups on or off from your dashboard whenever you need quiet.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Incoming Call Pop</span>
+                            <span class="capability-tag">Caller Matching</span>
+                            <span class="capability-tag">Stay &amp; Property Context</span>
+                            <span class="capability-tag">Call History</span>
+                            <span class="capability-tag">SMS Notifications</span>
+                            <span class="capability-tag">Do Not Disturb Toggle</span>
+                        </div>
+                        <a href="https://cohostiq.app/signup/request_demo.php" class="integration-card-link">See Quo in a demo &rarr;</a>
+                    </div>
+                    <div class="integration-card">
+                        <div class="integration-card-status"><span class="status-dot status-live"></span> Built In</div>
+                        <div class="integration-card-logo-wrap" style="min-height: 54px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2rem;">&#128241;</span>
+                        </div>
+                        <h4>InboxIQ Awareness</h4>
+                        <p>Call pops surface right inside the InboxIQ app too, so your team sees who's calling and the guest's reservation on any screen, not just the desktop dashboard.</p>
+                        <div class="integration-capabilities">
+                            <span class="capability-tag">Mobile Call Pops</span>
+                            <span class="capability-tag">On Every Screen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Integration -->
+    <section class="section section-gray">
         <div class="container">
             <div style="max-width: 700px; margin: 0 auto; text-align: center;">
                 <h2 style="margin-bottom: 16px;">Don't See Your Tool?</h2>

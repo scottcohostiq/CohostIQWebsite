@@ -125,7 +125,10 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Pricing</span>
                 <h2 class="section-title">Simple Per-Property Pricing</h2>
                 <p class="section-description">
-                    Start with 2 months free, then pay per property with volume discounts as you grow.
+                    For vacation rental and short-term rental portfolios. Start with 2 months free, then pay
+                    per property with volume discounts as you grow.
+                    <br>
+                    Running a homeowner or condo association? <a href="hoa.php#hoa-pricing">Association pricing works differently.</a>
                 </p>
             </div>
 
@@ -201,6 +204,10 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <p class="pricing-calc-foot">First 2 months are free. After that, you pay only for what you use.</p>
+                <p class="pricing-calc-foot" style="margin-top: 8px;">
+                    This calculator is for rental properties. Associations are priced by unit count &mdash;
+                    <a href="hoa.php#hoa-pricing">see HOA &amp; COA pricing</a>.
+                </p>
             </div>
             <script>
             (function() {

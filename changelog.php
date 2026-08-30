@@ -19,6 +19,90 @@ $pageNoindex = true; // Internal-only page, not linked from nav/footer
  * Default visibility: every entry shows unless hidden = true.
  */
 $entries = [
+    // ================== August 2026 ==================
+    ['date' => '2026-08-29', 'category' => 'hoa', 'title' => 'Document folders, and a record of who uploaded what',
+     'body' => 'Organize the association\'s documents into folders, and every upload now names the board member or homeowner who added it.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Board elections with nominations and a certified ballot',
+     'body' => 'Open a nomination window, let members put their own name forward, review each candidate, then certify the ballot before voting opens. Set seat counts, who may run, and whether dues must be current.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Track your buildings and common areas',
+     'body' => 'Each building holds its own structure, roof, life-safety, utility, and insurance and reserve detail, with its units assigned to it. Amenities like pools, elevators, and parking carry inspection and permit dates that stay quiet until something is due, and you can open a work order against any of them.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Staff roster with annual labor cost',
+     'body' => 'See who the association pays and what labor costs for the year. It is a roster, not payroll, so there are no pay periods or withholding to maintain.'],
+
+    ['date' => '2026-08-28', 'category' => 'ai', 'title' => 'Inquiries waiting on you now stand out in the inbox',
+     'body' => 'A prospective guest holding dates with nobody pre-approving or declining is now flagged the same way a booking request is, in the list, above the thread, and on the side rail.'],
+
+    ['date' => '2026-08-28', 'category' => 'billing', 'title' => 'Vendor visits bill the owner and settle in one place',
+     'body' => 'A per-visit vendor charge now actually posts to the owner, and one payables screen settles service visits and upsell orders together, because it is one invoice to the vendor.'],
+
+    ['date' => '2026-08-27', 'category' => 'maintenance', 'title' => 'Recurring vendor service work, end to end',
+     'body' => 'Schedule lawn care, hot tub service, or pest control on a repeating visit. The vendor sees the job in the portal they already sign into, takes as many photos as the visit needs, and closes it out. The rate is set in advance, so closing records that the work happened without setting what they are paid.'],
+
+    ['date' => '2026-08-27', 'category' => 'integrations', 'title' => 'Door access for vendors, with the wait timed by us',
+     'body' => 'A vendor working an occupied property announces themselves, and the unlock is held until a full minute has really passed. Both times go on the record, so it is not a checkbox saying they waited.'],
+
+    ['date' => '2026-08-27', 'category' => 'core', 'title' => 'Schedules that repeat the way you actually work',
+     'body' => 'Recurring tasks now cover twice a week, every other Tuesday, the first Monday of the month, quarterly, and annually, not just weekly.'],
+
+    ['date' => '2026-08-12', 'category' => 'core', 'title' => 'Editable check-in and check-out times that push back to your PMS',
+     'body' => 'Change a stay\'s check-in or check-out time in CohostIQ and it updates the reservation in Hospitable automatically.'],
+
+    ['date' => '2026-08-11', 'category' => 'ai', 'title' => 'InboxIQ: your whole guest inbox in one mobile app',
+     'body' => 'Every guest conversation across channels in a single installable app, with tickets, cleaning status, a property calendar, and who-else-is-viewing awareness.'],
+
+    ['date' => '2026-08-11', 'category' => 'integrations', 'title' => 'Unlock the door right from the guest conversation',
+     'body' => 'Lock or unlock a smart lock straight from the thread or the property sheet, and vacant homes re-lock themselves automatically.'],
+
+    ['date' => '2026-08-10', 'category' => 'owners', 'title' => 'Issue owner credits that sync to QuickBooks',
+     'body' => 'Apply a credit to an owner, net it into their statement, and record the matching credit memo in QuickBooks in one step.'],
+
+    ['date' => '2026-08-04', 'category' => 'integrations', 'title' => 'Caller ID that knows who\'s calling',
+     'body' => 'When the phone rings, CohostIQ pops the caller\'s identity — owner, contractor, staff, or guest — matched against your data.'],
+
+    ['date' => '2026-08-01', 'category' => 'guest', 'title' => 'Branded guest stay portal with live chat',
+     'body' => 'Guests get a private link to their trip details, house info, and a live chat with your team, in your colors and logo.'],
+
+    ['date' => '2026-08-01', 'category' => 'billing', 'title' => 'Direct and partner bookings with their own invoicing',
+     'body' => 'Take bookings outside the OTAs and invoice each partner their own way, through Stripe or QuickBooks.'],
+
+    // ================== July 2026 ==================
+    ['date' => '2026-07-31', 'category' => 'billing', 'title' => 'Deeper two-way QuickBooks sync',
+     'body' => 'Invoices, credit memos, deposits, and expense imports now flow both directions more reliably, with duplicate protection.'],
+
+    ['date' => '2026-07-22', 'category' => 'integrations', 'title' => 'Fine-grained door-lock permissions',
+     'body' => 'Decide exactly who can unlock which properties, with every guest-present unlock logged and ticketed.'],
+
+    ['date' => '2026-07-13', 'category' => 'core', 'title' => 'Company SOPs your team and assistant can search',
+     'body' => 'Store your standard operating procedures in a role-gated knowledge base that Ask CohostIQ can pull from to answer staff questions.'],
+
+    ['date' => '2026-07-12', 'category' => 'cleaning', 'title' => 'Provisional holds on the calendar',
+     'body' => 'Place a temporary check-in block while you sort out a turnover, and it releases itself automatically when it\'s no longer needed.'],
+
+    // ================== June 2026 ==================
+    ['date' => '2026-06-29', 'category' => 'guest', 'title' => 'Property advisories for guests',
+     'body' => 'Post an ongoing-issue notice (hot tub down, road work) so guests and your team see the same heads-up.'],
+
+    ['date' => '2026-06-29', 'category' => 'cleaning', 'title' => 'Photo audit for turnover templates',
+     'body' => 'Catch redundant or missing end-of-clean photos before they become a problem, template by template.'],
+
+    ['date' => '2026-06-29', 'category' => 'ai', 'title' => 'CIQ Concierge can send clean replies on its own',
+     'body' => 'Turn on auto-send and vetted guest replies go out by themselves, respecting quiet hours, with a human always able to step in.'],
+
+    ['date' => '2026-06-22', 'category' => 'guest', 'title' => 'Upsells: sell add-on services and experiences to guests',
+     'body' => 'Offer early check-in, mid-stay cleans, and local experiences, with a vendor app to fulfill and a split calculator to price them.'],
+
+    ['date' => '2026-06-20', 'category' => 'integrations', 'title' => 'Thermostat control per property',
+     'body' => 'See and set property thermostats alongside your smart locks, included when you connect Hospitable.'],
+
+    ['date' => '2026-06-18', 'category' => 'ai', 'title' => 'CIQ Concierge: AI guest messaging that answers like your team',
+     'body' => 'Grounded in your real property data, it drafts or auto-sends guest replies, checks live availability, and handles early check-in requests, never inventing details.'],
+
+    ['date' => '2026-06-18', 'category' => 'integrations', 'title' => 'Smart lock control comes to CohostIQ',
+     'body' => 'Manage your properties\' smart locks from CohostIQ, with battery alerts and per-lock problem tracking, included when you connect Hospitable.'],
+
     // ================== May 2026 ==================
     ['date' => '2026-05-31', 'category' => 'maintenance', 'title' => 'Driving routes on the Day Planner map',
      'body' => 'Your tech\'s day now shows the actual driving route between stops, not straight lines.'],
@@ -175,6 +259,7 @@ $categories = [
     'billing'      => ['label' => 'Billing',      'color' => '#635bff'],
     'integrations' => ['label' => 'Integrations', 'color' => '#0ea5e9'],
     'ai'           => ['label' => 'AI',           'color' => '#ec4899'],
+    'guest'        => ['label' => 'Guest',        'color' => '#f97316'],
     'owners'       => ['label' => 'Owners',       'color' => '#10b981'],
     'core'         => ['label' => 'Core',         'color' => '#64748b'],
 ];
