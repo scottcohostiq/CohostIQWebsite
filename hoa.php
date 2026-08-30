@@ -88,12 +88,23 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Maintenance &amp; Work Orders</h4>
-                    <p>Members submit requests through the portal. Your team triages, assigns, and tracks every ticket. Route optimization, drag-and-drop scheduling, and full repair history per asset.</p>
+                    <p>Members submit requests through the portal. Your team triages, assigns, and tracks every ticket, with drag-and-drop scheduling and a full repair history per asset — so you know what has already been fixed on that roof before you approve the next quote.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Request Queue</span>
                         <span class="capability-tag">Asset Tracking</span>
-                        <span class="capability-tag">Day Planner</span>
+                        <span class="capability-tag">Drag-and-Drop Scheduling</span>
                         <span class="capability-tag">Repair History</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Automated Duties &amp; Scheduling</h4>
+                    <p>Assign a duty to a homeowner or a board member and CohostIQ emails them, puts it in their portal task list with a due date, and holds it open until it's done. Duties that need proof — an insurance certificate, a signed acknowledgment — aren't complete until the document is uploaded. Recurring work runs on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Assigned Duties</span>
+                        <span class="capability-tag">Due Dates</span>
+                        <span class="capability-tag">Email Notifications</span>
+                        <span class="capability-tag">Proof of Completion</span>
+                        <span class="capability-tag">Recurring Schedules</span>
                     </div>
                 </div>
                 <div class="integration-card">
