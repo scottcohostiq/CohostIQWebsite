@@ -19,7 +19,7 @@
                         <a href="features.php">Features</a>
                         <a href="hoa.php">HOA &amp; COA</a>
                         <a href="integrations.php">Integrations</a>
-                        <a href="signup.php#pricing">Pricing</a>
+                        <a href="<?php echo ($currentPage ?? '') === 'hoa' ? 'hoa.php#hoa-pricing' : 'signup.php#pricing'; ?>">Pricing</a>
                         <a href="faq.php">FAQ</a>
                     </nav>
                 </div>
