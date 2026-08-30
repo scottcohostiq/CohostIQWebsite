@@ -242,7 +242,9 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="price-tier-amount">$59<span>/mo</span></div>
                     <p class="price-tier-units">Up to 25 units</p>
                     <p class="price-tier-compare">
-                        Most enterprise platforms won&rsquo;t sell to a community this size at all.
+                        Works out to
+                        <span class="price-tier-rate">$2.36 per unit</span>
+                        at 25 units.
                     </p>
                 </div>
                 <div class="integration-card price-tier">
@@ -250,8 +252,9 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="price-tier-amount">$99<span>/mo</span></div>
                     <p class="price-tier-units">26 &ndash; 50 units</p>
                     <p class="price-tier-compare">
-                        Enterprise minimums start near $280/mo at this size.
-                        <span class="price-tier-save">Save about 65%</span>
+                        Works out to
+                        <span class="price-tier-rate">$1.98 per unit</span>
+                        at 50 units.
                     </p>
                 </div>
                 <div class="integration-card price-tier integration-card-featured">
@@ -259,8 +262,9 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="price-tier-amount">$169<span>/mo</span></div>
                     <p class="price-tier-units">51 &ndash; 100 units</p>
                     <p class="price-tier-compare">
-                        Enterprise minimums still apply at this size, not per-unit rates.
-                        <span class="price-tier-save">Save about 40%</span>
+                        Works out to
+                        <span class="price-tier-rate">$1.69 per unit</span>
+                        at 100 units.
                     </p>
                 </div>
                 <div class="integration-card price-tier">
@@ -268,13 +272,17 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="price-tier-amount">$249<span>/mo</span></div>
                     <p class="price-tier-units">101 &ndash; 200 units</p>
                     <p class="price-tier-compare">
-                        Still under the monthly minimum the big platforms quote.
-                        <span class="price-tier-save">Save about 11%</span>
+                        Works out to
+                        <span class="price-tier-rate">$1.25 per unit</span>
+                        at 200 units.
                     </p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 28px;">
+                <p style="color: var(--body-color); font-size: 0.95rem; margin-bottom: 10px;">
+                    Your cost per unit drops as the community grows.
+                </p>
                 <p style="color: var(--body-color); font-size: 0.95rem;">
                     <strong>Over 200 units, or managing several associations?</strong>
                     <a href="https://cohostiq.app/signup/request_demo.php">Get a quote</a> &mdash; we price larger
@@ -301,7 +309,7 @@ require_once __DIR__ . '/includes/header.php';
             <div style="text-align: center; margin-top: 36px;">
                 <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-primary btn-lg">Request a Demo</a>
                 <p style="color: var(--body-color); font-size: 0.9rem; margin-top: 16px;">
-                    First two calendar months free, including onboarding. No contracts, cancel anytime.
+                    Guided onboarding included. No contracts, cancel anytime.
                 </p>
             </div>
         </div>
@@ -312,45 +320,110 @@ require_once __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Why CohostIQ</span>
-                <h2 class="section-title">Not Another Bloated HOA Platform</h2>
+                <h2 class="section-title">What Changes on Day One</h2>
+                <p class="section-description">
+                    Most associations aren&rsquo;t running bad software. They&rsquo;re running a spreadsheet,
+                    an inbox, and someone&rsquo;s memory.
+                </p>
             </div>
             <div class="problems-grid">
+
                 <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon" aria-hidden="true">&#128179;</div>
+                        <h3>Collecting the dues</h3>
+                        <p class="problem-subtitle">Who paid, who didn&rsquo;t, and what the treasurer has to do about it</p>
+                    </div>
                     <div class="problem-comparison">
                         <div class="problem-before">
-                            <span>Before</span>
-                            <p>Treasurer tracks dues in Excel. Secretary emails minutes. President texts the maintenance guy. Nobody knows who paid.</p>
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">A spreadsheet</div>
+                            <ul class="problem-list">
+                                <li>The treasurer tracks every unit by hand</li>
+                                <li>Payments arrive as checks, transfers, and cash</li>
+                                <li>Late fees get applied when someone remembers</li>
+                                <li>&ldquo;What&rsquo;s my balance?&rdquo; is a phone call</li>
+                                <li>Year-end means re-keying it all for the CPA</li>
+                            </ul>
                         </div>
                         <div class="problem-after">
-                            <span>With CohostIQ</span>
-                            <p>Dues auto-billed, statements generated, maintenance tracked, documents shared — all in one platform with a member portal.</p>
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">One ledger</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Dues billed automatically on your schedule</li>
+                                <li>Members pay by card or bank transfer in the portal</li>
+                                <li>Late fees applied by rule, not by memory</li>
+                                <li>Members check their own balance any time</li>
+                                <li>QuickBooks stays in sync, so year-end is a formality</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
                 <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon" aria-hidden="true">&#128295;</div>
+                        <h3>Getting things fixed</h3>
+                        <p class="problem-subtitle">From &ldquo;I mentioned it to the president at the mailboxes&rdquo; to a tracked work order</p>
+                    </div>
                     <div class="problem-comparison">
                         <div class="problem-before">
-                            <span>Before</span>
-                            <p>Maintenance requests come via email, text, phone, and hallway conversations. Half get lost.</p>
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">Wherever it landed</div>
+                            <ul class="problem-list">
+                                <li>Requests arrive by email, text, phone, and hallway</li>
+                                <li>Half of them never get written down</li>
+                                <li>No record of what was already repaired</li>
+                                <li>The same complaint gets reported three times</li>
+                                <li>Vendors arrive unsure what they came for</li>
+                            </ul>
                         </div>
                         <div class="problem-after">
-                            <span>With CohostIQ</span>
-                            <p>Members submit requests through the portal. Every request tracked with status, assignment, and resolution history.</p>
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">One queue</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Members submit through the portal</li>
+                                <li>Every request has a status and an owner</li>
+                                <li>Full repair history per building and amenity</li>
+                                <li>Work orders open against the structure itself</li>
+                                <li>Recurring service runs on a real schedule</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
                 <div class="problem-card">
+                    <div class="problem-card-header">
+                        <div class="problem-icon" aria-hidden="true">&#128499;</div>
+                        <h3>Running the association</h3>
+                        <p class="problem-subtitle">Elections, minutes, and the obligations buried in documents nobody rereads</p>
+                    </div>
                     <div class="problem-comparison">
                         <div class="problem-before">
-                            <span>Before</span>
-                            <p>Year-end financials take weeks. The accountant re-keys everything from bank statements.</p>
+                            <div class="problem-label problem-label-before">Without CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-bad">Paper and inboxes</div>
+                            <ul class="problem-list">
+                                <li>Ballots counted by hand at the annual meeting</li>
+                                <li>Minutes live in the secretary&rsquo;s sent folder</li>
+                                <li>CC&amp;Rs sit in a shared drive, or a filing cabinet</li>
+                                <li>Nobody is certain which version is current</li>
+                                <li>Deadlines written into the covenants go unnoticed</li>
+                            </ul>
                         </div>
                         <div class="problem-after">
-                            <span>With CohostIQ</span>
-                            <p>QuickBooks syncs automatically. Statements, expenses, and dues flow in real-time. Year-end is a formality.</p>
+                            <div class="problem-label problem-label-after">With CohostIQ</div>
+                            <div class="problem-time-highlight problem-time-good">On the record</div>
+                            <ul class="problem-list problem-list-solved">
+                                <li>Encrypted online ballots with quorum tracking</li>
+                                <li>A certified candidate list before voting opens</li>
+                                <li>Documents in folders, with the uploader named</li>
+                                <li>Members download what they need themselves</li>
+                                <li>CohostIQ reads your documents and surfaces the duties in them</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -361,7 +434,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cta-content">
                 <h2 class="cta-title">Ready to Modernize Your Association?</h2>
                 <p class="cta-description">
-                    Start with 2 months free. No contracts, cancel anytime.
+                    No contracts, no setup fee, cancel anytime.
                 </p>
                 <div class="cta-buttons">
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-white btn-lg">Request a Demo</a>
