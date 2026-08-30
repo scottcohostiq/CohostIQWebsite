@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'HOA & COA Management Software - CohostIQ';
-$pageDescription = 'CohostIQ for homeowner and condo associations: dues billing, board management, member portal, maintenance tracking, document storage, QuickBooks sync, and more.';
+$pageDescription = 'CohostIQ for homeowner and condo associations: dues billing and online payments, board elections with certified ballots, violations and architectural review, buildings and common areas, meetings, a branded member portal, and QuickBooks sync.';
 $currentPage = 'hoa';
 $pageCanonical = '/hoa.php';
 require_once __DIR__ . '/includes/header.php';
@@ -20,7 +20,7 @@ require_once __DIR__ . '/includes/header.php';
             </p>
             <div style="margin-top: 30px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-primary btn-lg">Request a Demo</a>
-                <a href="#hoa-pricing" class="btn btn-outline btn-lg">View Pricing</a>
+                <a href="#hoa-pricing" class="btn btn-outline btn-lg">How Pricing Works</a>
             </div>
         </div>
     </section>
@@ -68,13 +68,13 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </div>
                 <div class="integration-card">
-                    <h4>Member Portal</h4>
-                    <p>Homeowners get a secure login to view statements, submit maintenance requests, download documents, and check community updates. No more "can you email me my balance?" messages.</p>
+                    <h4>Branded Member Portal</h4>
+                    <p>Homeowners get a secure login to view their balance, pay dues, submit requests, vote, read announcements, and download documents. Each community gets its own logo, colors, welcome text, and web address &mdash; and you choose which sections members can see.</p>
                     <div class="integration-capabilities">
-                        <span class="capability-tag">Statements</span>
-                        <span class="capability-tag">Requests</span>
-                        <span class="capability-tag">Documents</span>
-                        <span class="capability-tag">Calendar</span>
+                        <span class="capability-tag">Your Logo &amp; Colors</span>
+                        <span class="capability-tag">Custom Domain</span>
+                        <span class="capability-tag">Announcements</span>
+                        <span class="capability-tag">Section Toggles</span>
                     </div>
                 </div>
                 <div class="integration-card">
@@ -98,10 +98,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Document Management</h4>
-                    <p>Store CC&amp;Rs, bylaws, meeting minutes, financial reports, and community notices. Members download what they need from the portal — no more Dropbox folders or email chains.</p>
+                    <p>Store CC&amp;Rs, bylaws, meeting minutes, financial reports, and community notices in folders you organize yourself. Every upload records who added it — board member or homeowner — so the file history still makes sense months later. Members download what they need from the portal.</p>
                     <div class="integration-capabilities">
+                        <span class="capability-tag">Folders</span>
                         <span class="capability-tag">CC&amp;Rs &amp; Bylaws</span>
-                        <span class="capability-tag">Meeting Minutes</span>
+                        <span class="capability-tag">Uploader On Record</span>
                         <span class="capability-tag">Portal Access</span>
                     </div>
                 </div>
@@ -112,6 +113,57 @@ require_once __DIR__ . '/includes/header.php';
                         <span class="capability-tag">Financial Reports</span>
                         <span class="capability-tag">QuickBooks Sync</span>
                         <span class="capability-tag">CSV &amp; PDF Export</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Board Elections &amp; Voting</h4>
+                    <p>Run a real election, not just a poll. Open a nomination window, let members put their own name forward, review each candidate, then certify the ballot before voting opens. Set seat counts, who may run, who may vote, a quorum, and an optional dues-current requirement. Ballots are encrypted and results release on your schedule.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Nomination Window</span>
+                        <span class="capability-tag">Candidate Review</span>
+                        <span class="capability-tag">Ballot Certification</span>
+                        <span class="capability-tag">Encrypted Ballots</span>
+                        <span class="capability-tag">Quorum Tracking</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Violations &amp; Compliance</h4>
+                    <p>Log a violation against a property, attach a fine, and track it from first notice through resolution. Members see their own violations in the portal, so nobody argues about whether they were told.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Fines</span>
+                        <span class="capability-tag">Notice Tracking</span>
+                        <span class="capability-tag">Status History</span>
+                        <span class="capability-tag">Member Visibility</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Meetings &amp; Announcements</h4>
+                    <p>Schedule meetings with a date, location or virtual link, and a published agenda. Attach the minutes document when it's ready. Post announcements straight to the portal so the whole community sees the same message.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Agendas</span>
+                        <span class="capability-tag">Attached Minutes</span>
+                        <span class="capability-tag">Portal Announcements</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Buildings &amp; Common Areas</h4>
+                    <p>Track the physical community, not just a list of addresses. Each building carries its own structure, roof, life-safety, utility, and insurance and reserve detail, with its units assigned to it. Amenities — pool, elevator, clubhouse, parking — are tracked community-wide or per building, with inspection and permit dates that stay quiet until something is actually due. Open a work order directly against a building or an amenity.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Building Records</span>
+                        <span class="capability-tag">Roof &amp; Life Safety</span>
+                        <span class="capability-tag">Insurance &amp; Reserves</span>
+                        <span class="capability-tag">Inspection Due Dates</span>
+                        <span class="capability-tag">Bulk Setup</span>
+                    </div>
+                </div>
+                <div class="integration-card">
+                    <h4>Online Dues Payments</h4>
+                    <p>Members pay dues by card or bank transfer directly from the portal, powered by Stripe. Set up reminder rules &mdash; so many days before the due date, or after the grace period ends &mdash; and they send themselves.</p>
+                    <div class="integration-capabilities">
+                        <span class="capability-tag">Card &amp; Bank Transfer</span>
+                        <span class="capability-tag">Stripe Powered</span>
+                        <span class="capability-tag">Automated Reminders</span>
+                        <span class="capability-tag">Payment History</span>
                     </div>
                 </div>
             </div>
@@ -154,65 +206,82 @@ require_once __DIR__ . '/includes/header.php';
     <section class="section" id="hoa-pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Simple Pricing</span>
-                <h2 class="section-title">One Price. Every Feature. No Surprises.</h2>
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Priced for Your Community, Not a Sales Quota</h2>
                 <p class="section-description">
-                    No feature gating, no per-transaction fees, no module upsells. Every plan includes the full platform.
+                    Pricing is based on the number of units in your community. No setup fee, no per-user
+                    charge, no minimum portfolio size, and no 60-day implementation before you can use it.
                 </p>
             </div>
-            <div class="integrations-grid integrations-grid-3">
-                <div class="integration-card" style="text-align: center;">
-                    <div style="font-size: 0.85rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Small</div>
-                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--dark); line-height: 1;">$49<span style="font-size: 1rem; font-weight: 500; color: var(--body-color);">/mo</span></div>
-                    <p style="margin: 12px 0 0; font-size: 0.9rem; color: var(--body-color);">Up to 50 units</p>
-                    <div style="margin: 20px 0; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: left;">
-                        <ul class="feature-list" style="font-size: 0.85rem;">
-                            <li>All core features</li>
-                            <li>Member portal</li>
-                            <li>Dues &amp; assessment billing</li>
-                            <li>Board management</li>
-                            <li>Maintenance tracking</li>
-                            <li>Document storage</li>
-                            <li>QuickBooks sync</li>
-                        </ul>
-                    </div>
-                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline" style="width: 100%;">Get Started</a>
+
+            <div class="price-grid-4">
+                <div class="integration-card price-tier">
+                    <div class="price-tier-name">Starter</div>
+                    <div class="price-tier-amount">$59<span>/mo</span></div>
+                    <p class="price-tier-units">Up to 25 units</p>
+                    <p class="price-tier-compare">
+                        Most enterprise platforms won&rsquo;t sell to a community this size at all.
+                    </p>
                 </div>
-                <div class="integration-card integration-card-featured" style="text-align: center;">
-                    <div style="font-size: 0.85rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Mid-Size</div>
-                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--dark); line-height: 1;">$99<span style="font-size: 1rem; font-weight: 500; color: var(--body-color);">/mo</span></div>
-                    <p style="margin: 12px 0 0; font-size: 0.9rem; color: var(--body-color);">51 – 200 units</p>
-                    <div style="margin: 20px 0; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: left;">
-                        <ul class="feature-list" style="font-size: 0.85rem;">
-                            <li>Everything in Small</li>
-                            <li>Multi-community support</li>
-                            <li>Advanced reporting</li>
-                            <li>Team management</li>
-                            <li>Route optimization</li>
-                            <li>Priority support</li>
-                        </ul>
-                    </div>
-                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                <div class="integration-card price-tier">
+                    <div class="price-tier-name">Small</div>
+                    <div class="price-tier-amount">$99<span>/mo</span></div>
+                    <p class="price-tier-units">26 &ndash; 50 units</p>
+                    <p class="price-tier-compare">
+                        Enterprise minimums start near $280/mo at this size.
+                        <span class="price-tier-save">Save about 65%</span>
+                    </p>
                 </div>
-                <div class="integration-card" style="text-align: center;">
-                    <div style="font-size: 0.85rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Large</div>
-                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--dark); line-height: 1;">$179<span style="font-size: 1rem; font-weight: 500; color: var(--body-color);">/mo</span></div>
-                    <p style="margin: 12px 0 0; font-size: 0.9rem; color: var(--body-color);">201 – 500 units</p>
-                    <div style="margin: 20px 0; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: left;">
-                        <ul class="feature-list" style="font-size: 0.85rem;">
-                            <li>Everything in Mid-Size</li>
-                            <li>Unlimited communities</li>
-                            <li>Bulk operations</li>
-                            <li>Dedicated onboarding</li>
-                            <li>Custom reporting</li>
-                        </ul>
-                    </div>
-                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-outline" style="width: 100%;">Get Started</a>
+                <div class="integration-card price-tier integration-card-featured">
+                    <div class="price-tier-name">Growing</div>
+                    <div class="price-tier-amount">$169<span>/mo</span></div>
+                    <p class="price-tier-units">51 &ndash; 100 units</p>
+                    <p class="price-tier-compare">
+                        Enterprise minimums still apply at this size, not per-unit rates.
+                        <span class="price-tier-save">Save about 40%</span>
+                    </p>
+                </div>
+                <div class="integration-card price-tier">
+                    <div class="price-tier-name">Mid-Size</div>
+                    <div class="price-tier-amount">$249<span>/mo</span></div>
+                    <p class="price-tier-units">101 &ndash; 200 units</p>
+                    <p class="price-tier-compare">
+                        Still under the monthly minimum the big platforms quote.
+                        <span class="price-tier-save">Save about 11%</span>
+                    </p>
                 </div>
             </div>
-            <p style="text-align: center; color: var(--body-color); font-size: 0.9rem; margin-top: 24px;">
-                500+ units? <a href="https://cohostiq.app/signup/request_demo.php">Contact us</a> for custom pricing. All plans include 2 months free.
-            </p>
+
+            <div style="text-align: center; margin-top: 28px;">
+                <p style="color: var(--body-color); font-size: 0.95rem;">
+                    <strong>Over 200 units, or managing several associations?</strong>
+                    <a href="https://cohostiq.app/signup/request_demo.php">Get a quote</a> &mdash; we price larger
+                    portfolios individually, and we&rsquo;ll show you the comparison against whatever you&rsquo;re
+                    using now.
+                </p>
+            </div>
+
+            <div class="integrations-grid integrations-grid-3" style="margin-top: 44px;">
+                <div class="integration-card">
+                    <h4>No Feature Tiers</h4>
+                    <p>Every association gets the whole toolset &mdash; dues billing, the branded member portal, board elections, violations, architectural review, buildings and common areas, meetings, maintenance, documents, reporting, and QuickBooks sync. Nothing is held back for a higher plan.</p>
+                </div>
+                <div class="integration-card">
+                    <h4>Keep Your Accountant</h4>
+                    <p>CohostIQ syncs to QuickBooks. Enterprise platforms typically expect you to move onto their own ledger, which means retraining your treasurer and your CPA at the same time.</p>
+                </div>
+                <div class="integration-card">
+                    <h4>No Setup Fee</h4>
+                    <p>Onboarding fees of $200 to $1,000 are normal in this category, on top of a month or two of implementation. You upload one CSV and go live the same afternoon.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 36px;">
+                <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-primary btn-lg">Request a Demo</a>
+                <p style="color: var(--body-color); font-size: 0.9rem; margin-top: 16px;">
+                    First two calendar months free, including onboarding. No contracts, cancel anytime.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -274,7 +343,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div class="cta-buttons">
                     <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-white btn-lg">Request a Demo</a>
-                    <a href="#hoa-pricing" class="btn btn-outline btn-lg" style="border-color: white; color: white;">View Pricing</a>
+                    <a href="#hoa-pricing" class="btn btn-outline btn-lg" style="border-color: white; color: white;">How Pricing Works</a>
                 </div>
             </div>
         </div>

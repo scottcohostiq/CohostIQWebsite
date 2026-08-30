@@ -1010,9 +1010,9 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128101; Team &amp; Vendor Management <?php echo ciq_badge_addon(); ?></h3>
+                    <h3>&#128101; Team, Vendors &amp; Recurring Service Work <?php echo ciq_badge_addon(); ?></h3>
                     <p>
-                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and communicate with contractors, all without leaving CohostIQ.
+                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and run recurring vendor work end to end &mdash; scheduled, fulfilled, billed, and paid &mdash; without leaving CohostIQ.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Role-based permissions (Admin, Manager, Cleaner, Maintenance, etc.)</li>
@@ -1020,7 +1020,13 @@ function ciq_badge_addon() {
                         <li>Assign specific properties to specific team members</li>
                         <li>Track task completion and team performance</li>
                         <li>Vendor/contractor profiles with contact info and rates</li>
-                        <li>Group messaging and announcements to your team</li>
+                        <li>Recurring service work on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually</li>
+                        <li>Vendors get a Jobs list in the portal they already use &mdash; no extra login seat to buy</li>
+                        <li>Vendors close their own visits, with the rate set in advance so closing records the work without setting the pay</li>
+                        <li>Several photos per visit, uploaded one at a time so a weak signal at the property doesn't lose the batch</li>
+                        <li>Smart-lock access with a server-timed knock gate: the vendor announces, the server holds the unlock for a full minute, and both times are on the record</li>
+                        <li>Per-visit owner billing that actually posts the charge</li>
+                        <li>One payables screen settles service visits and upsell orders together, because it's one invoice to the vendor</li>
                     </ul>
                 </div>
                 <div class="feature-detail-image">
@@ -1065,14 +1071,20 @@ function ciq_badge_addon() {
                 <div class="feature-detail-text">
                     <h3>&#127962; HOA Management <?php echo ciq_badge_addon(); ?></h3>
                     <p>
-                        Running a homeowners association instead of (or alongside) short-term rentals? CohostIQ has a dedicated HOA business type with its own portal, board roles, member requests, and a daily action center.
+                        Running a homeowners or condo association instead of (or alongside) short-term rentals? CohostIQ has a dedicated association business type with dues billing, elections, violations, a branded member portal, and a daily action center.
                     </p>
                     <ul class="feature-detail-list">
-                        <li>Board role appointments (president, treasurer, secretary) with full history</li>
+                        <li>Dues and assessment billing with rulesets per unit type, late fees, and online payment by card or bank transfer</li>
+                        <li>Board elections with a nomination window, candidate review, and a certified ballot before voting opens</li>
+                        <li>Violations with fines, notice tracking, and a member response or appeal workflow</li>
+                        <li>Architectural review requests capturing the change, materials, contractor license, and CC&amp;R acknowledgment</li>
+                        <li>Buildings and common areas with roof, life-safety, insurance and reserve detail, and inspection due dates</li>
+                        <li>Branded member portal with your own logo, colors, and web address</li>
+                        <li>Board role appointments (president, treasurer, secretary, ARC chair) with full history</li>
                         <li>Member request queue with detail view, reply, and status workflow</li>
+                        <li>Document library with folders and the uploader on record</li>
                         <li>Daily action center: today's calendar, recent activity, and what needs attention</li>
                         <li>Property and member CSV import in a single pass</li>
-                        <li>HOA managers land straight in their dedicated portal on login</li>
                     </ul>
                     <p style="margin-top: 16px;">
                         <a href="hoa.php" style="color:#4a6cf7; font-weight:600;">See the HOA module &rarr;</a>

@@ -615,7 +615,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="feature-icon">&#127962;</div>
                     <h3 class="feature-title">HOA Management</h3>
                     <p class="feature-description">
-                        A dedicated business type for homeowners associations: board roles, a member request queue, CSV import, and a daily action center.
+                        A full platform for homeowner and condo associations: dues billing and online payments, board elections with certified ballots, violations, architectural review, buildings and common areas, and a branded member portal.
                     </p>
                 </div>
             </div>
