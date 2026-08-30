@@ -20,6 +20,33 @@ $pageNoindex = true; // Internal-only page, not linked from nav/footer
  */
 $entries = [
     // ================== August 2026 ==================
+    ['date' => '2026-08-29', 'category' => 'hoa', 'title' => 'Document folders, and a record of who uploaded what',
+     'body' => 'Organize the association\'s documents into folders, and every upload now names the board member or homeowner who added it.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Board elections with nominations and a certified ballot',
+     'body' => 'Open a nomination window, let members put their own name forward, review each candidate, then certify the ballot before voting opens. Set seat counts, who may run, and whether dues must be current.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Track your buildings and common areas',
+     'body' => 'Each building holds its own structure, roof, life-safety, utility, and insurance and reserve detail, with its units assigned to it. Amenities like pools, elevators, and parking carry inspection and permit dates that stay quiet until something is due, and you can open a work order against any of them.'],
+
+    ['date' => '2026-08-28', 'category' => 'hoa', 'title' => 'Staff roster with annual labor cost',
+     'body' => 'See who the association pays and what labor costs for the year. It is a roster, not payroll, so there are no pay periods or withholding to maintain.'],
+
+    ['date' => '2026-08-28', 'category' => 'ai', 'title' => 'Inquiries waiting on you now stand out in the inbox',
+     'body' => 'A prospective guest holding dates with nobody pre-approving or declining is now flagged the same way a booking request is, in the list, above the thread, and on the side rail.'],
+
+    ['date' => '2026-08-28', 'category' => 'billing', 'title' => 'Vendor visits bill the owner and settle in one place',
+     'body' => 'A per-visit vendor charge now actually posts to the owner, and one payables screen settles service visits and upsell orders together, because it is one invoice to the vendor.'],
+
+    ['date' => '2026-08-27', 'category' => 'maintenance', 'title' => 'Recurring vendor service work, end to end',
+     'body' => 'Schedule lawn care, hot tub service, or pest control on a repeating visit. The vendor sees the job in the portal they already sign into, takes as many photos as the visit needs, and closes it out. The rate is set in advance, so closing records that the work happened without setting what they are paid.'],
+
+    ['date' => '2026-08-27', 'category' => 'integrations', 'title' => 'Door access for vendors, with the wait timed by us',
+     'body' => 'A vendor working an occupied property announces themselves, and the unlock is held until a full minute has really passed. Both times go on the record, so it is not a checkbox saying they waited.'],
+
+    ['date' => '2026-08-27', 'category' => 'core', 'title' => 'Schedules that repeat the way you actually work',
+     'body' => 'Recurring tasks now cover twice a week, every other Tuesday, the first Monday of the month, quarterly, and annually, not just weekly.'],
+
     ['date' => '2026-08-12', 'category' => 'core', 'title' => 'Editable check-in and check-out times that push back to your PMS',
      'body' => 'Change a stay\'s check-in or check-out time in CohostIQ and it updates the reservation in Hospitable automatically.'],
 
