@@ -2028,6 +2028,14 @@ ul {
     margin-bottom: 12px;
 }
 
+.problem-icon svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    color: var(--primary);
+}
+
 .problem-card-header h3 {
     font-size: 1.5rem;
     margin-bottom: 4px;
