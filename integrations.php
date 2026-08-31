@@ -275,7 +275,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="integration-card">
                         <div class="integration-card-status"><span class="status-dot status-live"></span> Built In</div>
                         <div class="integration-card-logo-wrap" style="min-height: 54px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 2rem;">&#128241;</span>
+                            <span style="font-size: 2rem;"><?php echo ciq_icon('smartphone'); ?></span>
                         </div>
                         <h4>InboxIQ Awareness</h4>
                         <p>Call pops surface right inside the InboxIQ app too, so your team sees who's calling and the guest's reservation on any screen, not just the desktop dashboard.</p>

@@ -469,7 +469,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                     <a href="mailto:support@cohostiq.app" class="btn btn-primary">
-                        &#128231; Email Support
+                        <?php echo ciq_icon('mail'); ?> Email Support
                     </a>
                     <a href="https://cohostiq.app/signup/signup.php" class="btn btn-outline">
                         Start Free Trial

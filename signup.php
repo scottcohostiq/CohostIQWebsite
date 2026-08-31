@@ -38,21 +38,21 @@ require_once __DIR__ . '/includes/header.php';
                             </div>
                         </div>
                         <div class="signup-benefit">
-                            <div class="signup-benefit-icon">&#128640;</div>
+                            <div class="signup-benefit-icon"><?php echo ciq_icon('rocket'); ?></div>
                             <div class="signup-benefit-text">
                                 <h4>Quick Setup</h4>
                                 <p>Guided onboarding gets you up and running in under 30 minutes.</p>
                             </div>
                         </div>
                         <div class="signup-benefit">
-                            <div class="signup-benefit-icon">&#128279;</div>
+                            <div class="signup-benefit-icon"><?php echo ciq_icon('link'); ?></div>
                             <div class="signup-benefit-text">
                                 <h4>PMS Integration</h4>
                                 <p>Connect to Hospitable and other PMS platforms to enhance your operations.</p>
                             </div>
                         </div>
                         <div class="signup-benefit">
-                            <div class="signup-benefit-icon">&#128200;</div>
+                            <div class="signup-benefit-icon"><?php echo ciq_icon('trending-up'); ?></div>
                             <div class="signup-benefit-text">
                                 <h4>Scale Instantly</h4>
                                 <p>Adding a property used to take 1-2 hours of setup. Now it's instant - grow without growing your workload.</p>
@@ -64,35 +64,35 @@ require_once __DIR__ . '/includes/header.php';
                         <h4 style="margin-bottom: 16px; color: #1d2144;">What's Included:</h4>
                         <ul style="display: flex; flex-direction: column; gap: 12px;">
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>PMS integration & reservation sync</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Maintenance ticketing with item tracking</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Owner statements & billing</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>All Airbnb payout methods supported</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>QuickBooks integration</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Team management & task assignment</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Reporting & analytics</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;">&#10003;</span>
+                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Owner portal access</span>
                             </li>
                         </ul>
@@ -136,7 +136,7 @@ require_once __DIR__ . '/includes/header.php';
             <div style="max-width: 600px; margin: 0 auto;">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <div class="pricing-icon pricing-icon-blue">&#127968;</div>
+                        <div class="pricing-icon pricing-icon-blue"><?php echo ciq_icon('home'); ?></div>
                         <h3>Per Property / Month</h3>
                         <p>Your rate is based on your total property count:</p>
                     </div>
@@ -298,16 +298,16 @@ require_once __DIR__ . '/includes/header.php';
             <div class="pricing-included">
                 <h3>Everything Included on Every Plan</h3>
                 <div class="pricing-included-grid">
-                    <div class="included-item"><span class="check">&#10003;</span><span>All Airbnb payout methods</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Owner statements & billing</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Maintenance ticketing</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Property item tracking</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Team management</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Reporting & analytics</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Owner portal</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>PMS integrations</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>QuickBooks integration</span></div>
-                    <div class="included-item"><span class="check">&#10003;</span><span>Unlimited team members</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>All Airbnb payout methods</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Owner statements & billing</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Maintenance ticketing</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Property item tracking</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Team management</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Reporting & analytics</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Owner portal</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>PMS integrations</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>QuickBooks integration</span></div>
+                    <div class="included-item"><span class="check"><?php echo ciq_icon('check'); ?></span><span>Unlimited team members</span></div>
                 </div>
             </div>
 

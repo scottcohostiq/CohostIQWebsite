@@ -330,7 +330,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2.5h12v19l-3-1.8-3 1.8-3-1.8-3 1.8z"/><path d="M9.5 8.5h5"/><path d="M9.5 12.5h5"/></svg></div>
+                        <div class="problem-icon"><?php echo ciq_icon('wallet'); ?></div>
                         <h3>Collecting the dues</h3>
                         <p class="problem-subtitle">Who paid, who didn&rsquo;t, and what the treasurer has to do about it</p>
                     </div>
@@ -362,7 +362,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg></div>
+                        <div class="problem-icon"><?php echo ciq_icon('wrench'); ?></div>
                         <h3>Getting things fixed</h3>
                         <p class="problem-subtitle">From &ldquo;I mentioned it to the president at the mailboxes&rdquo; to a tracked work order</p>
                     </div>
@@ -394,7 +394,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9.5"/><polyline points="8.5 11 11.5 14 21.5 4"/></svg></div>
+                        <div class="problem-icon"><?php echo ciq_icon('clipboard'); ?></div>
                         <h3>Running the association</h3>
                         <p class="problem-subtitle">Elections, minutes, and the obligations buried in documents nobody rereads</p>
                     </div>

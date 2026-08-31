@@ -44,28 +44,28 @@ function ciq_badge_addon() {
             <div style="margin-bottom: 12px; font-weight: 700; color: #0a9d78; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">The Core &mdash; on every account</div>
             <div class="features-grid" style="margin-bottom: 40px;">
                 <div class="feature-card">
-                    <div class="feature-icon">&#128176;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('wallet'); ?></div>
                     <h3 class="feature-title">Accounting &amp; Owner Billing</h3>
                     <p class="feature-description">
                         Owner statements, per-property fee rules, cohost payout math, and two-way QuickBooks sync. The numbers foot to the penny, the same way, every month.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128279;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('link'); ?></div>
                     <h3 class="feature-title">PMS Sync</h3>
                     <p class="feature-description">
                         Reservations and properties sync from Hospitable automatically. Smart lock and thermostat control ride along, included when you connect Hospitable.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128736;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('hammer'); ?></div>
                     <h3 class="feature-title">Maintenance</h3>
                     <p class="feature-description">
                         Track every appliance with warranty dates and repair history, spot repeat offenders, and dispatch tickets to a field-ready mobile app.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128202;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('bar-chart'); ?></div>
                     <h3 class="feature-title">Reporting</h3>
                     <p class="feature-description">
                         Year-over-year revenue, occupancy, expenses, ADR, and cleaning P&amp;L, with date filters and CSV or PDF export.
@@ -77,28 +77,28 @@ function ciq_badge_addon() {
             <div style="margin-bottom: 12px; font-weight: 700; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">Add-on Modules &mdash; switch on what you need</div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">&#129529;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('spray'); ?></div>
                     <h3 class="feature-title">Cleaning Operations</h3>
                     <p class="feature-description">
                         In-house cleaner scheduling, conditional checklists, crews, a mobile app, payroll, and supplies &amp; linens.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#129302;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('bot'); ?></div>
                     <h3 class="feature-title">AI Guest Messaging</h3>
                     <p class="feature-description">
                         CIQ Concierge drafts or auto-sends guest replies grounded in your real property data, and never invents details.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128241;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('smartphone'); ?></div>
                     <h3 class="feature-title">InboxIQ Unified Inbox</h3>
                     <p class="feature-description">
                         Every guest conversation across channels in one installable app, with tickets, presence, and a property calendar.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#127881;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('gift'); ?></div>
                     <h3 class="feature-title">Upsells &amp; Guest Portal</h3>
                     <p class="feature-description">
                         Sell early check-in, mid-stay cleans, and local experiences, and give guests a branded stay portal with live chat.
@@ -142,7 +142,7 @@ function ciq_badge_addon() {
             ];
             function compareMark($val) {
                 if ($val === 'full') {
-                    return '<span class="compare-mark compare-mark-full" aria-label="Yes">&#10003;</span>';
+                    return '<span class="compare-mark compare-mark-full" aria-label="Yes">' . ciq_icon('check') . '</span>';
                 } elseif ($val === 'partial') {
                     return '<span class="compare-mark compare-mark-partial" aria-label="Partial">Partial</span>';
                 }
@@ -192,7 +192,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128279; PMS Sync &amp; Smart Home <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('link'); ?> PMS Sync &amp; Smart Home <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging &mdash; and your smart locks and thermostats come along for the ride.
                     </p>
@@ -210,7 +210,7 @@ function ciq_badge_addon() {
                     <div class="dashboard-preview" style="min-height: 250px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                             <div style="font-weight: 600; color: #1d2144;">PMS Connection</div>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;">&#10003; Connected</span>
+                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 16px; margin-bottom: 12px; border: 1px solid #e2e8f0;">
                             <div style="display: flex; align-items: center; gap: 12px;">
@@ -233,7 +233,7 @@ function ciq_badge_addon() {
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 12px 14px; border: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 10px;">
-                                <span style="font-size: 18px;">&#128274;</span>
+                                <span style="font-size: 18px;"><?php echo ciq_icon('lock'); ?></span>
                                 <div style="font-size: 13px; color: #1d2144; font-weight: 500;">Lakeside Cabin &mdash; front door</div>
                             </div>
                             <span style="padding: 4px 10px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Locked &middot; 87%</span>
@@ -249,7 +249,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128176; Accounting &amp; Owner Statements <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('wallet'); ?> Accounting &amp; Owner Statements <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         Stop spending hours on spreadsheets. CohostIQ automatically generates professional owner statements, tracks expenses, and ensures you never miss a billable item again.
                     </p>
@@ -306,7 +306,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128181; Every Airbnb Payout Method, Handled <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('banknote'); ?> Every Airbnb Payout Method, Handled <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         Airbnb keeps changing how payouts work, and every owner seems to be on a different method. CohostIQ handles all of them. The fee math is right whether your owners are on cohost payouts, host-only fees, or split payouts, with no manual workarounds.
                     </p>
@@ -357,7 +357,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128218; Two-Way QuickBooks Sync <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('refresh'); ?> Two-Way QuickBooks Sync <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         Keep your books in sync without double entry. CohostIQ connects directly to QuickBooks so owner statements, expenses, credits, and payouts flow automatically into your accounting, and changes reconcile both directions. Saves hours every month and keeps the financials accurate.
                     </p>
@@ -378,7 +378,7 @@ function ciq_badge_addon() {
                                 <div style="width: 36px; height: 36px; background: #2CA01C; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px;">QB</div>
                                 <span style="font-weight: 600; color: #1d2144;">QuickBooks Sync</span>
                             </div>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;">&#10003; Connected</span>
+                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
                         </div>
                         <div style="padding: 16px 20px;">
                             <div style="font-size: 12px; color: #637381; margin-bottom: 12px;">Recent Sync Activity</div>
@@ -388,21 +388,21 @@ function ciq_badge_addon() {
                                         <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Statement, Lakeside Cabin</div>
                                         <div style="font-size: 11px; color: #637381;">Invoice #1042 created in QuickBooks</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
                                     <div>
                                         <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Credit, Sarah Kim</div>
                                         <div style="font-size: 11px; color: #637381;">Credit memo #204 recorded</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
                                     <div>
                                         <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Payout, John Davis</div>
                                         <div style="font-size: 11px; color: #637381;">$3,637.50 recorded as bill payment</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;">&#10003; Synced</span>
+                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
                             </div>
                             <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
@@ -421,7 +421,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128736; Maintenance &amp; Property Item Tracking <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('hammer'); ?> Maintenance &amp; Property Item Tracking <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         Never let a repair slip through the cracks. Track every appliance and item at each property, identify repeat offenders, and keep a complete maintenance history. Plus, tickets can be auto-created from your existing tools.
                     </p>
@@ -472,7 +472,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128295; Mobile App for Maintenance Crews <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('wrench'); ?> Mobile App for Maintenance Crews <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         A field-ready app for in-house maintenance staff and contractors. Tickets show on the technician's phone with full property and item history, so they walk in already knowing what they're working on. They mark complete with photos and parts used, and the cost lands on the right owner statement automatically.
                     </p>
@@ -497,7 +497,7 @@ function ciq_badge_addon() {
                         </div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Photo: thermostat reading</span>
-                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px; font-weight: 600;">Log parts: capacitor + labor 1.5 hrs</span>
@@ -514,7 +514,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128202; Reporting &amp; Analytics <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('bar-chart'); ?> Reporting &amp; Analytics <?php echo ciq_badge_core(); ?></h3>
                     <p>
                         Make data-driven decisions with comprehensive reports. Track occupancy, revenue, expenses, and trends across your entire portfolio or drill down to individual properties.
                     </p>
@@ -588,7 +588,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#129529; Full Cleaning Operations <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('spray'); ?> Full Cleaning Operations <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Run your in-house cleaners end to end, or bring in your Turno templates and projects. Either way, cleaning is a first-class part of CohostIQ, and every dollar spent on cleaning lands on the right owner's statement automatically.
                     </p>
@@ -643,7 +643,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128241; Mobile App for Cleaners <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('smartphone'); ?> Mobile App for Cleaners <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         A dedicated mobile app for the people doing the work. Cleaners see their jobs, run the checklist, upload photos, report problems, and track linens. You get a full audit trail behind every turnover.
                     </p>
@@ -664,11 +664,11 @@ function ciq_badge_addon() {
                         <div style="font-size: 13px; opacity: 0.8; margin-bottom: 20px;">3 bed / 2 bath, pet stay</div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Strip beds and bag linens</span>
-                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Photo: kitchen counters</span>
-                            <span style="color: #13c296; font-weight: 700;">&#10003;</span>
+                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px; font-weight: 600;">Restock toilet paper (5 rolls)</span>
@@ -685,7 +685,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128181; Cleaner Pay &amp; Payroll <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('banknote'); ?> Cleaner Pay &amp; Payroll <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Cleaner pay is calculated per job, totaled per pay period, and paid out the way your cleaners actually want to be paid. Cash, check, Venmo, Zelle, PayPal, Stripe, and QuickBooks payroll (coming soon), with quick-pay deep links to skip the typing.
                     </p>
@@ -745,7 +745,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128230; Supplies, Linens, and Restock Automation <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('package'); ?> Supplies, Linens, and Restock Automation <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Stop running out of paper towels. Stop losing sheets. CohostIQ tracks every consumable and linen at the property level, scales kits to the size of the home, and triggers a restock job before you hear about it from a guest.
                     </p>
@@ -804,7 +804,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#129302; AI Guest Messaging &mdash; CIQ Concierge <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('bot'); ?> AI Guest Messaging &mdash; CIQ Concierge <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         An AI that answers guests like a member of your team, grounded in your real property data. It drafts replies for you to approve, or sends vetted answers on its own, and it never invents details it can't verify.
                     </p>
@@ -822,7 +822,7 @@ function ciq_badge_addon() {
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 10px;">
-                                <div style="width: 34px; height: 34px; background: linear-gradient(135deg, #ec4899, #f472b6); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 15px;">&#10024;</div>
+                                <div style="width: 34px; height: 34px; background: linear-gradient(135deg, #ec4899, #f472b6); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 15px;"><?php echo ciq_icon('sparkle'); ?></div>
                                 <span style="font-weight: 600; color: #1d2144;">CIQ Concierge</span>
                             </div>
                             <span style="padding: 4px 12px; background: #e6f9f3; color: #0a9d78; border-radius: 20px; font-size: 12px;">Auto-send on</span>
@@ -852,7 +852,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128241; InboxIQ &mdash; Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('smartphone'); ?> InboxIQ &mdash; Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Every guest conversation, across every channel, in a single installable app for your team. See who's viewing a thread, spin up a ticket without leaving it, unlock the door from the conversation, and keep operations moving from your phone.
                     </p>
@@ -888,9 +888,9 @@ function ciq_badge_addon() {
                             <div style="font-size: 12px; opacity: 0.85; margin-top: 4px;">Ticket created: hot tub temperature</div>
                         </div>
                         <div style="display: flex; gap: 8px; margin-top: 14px;">
-                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;">&#128274; Unlock</span>
-                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;">&#127915; Ticket</span>
-                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;">&#10024; Suggest</span>
+                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;"><?php echo ciq_icon('lock'); ?> Unlock</span>
+                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;"><?php echo ciq_icon('ticket'); ?> Ticket</span>
+                            <span style="flex:1; text-align:center; padding: 8px; background: rgba(255,255,255,0.15); border-radius: 8px; font-size: 12px;"><?php echo ciq_icon('sparkle'); ?> Suggest</span>
                         </div>
                     </div>
                 </div>
@@ -903,7 +903,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#127881; Upsells &amp; Branded Guest Portal <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('gift'); ?> Upsells &amp; Branded Guest Portal <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Turn stays into revenue and give guests a home base. Offer early check-in, mid-stay cleans, and local experiences, fulfill them through a vendor app, and hand each guest a private, branded portal for their trip.
                     </p>
@@ -959,7 +959,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128274; Secure Owner Portal <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('lock'); ?> Secure Owner Portal <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Build trust with complete transparency. Give property owners their own secure login to view reservations, statements, property performance, and maintenance history anytime they want.
                     </p>
@@ -975,7 +975,7 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 24px; color: white;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div style="width: 50px; height: 50px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #4a6cf7; font-weight: 700;">&#127968;</div>
+                            <div style="width: 50px; height: 50px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #4a6cf7; font-weight: 700;"><?php echo ciq_icon('home'); ?></div>
                             <div>
                                 <div style="font-weight: 600;">Owner Dashboard</div>
                                 <div style="font-size: 12px; opacity: 0.7;">Welcome back, John</div>
@@ -1010,7 +1010,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#128101; Team, Vendors &amp; Recurring Service Work <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('users'); ?> Team, Vendors &amp; Recurring Service Work <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and run recurring vendor work end to end &mdash; scheduled, fulfilled, billed, and paid &mdash; without leaving CohostIQ.
                     </p>
@@ -1069,7 +1069,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3>&#127962; HOA Management <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('building'); ?> HOA Management <?php echo ciq_badge_addon(); ?></h3>
                     <p>
                         Running a homeowners or condo association instead of (or alongside) short-term rentals? CohostIQ has a dedicated association business type with dues billing, elections, violations, a branded member portal, and a daily action center.
                     </p>
@@ -1123,56 +1123,56 @@ function ciq_badge_addon() {
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">&#128222;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('phone'); ?></div>
                     <h3 class="feature-title">Caller ID Pops</h3>
                     <p class="feature-description">
                         When the phone rings, CohostIQ shows who's calling, matched against your owners, contractors, staff, and guests.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128221;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('file-text'); ?></div>
                     <h3 class="feature-title">Company SOPs</h3>
                     <p class="feature-description">
                         A role-gated knowledge base for your standard procedures that your team, and Ask CohostIQ, can search.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128179;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('credit-card'); ?></div>
                     <h3 class="feature-title">Direct &amp; Partner Bookings</h3>
                     <p class="feature-description">
                         Take bookings outside the OTAs and invoice each partner their own way, through Stripe or QuickBooks.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128179;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('credit-card'); ?></div>
                     <h3 class="feature-title">Stripe Payments</h3>
                     <p class="feature-description">
                         Collect direct-booking deposits, charge guests for damages or extra fees, and pay owners out through Stripe.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128196;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('file'); ?></div>
                     <h3 class="feature-title">Document Storage</h3>
                     <p class="feature-description">
                         Store leases, contracts, receipts, and property documents securely. Everything in one organized place.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128231;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('mail'); ?></div>
                     <h3 class="feature-title">Notifications</h3>
                     <p class="feature-description">
                         Email, SMS, and push alerts for reservations, task assignments, maintenance, and cleaning, tuned by category.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128736;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('hammer'); ?></div>
                     <h3 class="feature-title">Purchasing Workflow</h3>
                     <p class="feature-description">
                         Track purchase requests from creation to fulfillment. Know what was ordered, for which property, and who approved it.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128200;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('trending-up'); ?></div>
                     <h3 class="feature-title">Instant Scalability</h3>
                     <p class="feature-description">
                         Adding a new property used to take 1-2 hours of setup. With CohostIQ, it's fast. Scale your portfolio without scaling your workload.

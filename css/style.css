@@ -2028,13 +2028,35 @@ ul {
     margin-bottom: 12px;
 }
 
-.problem-icon svg {
-    width: 40px;
-    height: 40px;
+/* ── Icon sprite (see includes/icons.php) ─────────────────────────
+   .ciq-icon is 1em square, so an icon inherits the font-size of its
+   container. Blocks that sized an emoji with font-size keep working. */
+.ciq-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.125em;
+    flex-shrink: 0;
+}
+
+/* Block icons sit on their own line, centred, in the brand colour. */
+.problem-icon .ciq-icon,
+.feature-icon .ciq-icon,
+.benefit-icon .ciq-icon,
+.audience-icon .ciq-icon {
     display: block;
     margin: 0 auto;
     color: var(--primary);
+    vertical-align: baseline;
 }
+
+/* Inline icons in headings need a little air before the text. */
+h3 > .ciq-icon,
+h4 > .ciq-icon {
+    margin-right: 0.35em;
+    color: var(--primary);
+}
+
 
 .problem-card-header h3 {
     font-size: 1.5rem;

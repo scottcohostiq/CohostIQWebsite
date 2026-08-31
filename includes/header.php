@@ -104,6 +104,11 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
 <?php endif; ?>
 </head>
 <body>
+<?php
+// Icon sprite: every <symbol> defined once, referenced by ciq_icon() below.
+require_once __DIR__ . '/icons.php';
+echo ciq_icon_sprite();
+?>
     <!-- Skip to main content (ADA) -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 

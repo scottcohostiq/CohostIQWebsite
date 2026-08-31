@@ -268,35 +268,35 @@ require_once __DIR__ . '/includes/header.php';
                     <h3>We Handle the Billing Complexity</h3>
                     <div class="about-features-list">
                         <div class="about-feature-item">
-                            <span class="about-check">&#10003;</span>
+                            <span class="about-check"><?php echo ciq_icon('check'); ?></span>
                             <div>
                                 <strong>All Airbnb Payout Methods</strong>
                                 <p>Cohost payouts, host-only fees, split payouts. We support them all.</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
-                            <span class="about-check">&#10003;</span>
+                            <span class="about-check"><?php echo ciq_icon('check'); ?></span>
                             <div>
                                 <strong>Effortless Billing</strong>
                                 <p>Handle cohost payouts and host-only fees with ease</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
-                            <span class="about-check">&#10003;</span>
+                            <span class="about-check"><?php echo ciq_icon('check'); ?></span>
                             <div>
                                 <strong>Per-Property Rules</strong>
                                 <p>Different fee structures for different owners? No problem.</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
-                            <span class="about-check">&#10003;</span>
+                            <span class="about-check"><?php echo ciq_icon('check'); ?></span>
                             <div>
                                 <strong>Automatic Calculations</strong>
                                 <p>Management fees, cleaning pass-throughs, expense deductions, all automated</p>
                             </div>
                         </div>
                         <div class="about-feature-item">
-                            <span class="about-check">&#10003;</span>
+                            <span class="about-check"><?php echo ciq_icon('check'); ?></span>
                             <div>
                                 <strong>QuickBooks Integration</strong>
                                 <p>Owner statements, expenses, and payouts sync directly to QuickBooks. No double entry.</p>
@@ -323,7 +323,7 @@ require_once __DIR__ . '/includes/header.php';
                 <!-- Problem 1: Monthly Owner Billing -->
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon">&#128176;</div>
+                        <div class="problem-icon"><?php echo ciq_icon('wallet'); ?></div>
                         <h3>Monthly Owner Billing</h3>
                         <p class="problem-subtitle">25 properties</p>
                     </div>
@@ -358,7 +358,7 @@ require_once __DIR__ . '/includes/header.php';
                 <!-- Problem 2: Guest Reports AC Broken -->
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon">&#128295;</div>
+                        <div class="problem-icon"><?php echo ciq_icon('wrench'); ?></div>
                         <h3>Guest Reports AC Broken Mid-Stay</h3>
                         <p class="problem-subtitle">Emergency maintenance</p>
                     </div>
@@ -391,7 +391,7 @@ require_once __DIR__ . '/includes/header.php';
                 <!-- Problem 3: Onboarding a New Owner -->
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon">&#127968;</div>
+                        <div class="problem-icon"><?php echo ciq_icon('home'); ?></div>
                         <h3>Onboarding a New Owner's Property</h3>
                         <p class="problem-subtitle">Adding a new client</p>
                     </div>
@@ -424,7 +424,7 @@ require_once __DIR__ . '/includes/header.php';
                 <!-- Problem 4: Same-Day Turnover -->
                 <div class="problem-card">
                     <div class="problem-card-header">
-                        <div class="problem-icon">&#129529;</div>
+                        <div class="problem-icon"><?php echo ciq_icon('spray'); ?></div>
                         <h3>Coordinating a Same-Day Turnover</h3>
                         <p class="problem-subtitle">Cleaning, supplies, and pay</p>
                     </div>
@@ -501,21 +501,21 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="benefits-grid">
                 <div class="benefit-item">
-                    <div class="benefit-icon">&#128200;</div>
+                    <div class="benefit-icon"><?php echo ciq_icon('trending-up'); ?></div>
                     <div class="benefit-content">
                         <h4>Scale Without the Overhead</h4>
                         <p>Adding a new property used to mean hours of setup for billing and operations, and hours every month. Now setup is instant and ongoing billing takes mere seconds. Grow your portfolio without growing your workload.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon">&#128181;</div>
+                    <div class="benefit-icon"><?php echo ciq_icon('banknote'); ?></div>
                     <div class="benefit-content">
                         <h4>No More Missed Bills</h4>
                         <p>Track one time and reoccuring owner charges, and maintenance cost. Never forget to bill an owner or miss a reimbursement again. You can even add upcharges for your time and effort!</p>
                     </div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon">&#128203;</div>
+                    <div class="benefit-icon"><?php echo ciq_icon('clipboard'); ?></div>
                     <div class="benefit-content">
                         <h4>Complete Organization</h4>
                         <p>Every reservation, task, expense, and document in one place. No more searching through emails and spreadsheets.</p>
@@ -545,28 +545,28 @@ require_once __DIR__ . '/includes/header.php';
             <div style="margin-bottom: 12px; font-weight: 700; color: #0a9d78; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">The Core &mdash; on every account</div>
             <div class="features-grid" style="margin-bottom: 40px;">
                 <div class="feature-card">
-                    <div class="feature-icon">&#128176;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('wallet'); ?></div>
                     <h3 class="feature-title">Accounting &amp; Owner Billing</h3>
                     <p class="feature-description">
                         Owner statements, per-property fee rules, recurring charges, and every Airbnb payout method. Cohost payout math and two-way QuickBooks sync, no spreadsheet workarounds.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128279;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('link'); ?></div>
                     <h3 class="feature-title">PMS Sync</h3>
                     <p class="feature-description">
                         Reservations and properties sync from Hospitable automatically. Smart lock and thermostat control included on Hospitable. Keep your PMS for guests and channels.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128736;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('hammer'); ?></div>
                     <h3 class="feature-title">Maintenance &amp; Items</h3>
                     <p class="feature-description">
                         Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable, HostBuddy, and Turno, and dispatch to a mobile app.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128202;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('bar-chart'); ?></div>
                     <h3 class="feature-title">Reporting</h3>
                     <p class="feature-description">
                         Year-over-year revenue, occupancy, expenses, ADR, and cleaning P&amp;L. Filter by date and property, export to CSV or PDF.
@@ -577,42 +577,42 @@ require_once __DIR__ . '/includes/header.php';
             <div style="margin-bottom: 12px; font-weight: 700; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">Add-on Modules &mdash; switch on what you need</div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">&#129529;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('spray'); ?></div>
                     <h3 class="feature-title">Cleaning Operations</h3>
                     <p class="feature-description">
                         Jobs auto-created from reservations, conditional checklists, crews, a cleaner app, payroll, and supplies &amp; linens. Costs flow straight to the owner statement.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#129302;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('bot'); ?></div>
                     <h3 class="feature-title">AI Guest Messaging</h3>
                     <p class="feature-description">
                         CIQ Concierge drafts or auto-sends guest replies grounded in your real property data, checks live availability, and handles early check-in, never inventing details.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128241;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('smartphone'); ?></div>
                     <h3 class="feature-title">InboxIQ Unified Inbox</h3>
                     <p class="feature-description">
                         Every guest channel in one installable app, with tickets, live presence, a property calendar, and door control right from the conversation.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#127881;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('gift'); ?></div>
                     <h3 class="feature-title">Upsells &amp; Guest Portal</h3>
                     <p class="feature-description">
                         Sell early check-in, mid-stay cleans, and local experiences with vendor fulfillment, and give guests a branded stay portal with live chat.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128274;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('lock'); ?></div>
                     <h3 class="feature-title">Owner Portal</h3>
                     <p class="feature-description">
                         Owners log in to view statements, upcoming reservations, performance, and maintenance history. Cuts down on owner email threads.
                     </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#127962;</div>
+                    <div class="feature-icon"><?php echo ciq_icon('building'); ?></div>
                     <h3 class="feature-title">HOA Management</h3>
                     <p class="feature-description">
                         A full platform for homeowner and condo associations: dues billing and online payments, board elections with certified ballots, violations, architectural review, buildings and common areas, and a branded member portal.
@@ -732,11 +732,11 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="ai-compare-card">
                     <div class="ai-compare-label ai-compare-label-rules">Where Deterministic Rules Win</div>
                     <ul class="ai-compare-list">
-                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Cohost payout credits, calculated correctly every reservation</li>
-                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Per-property fee structures applied without drift</li>
-                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Owner statement totals that foot to the penny</li>
-                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> Pet fees, cleaning, and taxes allocated by rule, not by guess</li>
-                        <li><span class="ai-bullet ai-bullet-rules">&#10003;</span> "Oops, I forgot to implement that rule" doesn't happen</li>
+                        <li><span class="ai-bullet ai-bullet-rules"><?php echo ciq_icon('check'); ?></span> Cohost payout credits, calculated correctly every reservation</li>
+                        <li><span class="ai-bullet ai-bullet-rules"><?php echo ciq_icon('check'); ?></span> Per-property fee structures applied without drift</li>
+                        <li><span class="ai-bullet ai-bullet-rules"><?php echo ciq_icon('check'); ?></span> Owner statement totals that foot to the penny</li>
+                        <li><span class="ai-bullet ai-bullet-rules"><?php echo ciq_icon('check'); ?></span> Pet fees, cleaning, and taxes allocated by rule, not by guess</li>
+                        <li><span class="ai-bullet ai-bullet-rules"><?php echo ciq_icon('check'); ?></span> "Oops, I forgot to implement that rule" doesn't happen</li>
                     </ul>
                 </div>
             </div>
@@ -773,7 +773,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="audience-grid">
                 <div class="audience-card">
-                    <div class="audience-icon">&#128188;</div>
+                    <div class="audience-icon"><?php echo ciq_icon('briefcase'); ?></div>
                     <h3 class="audience-title">Co-Hosts</h3>
                     <p class="audience-description">
                         Take the chaos out of co-hosting. Track maintenance, manage billing, and keep owners informed.
@@ -786,7 +786,7 @@ require_once __DIR__ . '/includes/header.php';
                     </ul>
                 </div>
                 <div class="audience-card">
-                    <div class="audience-icon">&#127969;</div>
+                    <div class="audience-icon"><?php echo ciq_icon('key'); ?></div>
                     <h3 class="audience-title">Rental Owners</h3>
                     <p class="audience-description">
                         Own multiple vacation rentals? Get organized with professional-grade tools without the enterprise price.
