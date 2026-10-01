@@ -19,6 +19,10 @@ $pageNoindex = true; // Internal-only page, not linked from nav/footer
  * Default visibility: every entry shows unless hidden = true.
  */
 $entries = [
+    // ================== September 2026 ==================
+    ['date' => '2026-09-27', 'category' => 'onboarding', 'title' => 'Set up in under 5 minutes',
+     'body' => 'Onboarding is now three short screens: connect your tools, bring in your properties, and set how you get paid. QuickBooks, taxes, and cohost payout rules wait until after you are live.'],
+
     // ================== August 2026 ==================
     ['date' => '2026-08-29', 'category' => 'hoa', 'title' => 'Document folders, and a record of who uploaded what',
      'body' => 'Organize the association\'s documents into folders, and every upload now names the board member or homeowner who added it.'],
@@ -94,8 +98,8 @@ $entries = [
     ['date' => '2026-06-22', 'category' => 'guest', 'title' => 'Upsells: sell add-on services and experiences to guests',
      'body' => 'Offer early check-in, mid-stay cleans, and local experiences, with a vendor app to fulfill and a split calculator to price them.'],
 
-    ['date' => '2026-06-20', 'category' => 'integrations', 'title' => 'Thermostat control per property',
-     'body' => 'See and set property thermostats alongside your smart locks, included when you connect Hospitable.'],
+    ['date' => '2026-06-20', 'category' => 'integrations', 'title' => 'Thermostat monitoring per property',
+     'body' => 'See each property\'s thermostat alongside your smart locks and get flagged when something looks wrong with the thermostat or AC, like high humidity or a fan left on. Included when you connect Hospitable.'],
 
     ['date' => '2026-06-18', 'category' => 'ai', 'title' => 'CIQ Concierge: AI guest messaging that answers like your team',
      'body' => 'Grounded in your real property data, it drafts or auto-sends guest replies, checks live availability, and handles early check-in requests, never inventing details.'],
@@ -226,7 +230,8 @@ $entries = [
      'body' => 'Full cleaning operations: jobs auto-created from reservations, preferred cleaner assignment, templates with conditional checklists, and a mobile PWA for cleaners.'],
 
     ['date' => '2026-04-12', 'category' => 'cleaning', 'title' => 'Supplies management',
-     'body' => 'Per-property supply kits with scaling rules. Low stock triggers an auto-created restock job before guests notice.'],
+     'body' => 'Per-property supply kits with scaling rules. Low stock triggers an auto-created restock job before guests notice.',
+     'hidden' => true], // not working yet; supply-level reporting is the live feature
 
     ['date' => '2026-04-11', 'category' => 'cleaning', 'title' => 'Reusable cleaning templates',
      'body' => 'Templates with spaces, tasks, and sub-tasks, plus four pay models per template (total job, lead + sub, per hour, or per room).'],

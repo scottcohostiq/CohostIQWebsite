@@ -21,7 +21,7 @@ $pageSchema = '{
         "Cohost Payout Math (5 methods)",
         "Cleaning Operations and Crew Payroll",
         "Maintenance and Property Item Tracking",
-        "Supplies and Linen Tracking",
+        "Supply-Level Reporting and Linen Tracking",
         "PMS Integration (Hospitable)",
         "QuickBooks Sync",
         "Mobile Apps for Cleaners and Maintenance",
@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/header.php';
                         The operations and billing layer for <span>cohosts</span>
                     </h1>
                     <p class="hero-description">
-                        Your PMS handles guests. CohostIQ handles everything behind the property: owner billing, cleaning operations, maintenance, supplies, and the cohost payout math nobody else gets right.
+                        Your PMS handles guests. CohostIQ handles everything behind the property: owner billing, cleaning operations, maintenance, and the cohost payout math nobody else gets right.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary btn-lg">Start Free Trial</a>
@@ -446,7 +446,7 @@ require_once __DIR__ . '/includes/header.php';
                             <ul class="problem-list problem-list-solved">
                                 <li>Job created from the reservation, preferred cleaner auto-assigned</li>
                                 <li>Cleaner uses the mobile app with photos and checklist</li>
-                                <li>Low supplies trigger a restock job automatically</li>
+                                <li>Cleaners flag low or out supplies at the end of every job</li>
                                 <li>Pay is tracked per job, paid via Venmo, Zelle, check, Stripe, or QuickBooks payroll (coming soon)</li>
                                 <li>Cleaning cost flows straight to the owner statement</li>
                             </ul>
@@ -555,14 +555,14 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="feature-icon"><?php echo ciq_icon('link'); ?></div>
                     <h3 class="feature-title">PMS Sync</h3>
                     <p class="feature-description">
-                        Reservations and properties sync from Hospitable automatically. Smart lock and thermostat control included on Hospitable. Keep your PMS for guests and channels.
+                        Reservations and properties sync from Hospitable automatically. Smart lock control and thermostat monitoring included on Hospitable. Keep your PMS for guests and channels.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('hammer'); ?></div>
                     <h3 class="feature-title">Maintenance &amp; Items</h3>
                     <p class="feature-description">
-                        Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable, HostBuddy, and Turno, and dispatch to a mobile app.
+                        Track every appliance with warranty dates and repair history. Spot repeat offenders. Auto-create tickets from Hospitable guest issues, low lock batteries, HostBuddy, and Turno, and dispatch to a mobile app.
                     </p>
                 </div>
                 <div class="feature-card">
@@ -580,19 +580,19 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="feature-icon"><?php echo ciq_icon('spray'); ?></div>
                     <h3 class="feature-title">Cleaning Operations</h3>
                     <p class="feature-description">
-                        Jobs auto-created from reservations, conditional checklists, crews, a cleaner app, payroll, and supplies &amp; linens. Costs flow straight to the owner statement.
+                        Jobs auto-created from reservations, conditional checklists, crews, a cleaner app, payroll, supply-level reporting, and linens. Costs flow straight to the owner statement.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('bot'); ?></div>
-                    <h3 class="feature-title">AI Guest Messaging</h3>
+                    <h3 class="feature-title">AI Guest Messaging <span class="ai-inside-badge" style="background:#fff7e6;color:#b45309;">Beta</span></h3>
                     <p class="feature-description">
                         CIQ Concierge drafts or auto-sends guest replies grounded in your real property data, checks live availability, and handles early check-in, never inventing details.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('smartphone'); ?></div>
-                    <h3 class="feature-title">InboxIQ Unified Inbox</h3>
+                    <h3 class="feature-title">InboxIQ Unified Inbox <span class="ai-inside-badge" style="background:#fff7e6;color:#b45309;">Beta</span></h3>
                     <p class="feature-description">
                         Every guest channel in one installable app, with tickets, live presence, a property calendar, and door control right from the conversation.
                     </p>
@@ -633,7 +633,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Where CohostIQ Fits</span>
                 <h2 class="section-title">We Don't Replace Your PMS. We Fill the Gap Behind It.</h2>
                 <p class="section-description">
-                    Most tools cover one slice of the cohost workflow. CohostIQ ties operations to the owner statement so every cleaning, repair, supply, and payout lands on the right bill automatically.
+                    Most tools cover one slice of the cohost workflow. CohostIQ ties operations to the owner statement so every cleaning, repair, and payout lands on the right bill automatically.
                 </p>
             </div>
             <div class="fit-grid">
@@ -745,7 +745,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="ai-inside-label">Where AI Fits Inside CohostIQ</div>
                 <div class="ai-inside-grid">
                     <div class="ai-inside-card">
-                        <h4 class="ai-inside-title">CIQ Concierge <span class="ai-inside-badge" style="background:#eef2ff;color:#4a6cf7;">Add-on module</span></h4>
+                        <h4 class="ai-inside-title">CIQ Concierge <span class="ai-inside-badge" style="background:#eef2ff;color:#4a6cf7;">Add-on module</span> <span class="ai-inside-badge" style="background:#fff7e6;color:#b45309;">Beta</span></h4>
                         <p class="ai-inside-text">AI guest messaging that answers like your team, grounded in each property's real data. It drafts or auto-sends replies, checks live availability, and handles early check-in, without ever inventing details. A human can step in anytime.</p>
                     </div>
                     <div class="ai-inside-card">

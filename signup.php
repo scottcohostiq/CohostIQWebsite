@@ -41,7 +41,7 @@ require_once __DIR__ . '/includes/header.php';
                             <div class="signup-benefit-icon"><?php echo ciq_icon('rocket'); ?></div>
                             <div class="signup-benefit-text">
                                 <h4>Quick Setup</h4>
-                                <p>Guided onboarding gets you up and running in under 30 minutes.</p>
+                                <p>Setup takes less than 5 minutes.</p>
                             </div>
                         </div>
                         <div class="signup-benefit">
@@ -103,7 +103,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="signup-form-header">
                         <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">2 Months Free</div>
                         <h3>Start Your Free Trial</h3>
-                        <p>Your first 2 months are completely free. Our guided onboarding gets you up and running in under 30 minutes.</p>
+                        <p>Your first 2 months are completely free. Setup takes less than 5 minutes.</p>
                     </div>
                     <div style="padding: 20px 0; text-align: center;">
                         <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary btn-lg" style="width: 100%; display: block;">

@@ -20,7 +20,7 @@ $pageSchema = '{
             "name": "How long does onboarding take?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most users finish the required onboarding steps in 15 to 30 minutes. The guided wizard has 13 steps total, 5 are required to go live and 8 are optional and can be completed anytime after."
+                "text": "Less than 5 minutes. Setup is three short screens: Connect your tools, Import your properties, and Go (set how you get paid and invite your team). Everything else, like QuickBooks, taxes, and cohost payout rules, can be set up anytime after you go live."
             }
         },
         {
@@ -28,7 +28,7 @@ $pageSchema = '{
             "name": "How does CohostIQ integrate with my PMS?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CohostIQ connects to your PMS like Hospitable to pull in properties and reservations. You keep using your PMS for guests, channels, and messaging. CohostIQ adds owner billing, cohost payout math, cleaning operations, maintenance, supplies, and the QuickBooks sync your PMS does not provide."
+                "text": "CohostIQ connects to your PMS like Hospitable to pull in properties and reservations. You keep using your PMS for guests, channels, and messaging. CohostIQ adds owner billing, cohost payout math, cleaning operations, maintenance, and the QuickBooks sync your PMS does not provide."
             }
         },
         {
@@ -96,7 +96,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Visit our <a href="signup.php">Sign Up page</a>, fill out the form with your information, and you'll have instant access. Your first 2 months are free (limited time launch offer), and our guided onboarding gets you up and running in under 30 minutes.
+                            Visit our <a href="signup.php">Sign Up page</a>, fill out the form with your information, and you'll have instant access. Your first 2 months are free (limited time launch offer), and setup takes less than 5 minutes.
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            All you need is an email address to create your account. During onboarding, you'll set up your locations, define your payment rulesets, add properties (via PMS import, CSV, or manual entry), and optionally import historical reservations. The guided wizard walks you through each step with a worked example so you know what to enter.
+                            All you need is an email address to create your account. If you use Hospitable, have your login handy: connecting it lets CohostIQ pull in your properties for you. No booking system yet? You can add your first property by hand with just a name and city.
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            CohostIQ supports short-term rentals (STR), mid-term rentals (MTR), small hotels, and homeowner associations (HOA). The onboarding wizard adapts to the type you pick: HOA companies skip PMS connection and reservation import, for example, and get dues rulesets instead of payment rulesets. Most of the platform (billing, reporting, owner/member portal, QuickBooks sync) works for all four.
+                            CohostIQ supports short-term rentals (STR), mid-term rentals (MTR), small hotels, and homeowner associations (HOA). The onboarding wizard adapts to the type you pick: HOA companies skip PMS connection and reservation import, for example, and get dues rulesets instead of payment rulesets. Most of the platform (billing, reporting, owner/member portal, QuickBooks sync) works for all four. HOA management has its own set of tools; see <a href="hoa.php">HOA &amp; COA</a> for details.
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Most users finish the 5 required steps in 15 to 30 minutes. That includes locations, payment rulesets, importing properties, and the final review to go live. Optional steps like importing historical reservations, taxes, cohost rules, team members, and QuickBooks can be done during onboarding or anytime after.
+                            Less than 5 minutes. Setup is three short screens, and anything that isn't needed to get going is left for later. You can be looking at your own properties in CohostIQ the same sitting you sign up.
                         </div>
                     </div>
                 </div>
@@ -169,35 +169,25 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Our guided wizard walks you through 13 steps. 5 are required to go live; the rest you can skip and return to anytime. Each step includes a worked example so you know what to enter.
+                            Three screens: Connect, Import, and Go.
                             <ol style="margin-top: 12px; padding-left: 20px;">
-                                <li><strong>Welcome</strong> (required). Quick orientation to what's ahead.</li>
-                                <li><strong>Locations</strong> (required). Set up your Market, City, and Community structure. Drives tax rates, reporting, and who can see which properties.</li>
-                                <li><strong>Connect PMS</strong> (optional). Link Hospitable or your other PMS so properties and reservations sync automatically.</li>
-                                <li><strong>QuickBooks</strong> (optional). Connect QuickBooks and import existing owners, products, and vendors.</li>
-                                <li><strong>Payments</strong> (optional). Connect Stripe for direct-booking deposits, damage charges, and owner payouts.</li>
-                                <li><strong>Payment Rules</strong> (required). Define how owners are billed: management commissions, cleaning passthroughs, pet fee splits, per-stay fees, and more.</li>
-                                <li><strong>Properties</strong> (required). Import from your PMS, upload a CSV, or add manually. Assign each property to a payment ruleset.</li>
-                                <li><strong>Taxes</strong> (optional). Per-jurisdiction rates with effective dates, plus platform handling (who collects, who remits, by channel).</li>
-                                <li><strong>Import Reservations</strong> (optional). Backfill historical bookings so you get year-over-year reporting and complete tax records from day one.</li>
-                                <li><strong>Cohost Rules</strong> (optional). Configure your Airbnb cohost payout method per property. 5 methods supported: Cleaning Only, Cleaning + %, % excluding Cleaning, % including Cleaning, or Fixed per Booking.</li>
-                                <li><strong>Users</strong> (optional). Invite team members with role-scoped access (Manager, Maintenance, Cleaner, etc.).</li>
-                                <li><strong>Company Settings</strong> (optional). Company name, logo, timezone, and contact info that appears on owner statements and notifications.</li>
-                                <li><strong>Review &amp; Go Live</strong> (required). Review everything and activate your account.</li>
+                                <li><strong>Connect.</strong> Connect your booking system (Hospitable), tell us whether you use QuickBooks, optionally set up Stripe for taking payments, and secure your account with two-factor sign-in.</li>
+                                <li><strong>Import.</strong> CohostIQ scans your booking system and shows you what it found. Pick the properties you want, confirm the cities and timezone (pulled from your properties, so you don't build a location list by hand), and optionally pull in your booking history. No booking system? Add your first property by hand with just a name and city.</li>
+                                <li><strong>Go.</strong> Set your cut (for example, a percentage of the nightly rate), add your owners, and optionally invite your team. HOA companies set up dues here instead.</li>
                             </ol>
-                            <p style="margin-top: 12px;">Most users finish the required steps in 15 to 30 minutes. The optional steps can be done whenever you're ready.</p>
+                            <p style="margin-top: 12px;">Every answer can be changed later.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="faq-item" data-category="onboarding">
                     <div class="faq-question">
-                        <h4>Can I skip onboarding steps and come back later?</h4>
+                        <h4>What about QuickBooks, taxes, and cohost payout rules?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes. Of the 13 onboarding steps, 5 are required (Welcome, Locations, Payment Rules, Properties, and Go Live). The other 8 are optional and can be picked up later from Settings. For example, connecting QuickBooks, importing reservation history, configuring cohost rules, and inviting team members can all wait until you're ready. The wizard marks each step required or optional so you know what's needed to go live.
+                            Those are set up after you go live, so they don't slow down getting started. During onboarding we only ask whether you use QuickBooks. If you do, connecting it is its own short walkthrough. If you don't, owner invoices generate and send straight from CohostIQ with nothing else to configure. Taxes, Airbnb cohost payout rules, and fine-grained team permissions are all available from Settings whenever you're ready.
                         </div>
                     </div>
                 </div>
@@ -227,7 +217,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            During onboarding, only the admin (the person who created the account) can complete the setup steps. Other team members invited during onboarding will see a "Setup in Progress" page until the admin completes onboarding and clicks Go Live. Once live, team members have access based on their assigned roles.
+                            During onboarding, only the admin (the person who created the account) can complete the setup steps. Other team members invited during onboarding will see a "Setup in Progress" page until the admin finishes setup. Once live, team members have access based on their assigned roles.
                         </div>
                     </div>
                 </div>
@@ -239,7 +229,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes. Everything you set up during onboarding can be modified later. Add more properties, change payment rulesets, update team member roles, and adjust settings anytime from your dashboard. Onboarding just gives you a structured way to get started.
+                            Yes. Everything you set up during onboarding can be modified later. Add more properties, change payment rulesets, update team member roles, and adjust settings anytime from your dashboard. Onboarding just gets you started fast.
                         </div>
                     </div>
                 </div>
@@ -252,7 +242,9 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            CohostIQ connects to your PMS (Hospitable, with others on the way) to pull in properties and reservations. You keep using your PMS for guests, channels, listings, and messaging. CohostIQ adds the things your PMS doesn't do: owner billing, cohost payout math, cleaning operations, maintenance with property item tracking, supplies and linens, and the QuickBooks sync to tie everything together.
+                            CohostIQ connects to your PMS (Hospitable, with others on the way) to pull in properties and reservations. You keep using your PMS for guests, channels, listings, and messaging. CohostIQ adds the things your PMS doesn't do: owner billing, cohost payout math, cleaning operations, maintenance with property item tracking, and the QuickBooks sync to tie everything together.
+                            <br><br>
+                            If your smart locks and thermostats are connected to Hospitable, CohostIQ sees them too. You can lock and unlock doors from CohostIQ, and we watch your locks and thermostats for problems so you hear about them before a guest does (see the maintenance question below).
                         </div>
                     </div>
                 </div>
@@ -266,7 +258,14 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="faq-answer-content">
                             Maintenance in CohostIQ is built around the items at each property. Every appliance, hot tub, HVAC unit, and major furnishing is tracked with purchase dates, warranties, and full repair history. When something breaks for the third time, you see it instantly as a repeat offender so you can stop pouring money into a unit that needs replacement.
                             <br><br>
-                            Tickets can be created manually or <strong>auto-generated from Hospitable, HostBuddy, and Turno</strong>. Assignments go out by push notification and SMS, and your maintenance crew works the ticket from the <strong>mobile maintenance app</strong> (separate from the cleaning app). They log parts, hours, and photos on the phone. Costs flow straight to the right owner's statement with a full audit trail.
+                            Tickets can be created manually or created automatically:
+                            <ul style="margin-top: 12px; padding-left: 20px;">
+                                <li><strong>Guest issues reported in Hospitable</strong> become an urgent Break/Fix ticket.</li>
+                                <li><strong>Low smart lock batteries</strong> open a ticket when a lock drops below the threshold you set.</li>
+                                <li><strong>HostBuddy and Turno</strong> can create tickets automatically too.</li>
+                            </ul>
+                            CohostIQ also keeps an eye on thermostats connected through Hospitable and flags likely problems with the thermostat or AC unit, such as high humidity while a guest is in the home, the fan left on with nobody there, or the temperature drifting well past the setpoint. We don't control your thermostats; we just tell you when something looks wrong.
+                            <br><br> Assignments go out by push notification and SMS, and your maintenance crew works the ticket from the <strong>mobile maintenance app</strong> (separate from the cleaning app). They log parts, hours, and photos on the phone. Costs flow straight to the right owner's statement with a full audit trail.
                         </div>
                     </div>
                 </div>
@@ -278,7 +277,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Owner statements generate from reservations, your payment rulesets, and any logged expenses. Each statement shows gross revenue, management fees, cleaning fees, maintenance, supplies, and the net payout. Owners can view statements directly through the owner portal, and you can download PDFs. If you connect QuickBooks, statements post directly as invoices and credit memos with no double entry.
+                            Owner statements generate from reservations, your payment rulesets, and any logged expenses. Each statement shows gross revenue, management fees, cleaning fees, maintenance, and the net payout. Owners can view statements directly through the owner portal, and you can download PDFs. If you connect QuickBooks, statements post directly as invoices and credit memos with no double entry.
                         </div>
                     </div>
                 </div>
@@ -384,6 +383,8 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="faq-answer-content">
                             Yes, but on rails. Owner billing, cohost payouts, and statement math run on deterministic rules so the dollars are always right. AI shows up where it actually helps:
                             <ul style="margin-top: 12px; padding-left: 20px;">
+                                <li><strong>CIQ Concierge (Beta).</strong> AI guest messaging that drafts or auto-sends replies grounded in each property's real data, and never invents details it can't verify. A human can step in anytime. Available as an add-on module.</li>
+                                <li><strong>InboxIQ (Beta).</strong> Every guest conversation in one installable app for your team, with CIQ Concierge suggestions built in. Available as an add-on module.</li>
                                 <li><strong>Ask CohostIQ.</strong> A built-in assistant grounded in your real data. Ask "what was Sunset Villa's revenue last March?" or "any open maintenance at Lakeside?" and get answers from your portfolio. It can also create maintenance tickets straight from the conversation.</li>
                                 <li><strong>CohostIQ MCP (in development).</strong> Our own Model Context Protocol server, so you can connect Claude, ChatGPT, or Cursor to your CohostIQ data for fuzzy queries while the deterministic billing rules keep your statements safe.</li>
                             </ul>
@@ -393,12 +394,12 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div class="faq-item" data-category="features">
                     <div class="faq-question">
-                        <h4>How does CohostIQ handle supplies and linens?</h4>
+                        <h4>Can my cleaners tell me when supplies are running low?</h4>
                         <div class="faq-toggle">+</div>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Supplies are tracked per property. You build reusable supply kits with scaling rules (per bedroom, per bathroom, or fixed), and CohostIQ auto-creates a restock job when stock runs low or on a turnover trigger. The property status dashboard shows you at a glance which properties need supplies and which are good.
+                            Yes. You set up a short list of the consumables you care about (toilet paper, paper towels, dish soap, coffee, and so on). At the end of each job, cleaners mark each one Good, Low, or Out in the cleaning app, and you see which properties need supplies before the next guest arrives.
                             <br><br>
                             Linens are handled per property too. You set the mode (on-site, off-site cleaner, vendor service, or mixed), and when laundry goes off-site, the cleaning app tracks the checkout with a days-out counter so nothing gets lost.
                         </div>

@@ -9,6 +9,9 @@ require_once __DIR__ . '/includes/header.php';
 function ciq_badge_core() {
     return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#e6f9f3; color:#0a9d78; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Core</span>';
 }
+function ciq_badge_beta() {
+    return '<span style="display:inline-block; margin-left:6px; padding:3px 11px; background:#fff7e6; color:#b45309; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Beta</span>';
+}
 function ciq_badge_addon() {
     return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#eef2ff; color:#4a6cf7; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Add-on module</span>';
 }
@@ -54,14 +57,14 @@ function ciq_badge_addon() {
                     <div class="feature-icon"><?php echo ciq_icon('link'); ?></div>
                     <h3 class="feature-title">PMS Sync</h3>
                     <p class="feature-description">
-                        Reservations and properties sync from Hospitable automatically. Smart lock and thermostat control ride along, included when you connect Hospitable.
+                        Reservations and properties sync from Hospitable automatically. Smart lock control and thermostat monitoring come along, included when you connect Hospitable.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('hammer'); ?></div>
                     <h3 class="feature-title">Maintenance</h3>
                     <p class="feature-description">
-                        Track every appliance with warranty dates and repair history, spot repeat offenders, and dispatch tickets to a field-ready mobile app.
+                        Track every appliance with warranty dates and repair history, spot repeat offenders, auto-create tickets from guest issues and low lock batteries, and dispatch to a field-ready mobile app.
                     </p>
                 </div>
                 <div class="feature-card">
@@ -80,19 +83,19 @@ function ciq_badge_addon() {
                     <div class="feature-icon"><?php echo ciq_icon('spray'); ?></div>
                     <h3 class="feature-title">Cleaning Operations</h3>
                     <p class="feature-description">
-                        In-house cleaner scheduling, conditional checklists, crews, a mobile app, payroll, and supplies &amp; linens.
+                        In-house cleaner scheduling, conditional checklists, crews, a mobile app, payroll, supply-level reporting, and linens.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('bot'); ?></div>
-                    <h3 class="feature-title">AI Guest Messaging</h3>
+                    <h3 class="feature-title">AI Guest Messaging <?php echo ciq_badge_beta(); ?></h3>
                     <p class="feature-description">
                         CIQ Concierge drafts or auto-sends guest replies grounded in your real property data, and never invents details.
                     </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('smartphone'); ?></div>
-                    <h3 class="feature-title">InboxIQ Unified Inbox</h3>
+                    <h3 class="feature-title">InboxIQ Unified Inbox <?php echo ciq_badge_beta(); ?></h3>
                     <p class="feature-description">
                         Every guest conversation across channels in one installable app, with tickets, presence, and a property calendar.
                     </p>
@@ -134,7 +137,7 @@ function ciq_badge_addon() {
                 ['Cleaner marketplace (find new cleaners on demand)', 'no', 'no', 'no', 'full'],
                 ['In-house crew payroll', 'full', 'no', 'partial', 'no'],
                 ['Maintenance tickets and item tracking', 'full', 'partial', 'full', 'no'],
-                ['Supplies and linen tracking', 'full', 'no', 'partial', 'no'],
+                ['Supply-level reporting and linen tracking', 'full', 'no', 'partial', 'no'],
                 ['AI guest messaging grounded in your data', 'full', 'partial', 'no', 'no'],
                 ['Guest upsells and a branded stay portal', 'full', 'partial', 'no', 'no'],
                 ['Owner-facing portal with statements', 'full', 'partial', 'no', 'no'],
@@ -187,21 +190,23 @@ function ciq_badge_addon() {
         </div>
     </section>
 
-    <!-- Core: PMS Sync + Smart Home -->
+    <!-- Core: PMS Sync -->
     <section class="feature-detail">
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('link'); ?> PMS Sync &amp; Smart Home <?php echo ciq_badge_core(); ?></h3>
+                    <h3><?php echo ciq_icon('link'); ?> PMS Sync <?php echo ciq_badge_core(); ?></h3>
                     <p>
-                        CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging &mdash; and your smart locks and thermostats come along for the ride.
+                        CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging &mdash; and if your smart locks and thermostats are connected to Hospitable, CohostIQ sees them too.
                     </p>
                     <ul class="feature-detail-list">
                         <li>OAuth connection to Hospitable, with more PMS platforms on the way</li>
                         <li>Automatic reservation sync for accurate billing calculations</li>
                         <li>Editable check-in and check-out times that push back to your PMS</li>
                         <li>Smart lock control with battery alerts and per-lock problem tracking &mdash; included on Hospitable</li>
-                        <li>Thermostat control per property &mdash; included on Hospitable</li>
+                        <li>Auto-created maintenance tickets for low lock batteries</li>
+                        <li>Auto-created urgent tickets from guest issues reported in Hospitable</li>
+                        <li>Thermostat monitoring that flags likely thermostat or AC problems: high humidity, a fan left on in a vacant home, or temperature drifting past the setpoint</li>
                         <li>Vacant homes re-lock themselves; every unlock is logged</li>
                         <li>Single source of truth for financial and operational data</li>
                     </ul>
@@ -740,54 +745,53 @@ function ciq_badge_addon() {
         </div>
     </section>
 
-    <!-- Add-on: Supplies and Linens -->
+    <!-- Add-on: Supply Levels and Linens -->
     <section class="feature-detail">
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('package'); ?> Supplies, Linens, and Restock Automation <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('package'); ?> Supply Levels and Linens <?php echo ciq_badge_addon(); ?></h3>
                     <p>
-                        Stop running out of paper towels. Stop losing sheets. CohostIQ tracks every consumable and linen at the property level, scales kits to the size of the home, and triggers a restock job before you hear about it from a guest.
+                        Stop running out of paper towels. Stop losing sheets. Your cleaners report supply levels at the end of every job, so you know which homes need a restock before you hear about it from a guest.
                     </p>
                     <ul class="feature-detail-list">
-                        <li>Build reusable supply kits with per-bedroom, per-bathroom, or fixed scaling</li>
-                        <li>Property status dashboard with restock progress and low-stock alerts</li>
-                        <li>Auto-created supply delivery jobs on turnover or calendar triggers</li>
+                        <li>Your own checklist of the consumables you care about</li>
+                        <li>Cleaners mark each item Good, Low, or Out in the cleaning app at job wrap-up</li>
+                        <li>See at a glance which properties need supplies</li>
                         <li>Linen modes per property: on-site, off-site cleaner, vendor service, or mixed</li>
                         <li>Off-site linen checkout tracking with days-out counter</li>
-                        <li>Item catalog with master inventory and unit costs</li>
                     </ul>
                 </div>
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Property Supply Status</span>
+                            <span style="font-weight: 600; color: #1d2144;">Supplies Needed</span>
                             <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 20px; font-size: 12px;">2 Low</span>
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
                                 <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</span>
-                                <span style="font-size: 12px; color: #ff6b6b;">Restock needed</span>
+                                <span style="font-size: 12px; color: #ff6b6b;">1 Out, 2 Low</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
                                 <div style="width: 28%; background: #ff6b6b; height: 100%;"></div>
                             </div>
-                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">TP 2/10, paper towels 1/4, dish soap empty</div>
+                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">Dish soap Out &middot; toilet paper Low &middot; paper towels Low</div>
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
                                 <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</span>
-                                <span style="font-size: 12px; color: #856404;">Watch</span>
+                                <span style="font-size: 12px; color: #856404;">1 Low</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
                                 <div style="width: 62%; background: #fbbf24; height: 100%;"></div>
                             </div>
-                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">Linens: 4 sets off-site, 6 days out</div>
+                            <div style="font-size: 11px; color: #637381; margin-top: 6px;">Coffee Low &middot; linens: 4 sets off-site, 6 days out</div>
                         </div>
                         <div style="padding: 14px 20px;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
                                 <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</span>
-                                <span style="font-size: 12px; color: #13c296;">Stocked</span>
+                                <span style="font-size: 12px; color: #13c296;">All Good</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
                                 <div style="width: 92%; background: #13c296; height: 100%;"></div>
@@ -804,7 +808,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('bot'); ?> AI Guest Messaging &mdash; CIQ Concierge <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('bot'); ?> AI Guest Messaging &mdash; CIQ Concierge <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
                     <p>
                         An AI that answers guests like a member of your team, grounded in your real property data. It drafts replies for you to approve, or sends vetted answers on its own, and it never invents details it can't verify.
                     </p>
@@ -852,7 +856,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('smartphone'); ?> InboxIQ &mdash; Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?></h3>
+                    <h3><?php echo ciq_icon('smartphone'); ?> InboxIQ &mdash; Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
                     <p>
                         Every guest conversation, across every channel, in a single installable app for your team. See who's viewing a thread, spin up a ticket without leaving it, unlock the door from the conversation, and keep operations moving from your phone.
                     </p>
