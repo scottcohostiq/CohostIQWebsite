@@ -39,11 +39,11 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Condo Associations</h4>
-                    <p>Multi-unit buildings with shared infrastructure — elevators, lobbies, parking, pools. Manage assessments, reserve funds, and vendor contracts.</p>
+                    <p>Multi-unit buildings with shared infrastructure, elevators, lobbies, parking, pools. Manage assessments, reserve funds, and vendor contracts.</p>
                 </div>
                 <div class="integration-card">
                     <h4>Management Companies</h4>
-                    <p>Multiple associations under one account. Each community gets its own billing, portal, and reporting — your team sees everything in one dashboard.</p>
+                    <p>Multiple associations under one account. Each community gets its own billing, portal, and reporting, your team sees everything in one dashboard.</p>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Branded Member Portal</h4>
-                    <p>Homeowners get a secure login to view their balance, pay dues, submit requests, vote, read announcements, and download documents. Each community gets its own logo, colors, welcome text, and web address &mdash; and you choose which sections members can see.</p>
+                    <p>Homeowners get a secure login to view their balance, pay dues, submit requests, vote, read announcements, and download documents. Each community gets its own logo, colors, welcome text, and web address, and you choose which sections members can see.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Your Logo &amp; Colors</span>
                         <span class="capability-tag">Custom Domain</span>
@@ -79,7 +79,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Board Management</h4>
-                    <p>Track board roles — president, treasurer, secretary — with appointment dates and full history. Dedicated Action Center with today's calendar, recent activity, and items needing attention.</p>
+                    <p>Track board roles, president, treasurer, secretary, with appointment dates and full history. Dedicated Action Center with today's calendar, recent activity, and items needing attention.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Role Tracking</span>
                         <span class="capability-tag">Term History</span>
@@ -88,7 +88,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Maintenance &amp; Work Orders</h4>
-                    <p>Members submit requests through the portal. Your team triages, assigns, and tracks every ticket, with drag-and-drop scheduling and a full repair history per asset — so you know what has already been fixed on that roof before you approve the next quote.</p>
+                    <p>Members submit requests through the portal. Your team triages, assigns, and tracks every ticket, with drag-and-drop scheduling and a full repair history per asset, so you know what has already been fixed on that roof before you approve the next quote.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Request Queue</span>
                         <span class="capability-tag">Asset Tracking</span>
@@ -98,7 +98,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Automated Duty Discovery &amp; Scheduling</h4>
-                    <p>Upload your CC&amp;Rs, meeting minutes, a vendor contract, a reserve study, or an inspection report, and CohostIQ reads it and pulls out what someone actually has to do &mdash; the annual backflow inspection, the quarterly board meeting, the reserve contribution &mdash; with the due date, how often it repeats, and the section it came from. Accept the ones that matter as duties and dismiss the rest, then turn a duty into a schedule that repeats or a work order for your team. When a document states a rule but never says when to enforce it, CohostIQ tells you what's missing and suggests the duty you'd need.</p>
+                    <p>Upload your CC&amp;Rs, meeting minutes, a vendor contract, a reserve study, or an inspection report, and CohostIQ reads it and pulls out what someone actually has to do, the annual backflow inspection, the quarterly board meeting, the reserve contribution, with the due date, how often it repeats, and the section it came from. Accept the ones that matter as duties and dismiss the rest, then turn a duty into a schedule that repeats or a work order for your team. When a document states a rule but never says when to enforce it, CohostIQ tells you what's missing and suggests the duty you'd need.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Reads Your Documents</span>
                         <span class="capability-tag">Finds Dates &amp; Recurrence</span>
@@ -109,7 +109,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Member Duties &amp; Recurring Work</h4>
-                    <p>Assign a duty to a homeowner or a board member and CohostIQ emails them and puts it in their portal task list with a due date. Duties that need proof — an insurance certificate, a signed acknowledgment — stay open until the document is actually uploaded. Recurring work runs on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually.</p>
+                    <p>Assign a duty to a homeowner or a board member and CohostIQ emails them and puts it in their portal task list with a due date. Duties that need proof, an insurance certificate, a signed acknowledgment, stay open until the document is actually uploaded. Recurring work runs on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Assigned Duties</span>
                         <span class="capability-tag">Due Dates</span>
@@ -120,7 +120,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Document Management</h4>
-                    <p>Store CC&amp;Rs, bylaws, meeting minutes, financial reports, and community notices in folders you organize yourself. Every upload records who added it — board member or homeowner — so the file history still makes sense months later. Members download what they need from the portal.</p>
+                    <p>Store CC&amp;Rs, bylaws, meeting minutes, financial reports, and community notices in folders you organize yourself. Every upload records who added it, board member or homeowner, so the file history still makes sense months later. Members download what they need from the portal.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Folders</span>
                         <span class="capability-tag">CC&amp;Rs &amp; Bylaws</span>
@@ -130,7 +130,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Reporting &amp; QuickBooks Sync</h4>
-                    <p>Financial reports, expense tracking, and tax records — all exportable. QuickBooks integration pushes statements, dues, and expenses automatically. Year-end is a formality.</p>
+                    <p>Financial reports, expense tracking, and tax records, all exportable. QuickBooks integration pushes statements, dues, and expenses automatically. Year-end is a formality.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Financial Reports</span>
                         <span class="capability-tag">QuickBooks Sync</span>
@@ -169,7 +169,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Buildings &amp; Common Areas</h4>
-                    <p>Track the physical community, not just a list of addresses. Each building carries its own structure, roof, life-safety, utility, and insurance and reserve detail, with its units assigned to it. Amenities — pool, elevator, clubhouse, parking — are tracked community-wide or per building, with inspection and permit dates that stay quiet until something is actually due. Open a work order directly against a building or an amenity.</p>
+                    <p>Track the physical community, not just a list of addresses. Each building carries its own structure, roof, life-safety, utility, and insurance and reserve detail, with its units assigned to it. Amenities, pool, elevator, clubhouse, parking, are tracked community-wide or per building, with inspection and permit dates that stay quiet until something is actually due. Open a work order directly against a building or an amenity.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Building Records</span>
                         <span class="capability-tag">Roof &amp; Life Safety</span>
@@ -180,7 +180,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="integration-card">
                     <h4>Online Dues Payments</h4>
-                    <p>Members pay dues by card or bank transfer directly from the portal, powered by Stripe. Set up reminder rules &mdash; so many days before the due date, or after the grace period ends &mdash; and they send themselves.</p>
+                    <p>Members pay dues by card or bank transfer directly from the portal, powered by Stripe. Set up reminder rules, so many days before the due date, or after the grace period ends, and they send themselves.</p>
                     <div class="integration-capabilities">
                         <span class="capability-tag">Card &amp; Bank Transfer</span>
                         <span class="capability-tag">Stripe Powered</span>
@@ -199,7 +199,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="section-label">Getting Started</span>
                 <h2 class="section-title">Up and Running in an Afternoon</h2>
                 <p class="section-description">
-                    No PMS to connect, no reservations to import — just your properties and members.
+                    No PMS to connect, no reservations to import, just your properties and members.
                 </p>
             </div>
             <div class="integration-flow">
@@ -212,7 +212,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="integration-flow-step">
                     <div class="integration-flow-number">2</div>
                     <h4>Set Up Dues</h4>
-                    <p>Configure dues rulesets — monthly, quarterly, or annual. Set amounts by unit type or lot size.</p>
+                    <p>Configure dues rulesets, monthly, quarterly, or annual. Set amounts by unit type or lot size.</p>
                 </div>
                 <div class="integration-flow-arrow" aria-hidden="true">&rarr;</div>
                 <div class="integration-flow-step">
@@ -285,7 +285,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <p style="color: var(--body-color); font-size: 0.95rem;">
                     <strong>Over 200 units, or managing several associations?</strong>
-                    <a href="https://cohostiq.app/signup/request_demo.php">Get a quote</a> &mdash; we price larger
+                    <a href="https://cohostiq.app/signup/request_demo.php">Get a quote</a>, we price larger
                     portfolios individually, and we&rsquo;ll show you the comparison against whatever you&rsquo;re
                     using now.
                 </p>
@@ -294,7 +294,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="integrations-grid integrations-grid-3" style="margin-top: 44px;">
                 <div class="integration-card">
                     <h4>No Feature Tiers</h4>
-                    <p>Every association gets the whole toolset &mdash; dues billing, the branded member portal, board elections, violations, architectural review, buildings and common areas, duty discovery from your documents, meetings, maintenance, reporting, and QuickBooks sync. Nothing is held back for a higher plan.</p>
+                    <p>Every association gets the whole toolset, dues billing, the branded member portal, board elections, violations, architectural review, buildings and common areas, duty discovery from your documents, meetings, maintenance, reporting, and QuickBooks sync. Nothing is held back for a higher plan.</p>
                 </div>
                 <div class="integration-card">
                     <h4>Keep Your Accountant</h4>

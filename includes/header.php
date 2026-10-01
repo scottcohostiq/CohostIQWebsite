@@ -78,8 +78,9 @@ $canonicalUrl = $siteUrl . ($pageCanonical ?: ('/' . basename($_SERVER['SCRIPT_N
     <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
 
     <!-- Fonts (self-hosted to avoid third-party CORS/SRI/CSP scan findings) -->
-    <link rel="stylesheet" href="/css/fonts/inter.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts/inter.css">
+    <link rel="stylesheet" href="css/style.css?v=20261001">
+    <link rel="stylesheet" href="css/redesign.css?v=20261001">
 
     <!-- Organization Schema (all pages) -->
     <script type="application/ld+json">
@@ -121,8 +122,8 @@ echo ciq_icon_sprite();
                     CohostIQ
                 </a>
                 <div class="nav-links">
-                    <a href="index.php"<?php echo $currentPage === 'home' ? ' class="active" aria-current="page"' : ''; ?>>Home</a>
-                    <a href="index.php#about">About</a>
+
+
                     <a href="features.php"<?php echo $currentPage === 'features' ? ' class="active" aria-current="page"' : ''; ?>>Features</a>
                     <a href="integrations.php"<?php echo $currentPage === 'integrations' ? ' class="active" aria-current="page"' : ''; ?>>Integrations</a>
                     <a href="<?php echo $currentPage === 'hoa' ? 'hoa.php#hoa-pricing' : 'signup.php#pricing'; ?>"<?php echo $currentPage === 'signup' ? ' class="active" aria-current="page"' : ''; ?>>Pricing</a>
@@ -130,7 +131,7 @@ echo ciq_icon_sprite();
                 </div>
                 <div class="nav-actions">
                     <a href="https://cohostiq.app/login.php" class="btn btn-outline">Log In</a>
-                    <a href="https://cohostiq.app/signup/request_demo.php" class="btn btn-secondary">Request a Demo</a>
+
                     <a href="https://cohostiq.app/signup/signup.php" class="btn btn-primary">Start Free Trial</a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">

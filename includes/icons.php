@@ -14,7 +14,7 @@
  * whatever contains it. A container that used to set font-size: 2rem
  * for an emoji renders a 2rem icon with no extra CSS.
  *
- * ciq_icon_sprite() must be output once per page — includes/header.php
+ * ciq_icon_sprite() must be output once per page, includes/header.php
  * does this immediately after <body>. Adding an icon means adding one
  * entry to CIQ_ICON_PATHS; nothing else changes.
  */

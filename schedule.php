@@ -15,7 +15,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span>/</span>
                 <span>Schedule a Demo</span>
             </nav>
-            <h1 class="page-header-title">You're In — Let's Book Your Demo</h1>
+            <h1 class="page-header-title">You're In, Let's Book Your Demo</h1>
             <p class="page-header-description">
                 Pick a time that works for you. We'll walk you through CohostIQ and answer any questions about your setup.
             </p>

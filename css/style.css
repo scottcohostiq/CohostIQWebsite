@@ -4,15 +4,15 @@
 
 /* CSS Variables */
 :root {
-    --primary: #4a6cf7;
-    --primary-dark: #3a56d4;
-    --primary-light: #6b8aff;
-    --secondary: #13c296;
+    --primary: #233e50;
+    --primary-dark: #152d3c;
+    --primary-light: #436072;
+    --secondary: #47745b;
     --secondary-dark: #0ea77d;
-    --dark: #1d2144;
+    --dark: #203b4d;
     --dark-light: #2d3361;
     --body-color: #637381;
-    --body-bg: #f8fafc;
+    --body-bg: #f3f3ed;
     --white: #ffffff;
     --border-color: #e2e8f0;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -1863,7 +1863,7 @@ ul {
 }
 
 .about-features {
-    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    background: linear-gradient(135deg, #f3f3ed, #eef2ff);
     border-radius: 16px;
     padding: 32px;
 }
@@ -1958,7 +1958,7 @@ ul {
     }
 
     /* Signup page "What's Included" list */
-    .signup-info [style*="background: #f8fafc"] {
+    .signup-info [style*="background: #f3f3ed"] {
         padding: 20px !important;
     }
 
@@ -2459,7 +2459,7 @@ h4 > .ciq-icon {
     border-width: 2px;
 }
 
-/* HOA pricing tier row — 4 up, collapses to 2 then 1 */
+/* HOA pricing tier row ,  4 up, collapses to 2 then 1 */
 .price-grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2515,7 +2515,7 @@ h4 > .ciq-icon {
     display: inline-block;
     margin-top: 8px;
     font-weight: 700;
-    color: #0a9d78;
+    color: #47745b;
 }
 
 @media (max-width: 992px) {
@@ -2865,18 +2865,18 @@ h4 > .ciq-icon {
 }
 
 .compare-header {
-    background: #f8fafc;
+    background: #f3f3ed;
     padding: 16px 20px;
     font-size: 13px;
     font-weight: 600;
-    color: #1d2144;
+    color: #203b4d;
     border-bottom: 1px solid #e2e8f0;
 }
 
 .compare-row {
     padding: 14px 20px;
     font-size: 14px;
-    color: #1d2144;
+    color: #203b4d;
     border-bottom: 1px solid #f1f5f9;
 }
 
@@ -2892,7 +2892,7 @@ h4 > .ciq-icon {
 }
 
 .compare-cell-cohost {
-    color: #4a6cf7;
+    color: #233e50;
 }
 
 .compare-cell-label {
@@ -2913,7 +2913,7 @@ h4 > .ciq-icon {
     height: 22px;
     line-height: 22px;
     border-radius: 50%;
-    background: #13c296;
+    background: #47745b;
     color: white;
     font-weight: 700;
     font-size: 13px;
@@ -2950,7 +2950,7 @@ h4 > .ciq-icon {
 
     .compare-row .compare-feature {
         font-weight: 700;
-        color: #1d2144;
+        color: #203b4d;
         font-size: 15px;
         margin-bottom: 12px;
     }
@@ -2969,7 +2969,7 @@ h4 > .ciq-icon {
     }
 
     .compare-row .compare-cell[data-vendor="CohostIQ"] .compare-cell-label {
-        color: #4a6cf7;
+        color: #233e50;
     }
 }
 
@@ -2989,7 +2989,7 @@ h4 > .ciq-icon {
 
 .fit-card-name {
     font-weight: 700;
-    color: #1d2144;
+    color: #203b4d;
     font-size: 1.125rem;
     margin-bottom: 4px;
 }
@@ -3020,12 +3020,12 @@ h4 > .ciq-icon {
     margin-bottom: 6px;
 }
 
-.fit-card-label-handles { color: #13c296; }
+.fit-card-label-handles { color: #47745b; }
 .fit-card-label-gap { color: #ff6b6b; }
-.fit-card-label-us { color: #4a6cf7; }
+.fit-card-label-us { color: #233e50; }
 
 .fit-card-text {
-    color: #1d2144;
+    color: #203b4d;
     font-size: 14px;
 }
 
@@ -3045,7 +3045,7 @@ h4 > .ciq-icon {
 
 /* ===== AI / MCP positioning section (index.php) ===== */
 .ai-section {
-    background: linear-gradient(135deg, #1d2144 0%, #2d3361 100%);
+    background: linear-gradient(135deg, #203b4d 0%, #2d3361 100%);
     color: #ffffff;
     position: relative;
     overflow: hidden;
@@ -3068,7 +3068,7 @@ h4 > .ciq-icon {
 }
 
 .ai-section-label {
-    color: #6b8aff !important;
+    color: #436072 !important;
 }
 
 .ai-section-title {
@@ -3103,7 +3103,7 @@ h4 > .ciq-icon {
 }
 
 .ai-compare-label-fuzzy { color: #ff9b6b; }
-.ai-compare-label-rules { color: #13c296; }
+.ai-compare-label-rules { color: #47745b; }
 
 .ai-compare-list {
     list-style: none;
@@ -3131,7 +3131,7 @@ h4 > .ciq-icon {
 }
 
 .ai-bullet-fuzzy { color: #ff9b6b; }
-.ai-bullet-rules { color: #13c296; }
+.ai-bullet-rules { color: #47745b; }
 
 .ai-inside-block {
     background: rgba(255, 255, 255, 0.06);
@@ -3143,7 +3143,7 @@ h4 > .ciq-icon {
 .ai-inside-label {
     font-size: 12px;
     font-weight: 700;
-    color: #6b8aff;
+    color: #436072;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-bottom: 20px;
@@ -3168,7 +3168,7 @@ h4 > .ciq-icon {
     font-weight: 600;
     padding: 3px 8px;
     background: rgba(107, 138, 255, 0.2);
-    color: #6b8aff;
+    color: #436072;
     border-radius: 4px;
     vertical-align: middle;
     margin-left: 8px;
@@ -3226,7 +3226,7 @@ h4 > .ciq-icon {
 .pricing-calculator h3 {
     text-align: center;
     margin: 0 0 4px;
-    color: #1d2144;
+    color: #203b4d;
     font-size: 1.375rem;
 }
 
@@ -3249,7 +3249,7 @@ h4 > .ciq-icon {
     -webkit-appearance: none;
     appearance: none;
     height: 6px;
-    background: linear-gradient(to right, #4a6cf7 0%, #6b8aff 100%);
+    background: linear-gradient(to right, #233e50 0%, #436072 100%);
     border-radius: 999px;
     outline: none;
     cursor: pointer;
@@ -3262,7 +3262,7 @@ h4 > .ciq-icon {
     height: 22px;
     border-radius: 50%;
     background: #ffffff;
-    border: 3px solid #4a6cf7;
+    border: 3px solid #233e50;
     box-shadow: 0 2px 6px rgba(74, 108, 247, 0.4);
     cursor: pointer;
     transition: transform 0.1s ease;
@@ -3277,7 +3277,7 @@ h4 > .ciq-icon {
     height: 22px;
     border-radius: 50%;
     background: #ffffff;
-    border: 3px solid #4a6cf7;
+    border: 3px solid #233e50;
     box-shadow: 0 2px 6px rgba(74, 108, 247, 0.4);
     cursor: pointer;
     transition: transform 0.1s ease;
@@ -3291,7 +3291,7 @@ h4 > .ciq-icon {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: #f8fafc;
+    background: #f3f3ed;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
     padding: 6px 12px;
@@ -3304,7 +3304,7 @@ h4 > .ciq-icon {
     background: transparent;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #1d2144;
+    color: #203b4d;
     text-align: right;
     outline: none;
     padding: 4px 0;
@@ -3340,7 +3340,7 @@ h4 > .ciq-icon {
 .pricing-calc-result-value {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #1d2144;
+    color: #203b4d;
     line-height: 1;
 }
 
@@ -3368,7 +3368,7 @@ h4 > .ciq-icon {
 }
 
 .pricing-calc-result-row strong {
-    color: #1d2144;
+    color: #203b4d;
     font-weight: 600;
 }
 
@@ -3399,7 +3399,7 @@ h4 > .ciq-icon {
     justify-content: space-between;
     align-items: center;
     font-size: 13px;
-    color: #1d2144;
+    color: #203b4d;
 }
 
 .pricing-calc-breakdown-row strong {
@@ -3485,7 +3485,7 @@ h4 > .ciq-icon {
 
 .integrations-strip-logos span:hover {
     opacity: 1;
-    color: #1d2144;
+    color: #203b4d;
 }
 
 @media (max-width: 600px) {
@@ -3519,7 +3519,7 @@ h4 > .ciq-icon {
 .ts-calc-header h3 {
     margin: 0 0 6px;
     font-size: 1.25rem;
-    color: #1d2144;
+    color: #203b4d;
 }
 
 .ts-calc-header p {
@@ -3554,7 +3554,7 @@ h4 > .ciq-icon {
     -webkit-appearance: none;
     appearance: none;
     height: 5px;
-    background: linear-gradient(to right, #4a6cf7 0%, #6b8aff 100%);
+    background: linear-gradient(to right, #233e50 0%, #436072 100%);
     border-radius: 999px;
     outline: none;
     cursor: pointer;
@@ -3567,7 +3567,7 @@ h4 > .ciq-icon {
     height: 18px;
     border-radius: 50%;
     background: #ffffff;
-    border: 2.5px solid #4a6cf7;
+    border: 2.5px solid #233e50;
     box-shadow: 0 2px 5px rgba(74, 108, 247, 0.35);
     cursor: pointer;
 }
@@ -3577,7 +3577,7 @@ h4 > .ciq-icon {
     height: 18px;
     border-radius: 50%;
     background: #ffffff;
-    border: 2.5px solid #4a6cf7;
+    border: 2.5px solid #233e50;
     box-shadow: 0 2px 5px rgba(74, 108, 247, 0.35);
     cursor: pointer;
 }
@@ -3589,10 +3589,10 @@ h4 > .ciq-icon {
     padding: 6px 10px;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: #1d2144;
+    color: #203b4d;
     text-align: right;
     outline: none;
-    background: #f8fafc;
+    background: #f3f3ed;
     -moz-appearance: textfield;
 }
 
@@ -3612,13 +3612,13 @@ h4 > .ciq-icon {
     gap: 10px;
     cursor: pointer;
     font-size: 14px;
-    color: #1d2144;
+    color: #203b4d;
 }
 
 .ts-calc-check input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #4a6cf7;
+    accent-color: #233e50;
     cursor: pointer;
 }
 
@@ -3657,7 +3657,7 @@ h4 > .ciq-icon {
     flex: 0 0 auto;
     font-size: 1.5rem;
     font-weight: 800;
-    color: #1d2144;
+    color: #203b4d;
     line-height: 1.1;
     order: 2;
 }
@@ -3692,12 +3692,12 @@ h4 > .ciq-icon {
 }
 
 .ts-calc-row-saved .ts-calc-row-label {
-    color: #4a6cf7;
+    color: #233e50;
 }
 
 .ts-calc-row-saved .ts-calc-row-value {
     font-size: 1.875rem;
-    color: #4a6cf7;
+    color: #233e50;
 }
 
 .ts-calc-note {
@@ -3747,7 +3747,7 @@ h4 > .ciq-icon {
 .changelog-month-label {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #1d2144;
+    color: #203b4d;
     padding-top: 4px;
     position: sticky;
     top: 100px;
@@ -3793,7 +3793,7 @@ h4 > .ciq-icon {
 }
 
 .changelog-item-title {
-    color: #1d2144;
+    color: #203b4d;
     font-size: 1rem;
     font-weight: 600;
     margin: 0;
@@ -3854,7 +3854,7 @@ h4 > .ciq-icon {
 .founder-greeting {
     font-size: 1.375rem;
     font-weight: 700;
-    color: #1d2144;
+    color: #203b4d;
     line-height: 1.2;
 }
 
@@ -3927,7 +3927,7 @@ h4 > .ciq-icon {
 .benefits-grid .benefit-content h4 {
     margin: 0 0 8px;
     font-size: 1.0625rem;
-    color: #1d2144;
+    color: #203b4d;
 }
 
 .benefits-grid .benefit-content p {

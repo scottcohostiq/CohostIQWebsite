@@ -416,7 +416,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="faq-answer-content">
                             For vacation rental and short-term rental portfolios, CohostIQ uses volume-based per-property pricing. The more properties you have, the lower the per-property rate, and volume discounts apply automatically as you add properties, so there's nothing to upgrade or downgrade manually. See the <a href="signup.php#pricing">pricing page</a> for current tiers.
                             <br><br>
-                            Homeowner and condo associations are priced differently &mdash; by unit count, as a flat monthly rate. See <a href="hoa.php#hoa-pricing">HOA &amp; COA pricing</a>.
+                            Homeowner and condo associations are priced differently, by unit count, as a flat monthly rate. See <a href="hoa.php#hoa-pricing">HOA &amp; COA pricing</a>.
                         </div>
                     </div>
                 </div>

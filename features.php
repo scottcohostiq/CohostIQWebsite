@@ -7,13 +7,13 @@ require_once __DIR__ . '/includes/header.php';
 
 // Small inline badge helpers so the Core / Add-on split reads at a glance.
 function ciq_badge_core() {
-    return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#e6f9f3; color:#0a9d78; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Core</span>';
+    return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#e6f9f3; color:#47745b; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Core</span>';
 }
 function ciq_badge_beta() {
     return '<span style="display:inline-block; margin-left:6px; padding:3px 11px; background:#fff7e6; color:#b45309; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Beta</span>';
 }
 function ciq_badge_addon() {
-    return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#eef2ff; color:#4a6cf7; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Add-on module</span>';
+    return '<span style="display:inline-block; margin-left:10px; padding:3px 11px; background:#eef2ff; color:#233e50; border-radius:20px; font-size:12px; font-weight:600; vertical-align:middle; letter-spacing:0.2px;">Add-on module</span>';
 }
 ?>
 
@@ -25,9 +25,9 @@ function ciq_badge_addon() {
                 <span>/</span>
                 <span>Features</span>
             </nav>
-            <h1 class="page-header-title">A Rock-Solid Core. Modules You Add As You Grow.</h1>
+            <h1 class="page-header-title">The tools behind every property.</h1>
             <p class="page-header-description">
-                Every CohostIQ account runs on the same core: accounting, PMS sync, maintenance, and reporting. From there, switch on the modules you need &mdash; cleaning operations, AI guest messaging, a unified inbox, upsells, and a branded guest portal.
+                Every CohostIQ account runs on the same core: accounting, PMS sync, maintenance, and reporting. From there, switch on the modules you need, cleaning operations, AI guest messaging, a unified inbox, upsells, and a branded guest portal.
             </p>
         </div>
     </section>
@@ -37,14 +37,14 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="section-header">
                 <span class="section-label">How CohostIQ Is Built</span>
-                <h2 class="section-title">The Core Does the Money and the Ops. Modules Do the Rest.</h2>
+                <h2 class="section-title">Start with the core. Add what you need.</h2>
                 <p class="section-description">
-                    The core is the part that has to be right every month: your books, your reservation data, your repairs, and your reports. Add-on modules bolt on when you want them, and everything a module does still flows back into the core.
+                    Every account includes accounting, reservation sync, maintenance, and reporting. Optional modules connect cleaning, owner access, and guest services to those same records.
                 </p>
             </div>
 
             <!-- The Core -->
-            <div style="margin-bottom: 12px; font-weight: 700; color: #0a9d78; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">The Core &mdash; on every account</div>
+            <div style="margin-bottom: 12px; font-weight: 700; color: #47745b; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">The Core, on every account</div>
             <div class="features-grid" style="margin-bottom: 40px;">
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('wallet'); ?></div>
@@ -77,7 +77,7 @@ function ciq_badge_addon() {
             </div>
 
             <!-- Add-on Modules -->
-            <div style="margin-bottom: 12px; font-weight: 700; color: #4a6cf7; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">Add-on Modules &mdash; switch on what you need</div>
+            <div style="margin-bottom: 12px; font-weight: 700; color: #233e50; text-transform: uppercase; letter-spacing: 0.6px; font-size: 13px;">Add-on Modules, switch on what you need</div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon"><?php echo ciq_icon('spray'); ?></div>
@@ -110,7 +110,7 @@ function ciq_badge_addon() {
             </div>
 
             <p style="text-align: center; color: #637381; font-size: 13px; margin-top: 24px; max-width: 720px; margin-left: auto; margin-right: auto;">
-                The core is priced per property. Add-on modules are optional and priced separately &mdash; <a href="https://cohostiq.app/signup/request_demo.php" style="color:#4a6cf7;">talk to us</a> about turning one on.
+                The core is priced per property. Add-on modules are optional and priced separately, <a href="https://cohostiq.app/signup/request_demo.php" style="color:#233e50;">talk to us</a> about turning one on.
             </p>
         </div>
     </section>
@@ -181,7 +181,7 @@ function ciq_badge_addon() {
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label" style="color:#0a9d78;">The Core</span>
+                <span class="section-label" style="color:#47745b;">The Core</span>
                 <h2 class="section-title">The Part That Has to Be Right Every Month</h2>
                 <p class="section-description">
                     Accounting, PMS sync, maintenance, and reporting. This is the foundation every CohostIQ account runs on, and every module feeds back into it.
@@ -197,13 +197,13 @@ function ciq_badge_addon() {
                 <div class="feature-detail-text">
                     <h3><?php echo ciq_icon('link'); ?> PMS Sync <?php echo ciq_badge_core(); ?></h3>
                     <p>
-                        CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging &mdash; and if your smart locks and thermostats are connected to Hospitable, CohostIQ sees them too.
+                        CohostIQ connects to your existing PMS like Hospitable. We pull in reservation and property data, then add the billing, reporting, cleaning, and team management your PMS doesn't cover. You keep using your PMS for guests, channels, and messaging, and if your smart locks and thermostats are connected to Hospitable, CohostIQ sees them too.
                     </p>
                     <ul class="feature-detail-list">
                         <li>OAuth connection to Hospitable, with more PMS platforms on the way</li>
                         <li>Automatic reservation sync for accurate billing calculations</li>
                         <li>Editable check-in and check-out times that push back to your PMS</li>
-                        <li>Smart lock control with battery alerts and per-lock problem tracking &mdash; included on Hospitable</li>
+                        <li>Smart lock control with battery alerts and per-lock problem tracking, included on Hospitable</li>
                         <li>Auto-created maintenance tickets for low lock batteries</li>
                         <li>Auto-created urgent tickets from guest issues reported in Hospitable</li>
                         <li>Thermostat monitoring that flags likely thermostat or AC problems: high humidity, a fan left on in a vacant home, or temperature drifting past the setpoint</li>
@@ -214,32 +214,32 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div class="dashboard-preview" style="min-height: 250px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                            <div style="font-weight: 600; color: #1d2144;">PMS Connection</div>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
+                            <div style="font-weight: 600; color: #203b4d;">PMS Connection</div>
+                            <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 16px; margin-bottom: 12px; border: 1px solid #e2e8f0;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #4a6cf7, #6b8aff); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">H</div>
+                                <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #233e50, #436072); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700;">H</div>
                                 <div>
-                                    <div style="font-weight: 600; color: #1d2144;">Hospitable</div>
+                                    <div style="font-weight: 600; color: #203b4d;">Hospitable</div>
                                     <div style="font-size: 12px; color: #637381;">Last sync: 5 minutes ago</div>
                                 </div>
                             </div>
                         </div>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
                             <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; border: 1px solid #e2e8f0;">
-                                <div style="font-size: 1.25rem; font-weight: 700; color: #1d2144;">24</div>
+                                <div style="font-size: 1.25rem; font-weight: 700; color: #203b4d;">24</div>
                                 <div style="font-size: 11px; color: #637381;">Properties Synced</div>
                             </div>
                             <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; border: 1px solid #e2e8f0;">
-                                <div style="font-size: 1.25rem; font-weight: 700; color: #1d2144;">156</div>
+                                <div style="font-size: 1.25rem; font-weight: 700; color: #203b4d;">156</div>
                                 <div style="font-size: 11px; color: #637381;">Reservations</div>
                             </div>
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 12px 14px; border: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 10px;">
                                 <span style="font-size: 18px;"><?php echo ciq_icon('lock'); ?></span>
-                                <div style="font-size: 13px; color: #1d2144; font-weight: 500;">Lakeside Cabin &mdash; front door</div>
+                                <div style="font-size: 13px; color: #203b4d; font-weight: 500;">Lakeside Cabin, front door</div>
                             </div>
                             <span style="padding: 4px 10px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Locked &middot; 87%</span>
                         </div>
@@ -273,15 +273,15 @@ function ciq_badge_addon() {
                     <div style="background: white; border-radius: 12px; padding: 24px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                             <div>
-                                <div style="font-weight: 600; color: #1d2144;">Owner Statement</div>
+                                <div style="font-weight: 600; color: #203b4d;">Owner Statement</div>
                                 <div style="font-size: 12px; color: #637381;">January 2025, Lakeside Cabin</div>
                             </div>
-                            <span style="padding: 6px 14px; background: #4a6cf7; color: white; border-radius: 6px; font-size: 12px;">Download PDF</span>
+                            <span style="padding: 6px 14px; background: #233e50; color: white; border-radius: 6px; font-size: 12px;">Download PDF</span>
                         </div>
                         <div style="border-top: 1px solid #e2e8f0; padding-top: 16px;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                                 <span style="color: #637381;">Gross Revenue</span>
-                                <span style="font-weight: 600; color: #1d2144;">$4,850.00</span>
+                                <span style="font-weight: 600; color: #203b4d;">$4,850.00</span>
                             </div>
                             <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                                 <span style="color: #637381;">Management Fee (15%)</span>
@@ -295,9 +295,9 @@ function ciq_badge_addon() {
                                 <span style="color: #637381;">Maintenance</span>
                                 <span style="color: #ff6b6b;">-$125.00</span>
                             </div>
-                            <div style="border-top: 2px solid #1d2144; margin-top: 12px; padding-top: 12px; display: flex; justify-content: space-between;">
-                                <span style="font-weight: 700; color: #1d2144;">Owner Payout</span>
-                                <span style="font-weight: 700; color: #13c296; font-size: 1.25rem;">$3,637.50</span>
+                            <div style="border-top: 2px solid #203b4d; margin-top: 12px; padding-top: 12px; display: flex; justify-content: space-between;">
+                                <span style="font-weight: 700; color: #203b4d;">Owner Payout</span>
+                                <span style="font-weight: 700; color: #47745b; font-size: 1.25rem;">$3,637.50</span>
                             </div>
                         </div>
                     </div>
@@ -327,26 +327,26 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Payout Configuration</span>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;">3 Methods Active</span>
+                            <span style="font-weight: 600; color: #203b4d;">Payout Configuration</span>
+                            <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 20px; font-size: 12px;">3 Methods Active</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Lakeside Cabin</div>
                                 <div style="font-size: 12px; color: #637381;">Owner: John Davis</div>
                             </div>
-                            <span style="padding: 4px 12px; background: #e8f4fd; color: #4a6cf7; border-radius: 4px; font-size: 12px; font-weight: 600;">Cohost Payout</span>
+                            <span style="padding: 4px 12px; background: #e8f4fd; color: #233e50; border-radius: 4px; font-size: 12px; font-weight: 600;">Cohost Payout</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Sunset Villa</div>
                                 <div style="font-size: 12px; color: #637381;">Owner: Sarah Kim</div>
                             </div>
                             <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px; font-weight: 600;">Host-Only Fee</span>
                         </div>
                         <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Mountain View</div>
                                 <div style="font-size: 12px; color: #637381;">Owner: Mike Torres</div>
                             </div>
                             <span style="padding: 4px 12px; background: #fff3cd; color: #856404; border-radius: 4px; font-size: 12px; font-weight: 600;">Split Payout</span>
@@ -381,33 +381,33 @@ function ciq_badge_addon() {
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 12px;">
                                 <div style="width: 36px; height: 36px; background: #2CA01C; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 14px;">QB</div>
-                                <span style="font-weight: 600; color: #1d2144;">QuickBooks Sync</span>
+                                <span style="font-weight: 600; color: #203b4d;">QuickBooks Sync</span>
                             </div>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
+                            <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 20px; font-size: 12px;"><?php echo ciq_icon('check'); ?> Connected</span>
                         </div>
                         <div style="padding: 16px 20px;">
                             <div style="font-size: 12px; color: #637381; margin-bottom: 12px;">Recent Sync Activity</div>
                             <div style="display: flex; flex-direction: column; gap: 10px;">
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f3f3ed; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Statement, Lakeside Cabin</div>
+                                        <div style="font-weight: 500; color: #203b4d; font-size: 13px;">Owner Statement, Lakeside Cabin</div>
                                         <div style="font-size: 11px; color: #637381;">Invoice #1042 created in QuickBooks</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
+                                    <span style="color: #47745b; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f3f3ed; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Credit, Sarah Kim</div>
+                                        <div style="font-weight: 500; color: #203b4d; font-size: 13px;">Owner Credit, Sarah Kim</div>
                                         <div style="font-size: 11px; color: #637381;">Credit memo #204 recorded</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
+                                    <span style="color: #47745b; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f8fafc; border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f3f3ed; border-radius: 8px;">
                                     <div>
-                                        <div style="font-weight: 500; color: #1d2144; font-size: 13px;">Owner Payout, John Davis</div>
+                                        <div style="font-weight: 500; color: #203b4d; font-size: 13px;">Owner Payout, John Davis</div>
                                         <div style="font-size: 11px; color: #637381;">$3,637.50 recorded as bill payment</div>
                                     </div>
-                                    <span style="color: #13c296; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
+                                    <span style="color: #47745b; font-size: 12px;"><?php echo ciq_icon('check'); ?> Synced</span>
                                 </div>
                             </div>
                             <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
@@ -442,26 +442,26 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Property Items</span>
+                            <span style="font-weight: 600; color: #203b4d;">Property Items</span>
                             <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 20px; font-size: 12px;">2 Need Attention</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Samsung HVAC Unit</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Samsung HVAC Unit</div>
                                 <div style="font-size: 12px; color: #637381;">Lakeside Cabin, 4 repairs this year</div>
                             </div>
                             <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 4px; font-size: 12px;">Repeat Issue</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Hot Tub, Bullfrog A7</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Hot Tub, Bullfrog A7</div>
                                 <div style="font-size: 12px; color: #637381;">Sunset Villa, warranty expires 3/24</div>
                             </div>
                             <span style="padding: 4px 12px; background: #fff3cd; color: #856404; border-radius: 4px; font-size: 12px;">Check Warranty</span>
                         </div>
                         <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">LG Washer/Dryer</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">LG Washer/Dryer</div>
                                 <div style="font-size: 12px; color: #637381;">Mountain View, no issues</div>
                             </div>
                             <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Good</span>
@@ -492,7 +492,7 @@ function ciq_badge_addon() {
                     </ul>
                 </div>
                 <div class="feature-detail-image">
-                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 28px; color: white;">
+                    <div style="background: linear-gradient(135deg, #203b4d, #2d3361); border-radius: 12px; padding: 28px; color: white;">
                         <div style="font-size: 12px; opacity: 0.7; margin-bottom: 4px;">Ticket #1184</div>
                         <div style="font-weight: 700; font-size: 1.25rem; margin-bottom: 4px;">HVAC Not Cooling</div>
                         <div style="font-size: 13px; opacity: 0.8; margin-bottom: 20px;">Lakeside Cabin, Samsung HVAC Unit</div>
@@ -502,7 +502,7 @@ function ciq_badge_addon() {
                         </div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Photo: thermostat reading</span>
-                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
+                            <span style="color: #47745b; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px; font-weight: 600;">Log parts: capacitor + labor 1.5 hrs</span>
@@ -535,24 +535,24 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; padding: 24px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                            <div style="font-weight: 600; color: #1d2144;">Revenue Comparison</div>
+                            <div style="font-weight: 600; color: #203b4d;">Revenue Comparison</div>
                             <div style="font-size: 12px; color: #637381;">2024 vs 2023</div>
                         </div>
                         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px;">
-                            <div style="text-align: center; padding: 16px; background: #f8fafc; border-radius: 8px;">
-                                <div style="font-size: 1.5rem; font-weight: 700; color: #1d2144;">$48.2K</div>
+                            <div style="text-align: center; padding: 16px; background: #f3f3ed; border-radius: 8px;">
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #203b4d;">$48.2K</div>
                                 <div style="font-size: 12px; color: #637381;">This Year</div>
-                                <div style="font-size: 12px; color: #13c296;">&#8593; 12%</div>
+                                <div style="font-size: 12px; color: #47745b;">&#8593; 12%</div>
                             </div>
-                            <div style="text-align: center; padding: 16px; background: #f8fafc; border-radius: 8px;">
-                                <div style="font-size: 1.5rem; font-weight: 700; color: #1d2144;">78%</div>
+                            <div style="text-align: center; padding: 16px; background: #f3f3ed; border-radius: 8px;">
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #203b4d;">78%</div>
                                 <div style="font-size: 12px; color: #637381;">Occupancy</div>
-                                <div style="font-size: 12px; color: #13c296;">&#8593; 5%</div>
+                                <div style="font-size: 12px; color: #47745b;">&#8593; 5%</div>
                             </div>
-                            <div style="text-align: center; padding: 16px; background: #f8fafc; border-radius: 8px;">
-                                <div style="font-size: 1.5rem; font-weight: 700; color: #1d2144;">$285</div>
+                            <div style="text-align: center; padding: 16px; background: #f3f3ed; border-radius: 8px;">
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #203b4d;">$285</div>
                                 <div style="font-size: 12px; color: #637381;">Avg/Night</div>
-                                <div style="font-size: 12px; color: #13c296;">&#8593; 8%</div>
+                                <div style="font-size: 12px; color: #47745b;">&#8593; 8%</div>
                             </div>
                         </div>
                         <div class="preview-chart" style="height: 100px;">
@@ -579,10 +579,10 @@ function ciq_badge_addon() {
     <section class="section section-gray">
         <div class="container">
             <div class="section-header">
-                <span class="section-label" style="color:#4a6cf7;">Add-On Modules</span>
+                <span class="section-label" style="color:#233e50;">Add-On Modules</span>
                 <h2 class="section-title">Switch On What Your Operation Needs</h2>
                 <p class="section-description">
-                    Optional modules that extend the core. Turn on cleaning operations, AI guest messaging, a unified inbox, upsells, and a branded guest portal &mdash; each priced separately, each feeding right back into your core accounting and reporting.
+                    Optional modules that extend the core. Turn on cleaning operations, AI guest messaging, a unified inbox, upsells, and a branded guest portal, each priced separately, each feeding right back into your core accounting and reporting.
                 </p>
             </div>
         </div>
@@ -613,26 +613,26 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Today's Cleanings</span>
-                            <span style="padding: 4px 12px; background: #4a6cf7; color: white; border-radius: 20px; font-size: 12px;">7 Jobs</span>
+                            <span style="font-weight: 600; color: #203b4d;">Today's Cleanings</span>
+                            <span style="padding: 4px 12px; background: #233e50; color: white; border-radius: 20px; font-size: 12px;">7 Jobs</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Lakeside Cabin</div>
                                 <div style="font-size: 12px; color: #637381;">Maria's Crew, 11:00 AM checkout</div>
                             </div>
-                            <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 4px; font-size: 12px;">In Progress</span>
+                            <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 4px; font-size: 12px;">In Progress</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Sunset Villa</div>
                                 <div style="font-size: 12px; color: #637381;">Auto-assigned, pet stay + deep clean</div>
                             </div>
-                            <span style="padding: 4px 12px; background: #e8f4fd; color: #4a6cf7; border-radius: 4px; font-size: 12px;">Accepted</span>
+                            <span style="padding: 4px 12px; background: #e8f4fd; color: #233e50; border-radius: 4px; font-size: 12px;">Accepted</span>
                         </div>
                         <div style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Mountain View</div>
                                 <div style="font-size: 12px; color: #637381;">From Turno, 2 photos uploaded</div>
                             </div>
                             <span style="padding: 4px 12px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">Complete</span>
@@ -663,17 +663,17 @@ function ciq_badge_addon() {
                     </ul>
                 </div>
                 <div class="feature-detail-image">
-                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 28px; color: white;">
+                    <div style="background: linear-gradient(135deg, #203b4d, #2d3361); border-radius: 12px; padding: 28px; color: white;">
                         <div style="font-size: 12px; opacity: 0.7; margin-bottom: 4px;">Job 4 of 7 today</div>
                         <div style="font-weight: 700; font-size: 1.25rem; margin-bottom: 4px;">Lakeside Cabin</div>
                         <div style="font-size: 13px; opacity: 0.8; margin-bottom: 20px;">3 bed / 2 bath, pet stay</div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Strip beds and bag linens</span>
-                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
+                            <span style="color: #47745b; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px;">Photo: kitchen counters</span>
-                            <span style="color: #13c296; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
+                            <span style="color: #47745b; font-weight: 700;"><?php echo ciq_icon('check'); ?></span>
                         </div>
                         <div style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 14px; display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 14px; font-weight: 600;">Restock toilet paper (5 rolls)</span>
@@ -706,38 +706,38 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0;">
-                            <span style="font-weight: 600; color: #1d2144;">Payroll Period</span>
+                            <span style="font-weight: 600; color: #203b4d;">Payroll Period</span>
                             <div style="font-size: 12px; color: #637381;">May 15 to May 28</div>
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #13c296, #28d6a8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">MC</div>
+                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #47745b, #28d6a8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">MC</div>
                                 <div>
-                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Maria's Crew</div>
+                                    <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Maria's Crew</div>
                                     <div style="font-size: 12px; color: #637381;">12 jobs, Venmo</div>
                                 </div>
                             </div>
-                            <div style="font-weight: 700; color: #1d2144;">$1,840</div>
+                            <div style="font-weight: 700; color: #203b4d;">$1,840</div>
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #4a6cf7, #6b8aff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">JR</div>
+                                <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #233e50, #436072); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">JR</div>
                                 <div>
-                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">James R.</div>
+                                    <div style="font-weight: 500; color: #203b4d; font-size: 14px;">James R.</div>
                                     <div style="font-size: 12px; color: #637381;">7 jobs, Zelle</div>
                                 </div>
                             </div>
-                            <div style="font-weight: 700; color: #1d2144;">$945</div>
+                            <div style="font-weight: 700; color: #203b4d;">$945</div>
                         </div>
                         <div style="padding: 14px 20px; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 12px;">
                                 <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #ff6b6b, #ff8787); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px;">LK</div>
                                 <div>
-                                    <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Linda K.</div>
+                                    <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Linda K.</div>
                                     <div style="font-size: 12px; color: #637381;">9 jobs, Stripe</div>
                                 </div>
                             </div>
-                            <div style="font-weight: 700; color: #1d2144;">$1,215</div>
+                            <div style="font-weight: 700; color: #203b4d;">$1,215</div>
                         </div>
                     </div>
                 </div>
@@ -765,12 +765,12 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Supplies Needed</span>
+                            <span style="font-weight: 600; color: #203b4d;">Supplies Needed</span>
                             <span style="padding: 4px 12px; background: #ff6b6b; color: white; border-radius: 20px; font-size: 12px;">2 Low</span>
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Lakeside Cabin</span>
+                                <span style="font-weight: 500; color: #203b4d; font-size: 14px;">Lakeside Cabin</span>
                                 <span style="font-size: 12px; color: #ff6b6b;">1 Out, 2 Low</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
@@ -780,7 +780,7 @@ function ciq_badge_addon() {
                         </div>
                         <div style="padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Sunset Villa</span>
+                                <span style="font-weight: 500; color: #203b4d; font-size: 14px;">Sunset Villa</span>
                                 <span style="font-size: 12px; color: #856404;">1 Low</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
@@ -790,11 +790,11 @@ function ciq_badge_addon() {
                         </div>
                         <div style="padding: 14px 20px;">
                             <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-                                <span style="font-weight: 500; color: #1d2144; font-size: 14px;">Mountain View</span>
-                                <span style="font-size: 12px; color: #13c296;">All Good</span>
+                                <span style="font-weight: 500; color: #203b4d; font-size: 14px;">Mountain View</span>
+                                <span style="font-size: 12px; color: #47745b;">All Good</span>
                             </div>
                             <div style="background: #f1f5f9; height: 6px; border-radius: 3px; overflow: hidden;">
-                                <div style="width: 92%; background: #13c296; height: 100%;"></div>
+                                <div style="width: 92%; background: #47745b; height: 100%;"></div>
                             </div>
                         </div>
                     </div>
@@ -808,7 +808,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('bot'); ?> AI Guest Messaging &mdash; CIQ Concierge <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
+                    <h3><?php echo ciq_icon('bot'); ?> AI Guest Messaging, CIQ Concierge <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
                     <p>
                         An AI that answers guests like a member of your team, grounded in your real property data. It drafts replies for you to approve, or sends vetted answers on its own, and it never invents details it can't verify.
                     </p>
@@ -827,22 +827,22 @@ function ciq_badge_addon() {
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
                             <div style="display: flex; align-items: center; gap: 10px;">
                                 <div style="width: 34px; height: 34px; background: linear-gradient(135deg, #ec4899, #f472b6); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 15px;"><?php echo ciq_icon('sparkle'); ?></div>
-                                <span style="font-weight: 600; color: #1d2144;">CIQ Concierge</span>
+                                <span style="font-weight: 600; color: #203b4d;">CIQ Concierge</span>
                             </div>
-                            <span style="padding: 4px 12px; background: #e6f9f3; color: #0a9d78; border-radius: 20px; font-size: 12px;">Auto-send on</span>
+                            <span style="padding: 4px 12px; background: #e6f9f3; color: #47745b; border-radius: 20px; font-size: 12px;">Auto-send on</span>
                         </div>
                         <div style="padding: 16px 20px;">
                             <div style="background: #f1f5f9; border-radius: 12px 12px 12px 2px; padding: 10px 14px; margin-bottom: 10px; max-width: 78%;">
-                                <div style="font-size: 13px; color: #1d2144;">Hi! Is early check-in possible for tomorrow? We'll be in town by 11.</div>
+                                <div style="font-size: 13px; color: #203b4d;">Hi! Is early check-in possible for tomorrow? We'll be in town by 11.</div>
                                 <div style="font-size: 11px; color: #94a3b8; margin-top: 4px;">Guest &middot; Emma</div>
                             </div>
-                            <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; border-radius: 12px 12px 2px 12px; padding: 10px 14px; margin-left: auto; max-width: 82%;">
-                                <div style="font-size: 13px;">Good news, Emma &mdash; the cabin is open the night before, so a 12:00 check-in works. I've updated your reservation and your door code is active from noon.</div>
+                            <div style="background: linear-gradient(135deg, #233e50, #436072); color: white; border-radius: 12px 12px 2px 12px; padding: 10px 14px; margin-left: auto; max-width: 82%;">
+                                <div style="font-size: 13px;">Good news, Emma, the cabin is open the night before, so a 12:00 check-in works. I've updated your reservation and your door code is active from noon.</div>
                                 <div style="font-size: 11px; opacity: 0.85; margin-top: 4px;">CIQ Concierge &middot; checked availability</div>
                             </div>
                             <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #e2e8f0; display: flex; gap: 8px; flex-wrap: wrap;">
-                                <span style="padding: 4px 10px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 11px; color: #637381;">Grounded in property data</span>
-                                <span style="padding: 4px 10px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 11px; color: #637381;">Quiet hours aware</span>
+                                <span style="padding: 4px 10px; background: #f3f3ed; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 11px; color: #637381;">Grounded in property data</span>
+                                <span style="padding: 4px 10px; background: #f3f3ed; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 11px; color: #637381;">Quiet hours aware</span>
                             </div>
                         </div>
                     </div>
@@ -856,7 +856,7 @@ function ciq_badge_addon() {
         <div class="container">
             <div class="feature-detail-content">
                 <div class="feature-detail-text">
-                    <h3><?php echo ciq_icon('smartphone'); ?> InboxIQ &mdash; Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
+                    <h3><?php echo ciq_icon('smartphone'); ?> InboxIQ, Your Whole Guest Inbox in One App <?php echo ciq_badge_addon(); ?><?php echo ciq_badge_beta(); ?></h3>
                     <p>
                         Every guest conversation, across every channel, in a single installable app for your team. See who's viewing a thread, spin up a ticket without leaving it, unlock the door from the conversation, and keep operations moving from your phone.
                     </p>
@@ -872,7 +872,7 @@ function ciq_badge_addon() {
                     </ul>
                 </div>
                 <div class="feature-detail-image">
-                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 24px; color: white;">
+                    <div style="background: linear-gradient(135deg, #203b4d, #2d3361); border-radius: 12px; padding: 24px; color: white;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
                             <div style="font-weight: 700; font-size: 1.1rem;">InboxIQ</div>
                             <span style="padding: 3px 10px; background: rgba(255,255,255,0.15); border-radius: 20px; font-size: 11px;">4 unread</span>
@@ -925,31 +925,31 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
-                            <span style="font-weight: 600; color: #1d2144;">Your Stay &middot; Lakeside Cabin</span>
+                            <span style="font-weight: 600; color: #203b4d;">Your Stay &middot; Lakeside Cabin</span>
                             <span style="padding: 4px 12px; background: #f97316; color: white; border-radius: 20px; font-size: 12px;">Guest Portal</span>
                         </div>
                         <div style="padding: 16px 20px;">
                             <div style="font-size: 12px; color: #637381; margin-bottom: 10px;">Make your stay better</div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f3f3ed; border-radius: 8px; margin-bottom: 10px;">
                                 <div>
-                                    <div style="font-weight: 600; color: #1d2144; font-size: 13px;">Early check-in (12:00 PM)</div>
+                                    <div style="font-weight: 600; color: #203b4d; font-size: 13px;">Early check-in (12:00 PM)</div>
                                     <div style="font-size: 11px; color: #637381;">Get in early and start the weekend sooner</div>
                                 </div>
-                                <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 6px; font-size: 12px;">Add $45</span>
+                                <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 6px; font-size: 12px;">Add $45</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f3f3ed; border-radius: 8px; margin-bottom: 10px;">
                                 <div>
-                                    <div style="font-weight: 600; color: #1d2144; font-size: 13px;">Mid-stay clean</div>
+                                    <div style="font-weight: 600; color: #203b4d; font-size: 13px;">Mid-stay clean</div>
                                     <div style="font-size: 11px; color: #637381;">Fresh towels and tidy-up on day 3</div>
                                 </div>
-                                <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 6px; font-size: 12px;">Add $60</span>
+                                <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 6px; font-size: 12px;">Add $60</span>
                             </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f8fafc; border-radius: 8px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f3f3ed; border-radius: 8px;">
                                 <div>
-                                    <div style="font-weight: 600; color: #1d2144; font-size: 13px;">Guided lake pontoon tour</div>
+                                    <div style="font-weight: 600; color: #203b4d; font-size: 13px;">Guided lake pontoon tour</div>
                                     <div style="font-size: 11px; color: #637381;">Local partner &middot; 2 hours</div>
                                 </div>
-                                <span style="padding: 4px 12px; background: #13c296; color: white; border-radius: 6px; font-size: 12px;">Add $180</span>
+                                <span style="padding: 4px 12px; background: #47745b; color: white; border-radius: 6px; font-size: 12px;">Add $180</span>
                             </div>
                         </div>
                     </div>
@@ -977,9 +977,9 @@ function ciq_badge_addon() {
                     </ul>
                 </div>
                 <div class="feature-detail-image">
-                    <div style="background: linear-gradient(135deg, #1d2144, #2d3361); border-radius: 12px; padding: 24px; color: white;">
+                    <div style="background: linear-gradient(135deg, #203b4d, #2d3361); border-radius: 12px; padding: 24px; color: white;">
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-                            <div style="width: 50px; height: 50px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #4a6cf7; font-weight: 700;"><?php echo ciq_icon('home'); ?></div>
+                            <div style="width: 50px; height: 50px; background: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #233e50; font-weight: 700;"><?php echo ciq_icon('home'); ?></div>
                             <div>
                                 <div style="font-weight: 600;">Owner Dashboard</div>
                                 <div style="font-size: 12px; opacity: 0.7;">Welcome back, John</div>
@@ -1016,7 +1016,7 @@ function ciq_badge_addon() {
                 <div class="feature-detail-text">
                     <h3><?php echo ciq_icon('users'); ?> Team, Vendors &amp; Recurring Service Work <?php echo ciq_badge_addon(); ?></h3>
                     <p>
-                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and run recurring vendor work end to end &mdash; scheduled, fulfilled, billed, and paid &mdash; without leaving CohostIQ.
+                        Coordinate your entire team from one platform. Assign roles, manage permissions, schedule cleaners, and run recurring vendor work end to end, scheduled, fulfilled, billed, and paid, without leaving CohostIQ.
                     </p>
                     <ul class="feature-detail-list">
                         <li>Role-based permissions (Admin, Manager, Cleaner, Maintenance, etc.)</li>
@@ -1025,7 +1025,7 @@ function ciq_badge_addon() {
                         <li>Track task completion and team performance</li>
                         <li>Vendor/contractor profiles with contact info and rates</li>
                         <li>Recurring service work on a real schedule: twice a week, every other Tuesday, the first Monday of the month, quarterly, or annually</li>
-                        <li>Vendors get a Jobs list in the portal they already use &mdash; no extra login seat to buy</li>
+                        <li>Vendors get a Jobs list in the portal they already use, no extra login seat to buy</li>
                         <li>Vendors close their own visits, with the rate set in advance so closing records the work without setting the pay</li>
                         <li>Several photos per visit, uploaded one at a time so a weak signal at the property doesn't lose the batch</li>
                         <li>Smart-lock access with a server-timed knock gate: the vendor announces, the server holds the unlock for a full minute, and both times are on the record</li>
@@ -1036,20 +1036,20 @@ function ciq_badge_addon() {
                 <div class="feature-detail-image">
                     <div style="background: white; border-radius: 12px; overflow: hidden;">
                         <div style="padding: 16px 20px; border-bottom: 1px solid #e2e8f0;">
-                            <span style="font-weight: 600; color: #1d2144;">Team Members</span>
+                            <span style="font-weight: 600; color: #203b4d;">Team Members</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; gap: 12px;">
-                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #4a6cf7, #6b8aff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">SM</div>
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #233e50, #436072); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">SM</div>
                             <div style="flex: 1;">
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Sarah Mitchell</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Sarah Mitchell</div>
                                 <div style="font-size: 12px; color: #637381;">Admin</div>
                             </div>
-                            <span style="padding: 4px 10px; background: #e8f4fd; color: #4a6cf7; border-radius: 4px; font-size: 11px;">All Properties</span>
+                            <span style="padding: 4px 10px; background: #e8f4fd; color: #233e50; border-radius: 4px; font-size: 11px;">All Properties</span>
                         </div>
                         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; gap: 12px;">
-                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #13c296, #28d6a8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">MC</div>
+                            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #47745b, #28d6a8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">MC</div>
                             <div style="flex: 1;">
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Maria Cleaning</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Maria Cleaning</div>
                                 <div style="font-size: 12px; color: #637381;">Cleaner</div>
                             </div>
                             <span style="padding: 4px 10px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 11px;">8 Tasks Today</span>
@@ -1057,7 +1057,7 @@ function ciq_badge_addon() {
                         <div style="padding: 12px 20px; display: flex; align-items: center; gap: 12px;">
                             <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff6b6b, #ff8787); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">JH</div>
                             <div style="flex: 1;">
-                                <div style="font-weight: 500; color: #1d2144; font-size: 14px;">Jim's HVAC</div>
+                                <div style="font-weight: 500; color: #203b4d; font-size: 14px;">Jim's HVAC</div>
                                 <div style="font-size: 12px; color: #637381;">Maintenance</div>
                             </div>
                             <span style="padding: 4px 10px; background: #fff3cd; color: #856404; border-radius: 4px; font-size: 11px;">2 Active</span>
@@ -1091,7 +1091,7 @@ function ciq_badge_addon() {
                         <li>Property and member CSV import in a single pass</li>
                     </ul>
                     <p style="margin-top: 16px;">
-                        <a href="hoa.php" style="color:#4a6cf7; font-weight:600;">See the HOA module &rarr;</a>
+                        <a href="hoa.php" style="color:#233e50; font-weight:600;">See the HOA module &rarr;</a>
                     </p>
                 </div>
                 <div class="feature-detail-image">

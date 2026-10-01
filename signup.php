@@ -60,39 +60,39 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
 
-                    <div style="background: #f8fafc; border-radius: 12px; padding: 24px; margin-top: 30px;">
-                        <h4 style="margin-bottom: 16px; color: #1d2144;">What's Included:</h4>
+                    <div style="background: #f3f3ed; border-radius: 12px; padding: 24px; margin-top: 30px;">
+                        <h4 style="margin-bottom: 16px; color: #203b4d;">What's Included:</h4>
                         <ul style="display: flex; flex-direction: column; gap: 12px;">
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>PMS integration & reservation sync</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Maintenance ticketing with item tracking</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Owner statements & billing</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>All Airbnb payout methods supported</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>QuickBooks integration</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Team management & task assignment</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Reporting & analytics</span>
                             </li>
                             <li style="display: flex; align-items: center; gap: 10px;">
-                                <span style="color: #13c296;"><?php echo ciq_icon('check'); ?></span>
+                                <span style="color: #47745b;"><?php echo ciq_icon('check'); ?></span>
                                 <span>Owner portal access</span>
                             </li>
                         </ul>
@@ -101,7 +101,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div class="signup-form-container" id="signup">
                     <div class="signup-form-header">
-                        <div style="background: linear-gradient(135deg, #4a6cf7, #6b8aff); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">2 Months Free</div>
+                        <div style="background: linear-gradient(135deg, #233e50, #436072); color: white; display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px;">2 Months Free</div>
                         <h3>Start Your Free Trial</h3>
                         <p>Your first 2 months are completely free. Setup takes less than 5 minutes.</p>
                     </div>
@@ -205,7 +205,7 @@ require_once __DIR__ . '/includes/header.php';
 
                 <p class="pricing-calc-foot">First 2 months are free. After that, you pay only for what you use.</p>
                 <p class="pricing-calc-foot" style="margin-top: 8px;">
-                    This calculator is for rental properties. Associations are priced by unit count &mdash;
+                    This calculator is for rental properties. Associations are priced by unit count,
                     <a href="hoa.php#hoa-pricing">see HOA &amp; COA pricing</a>.
                 </p>
             </div>
@@ -312,7 +312,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
 
             <p class="pricing-enterprise">
-                Have questions about pricing? <a href="mailto:support@cohostiq.app" style="color: #4a6cf7;">Contact us</a>, we're happy to help.
+                Have questions about pricing? <a href="mailto:support@cohostiq.app" style="color: #233e50;">Contact us</a>, we're happy to help.
             </p>
         </div>
     </section>

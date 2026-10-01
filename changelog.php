@@ -64,7 +64,7 @@ $entries = [
      'body' => 'Apply a credit to an owner, net it into their statement, and record the matching credit memo in QuickBooks in one step.'],
 
     ['date' => '2026-08-04', 'category' => 'integrations', 'title' => 'Caller ID that knows who\'s calling',
-     'body' => 'When the phone rings, CohostIQ pops the caller\'s identity — owner, contractor, staff, or guest — matched against your data.'],
+     'body' => 'When the phone rings, CohostIQ pops the caller\'s identity, owner, contractor, staff, or guest, matched against your data.'],
 
     ['date' => '2026-08-01', 'category' => 'guest', 'title' => 'Branded guest stay portal with live chat',
      'body' => 'Guests get a private link to their trip details, house info, and a live chat with your team, in your colors and logo.'],
@@ -257,15 +257,15 @@ $entries = [
 
 // Category metadata
 $categories = [
-    'cleaning'     => ['label' => 'Cleaning',     'color' => '#13c296'],
-    'maintenance'  => ['label' => 'Maintenance',  'color' => '#4a6cf7'],
+    'cleaning'     => ['label' => 'Cleaning',     'color' => '#47745b'],
+    'maintenance'  => ['label' => 'Maintenance',  'color' => '#233e50'],
     'hoa'          => ['label' => 'HOA',          'color' => '#8b5cf6'],
     'onboarding'   => ['label' => 'Onboarding',   'color' => '#f59e0b'],
     'billing'      => ['label' => 'Billing',      'color' => '#635bff'],
     'integrations' => ['label' => 'Integrations', 'color' => '#0ea5e9'],
     'ai'           => ['label' => 'AI',           'color' => '#ec4899'],
     'guest'        => ['label' => 'Guest',        'color' => '#f97316'],
-    'owners'       => ['label' => 'Owners',       'color' => '#10b981'],
+    'owners'       => ['label' => 'Owners',       'color' => '#47745b'],
     'core'         => ['label' => 'Core',         'color' => '#64748b'],
 ];
 
